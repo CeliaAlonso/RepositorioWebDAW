@@ -1,0 +1,72 @@
+/*
+ *    Autor = Celia Alonso, Raul Marin, Ricardo Salido, David Gomez
+ *    Fecha = 10/12/2015
+ *    Licencia = GPL v3
+ *    Versión = 1.0
+ *    Descripción = Definiciones CSS
+ *
+ *    Copyright (C) 2015 Buscando a Nemo
+ *
+ *    This program is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU General Public License as published by
+ *    the Free Software Foundation, either version 3 of the License, or
+ *    (at your option) any later version.
+ *
+ *    This program is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    GNU General Public License for more details.
+ *
+ *    You should have received a copy of the GNU General Public License
+ *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+div { border: 1px dotted red; }
+/* ---------------------
+FUENTES
+--------------------- */
+
+/* ---------------------
+VARIOS
+--------------------- */
+* {margin: 0; padding: 0;}
+
+
+html, body {
+    min-height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {font-size: 70px;}
+h2 {font-size: 60px;}
+h3 {font-size: 50px;}
+h4 {font-size: 40px;}
+
+p {font-size: 20px;}
+.animation-moz-fix { display: inline-flex; } /* Arreglo para la animación en Firefox */
+
+.left { float: left; }
+.right { float: right; }
+
+/* --------------------- 
+HEADER
+--------------------- */
+header {
+    width:100%;
+    height: 40vw;
+    padding-top: 3vw;
+    background-image: url("../img/slider.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+header p { color: white; }
+
+.btn {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+    border: solid white 2px;
+    text-decoration: none;
+}
