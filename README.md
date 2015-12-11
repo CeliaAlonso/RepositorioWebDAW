@@ -23,3 +23,8 @@ Actualizar el respositorio (IMPORTANTE HACER ANTES DE COMENZAR A TRABAJAR)
 ```sh
 $ git pull
 ```
+
+# Documentación
+
+Link:
+  - https://drive.google.com/folderview?id=0B6eStVXbDuBYYVdRZXFvUWE0TEU&usp=sharing
