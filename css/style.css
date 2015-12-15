@@ -2,8 +2,8 @@
  *    Autor = Celia Alonso, Raul Marin, Ricardo Salido, David Gomez
  *    Fecha = 10/12/2015
  *    Licencia = GPL v3
- *    Versión = 1.0
- *    Descripción = Definiciones CSS
+ *    Versiï¿½n = 1.0
+ *    Descripciï¿½n = Definiciones CSS
  *
  *    Copyright (C) 2015 Buscando a Nemo
  *
@@ -21,8 +21,9 @@
  *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 div {
-	border: 1px dotted red;
+    border: 1px dotted red;
 }
+
 /* ---------------------
 FUENTES
 --------------------- */
@@ -31,126 +32,122 @@ FUENTES
 VARIOS
 --------------------- */
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
-	min-height: 100%;
-	font-family: 'Raleway', sans-serif;
+    min-height: 100%;
+    font-family: 'Raleway', sans-serif;
 }
 
 h1 {
-	font-size: 70px;
+    font-size: 70px;
 }
 
 h2 {
-	font-size: 60px;
+    font-size: 60px;
 }
 
 h3 {
-	font-size: 50px;
+    font-size: 50px;
 }
 
 h4 {
-	font-size: 40px;
+    font-size: 40px;
 }
 
 p {
-	font-size: 20px;
+    font-size: 20px;
 }
 
 .animation-moz-fix {
-	display: inline-flex;
-} /* Arreglo para la animación en Firefox */
+    display: inline-flex;
+}
+
+/* Arreglo para la animaciï¿½n en Firefox */
 .left {
-	float: left;
+    float: left;
 }
 
 .right {
-	float: right;
+    float: right;
 }
 
 /* --------------------- 
 HEADER
 --------------------- */
 header {
-	width: 100%;
-	height: 40vw;
-	padding-top: 3vw;
-	background-image: url("../img/slider.jpg");
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
+    width: 100%;
+    height: 40vw;
+    padding-top: 3vw;
+    background-image: url("../img/slider.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 header p {
-	color: white;
+    color: white;
 }
 
 .btn {
-	font-family: 'Raleway', sans-serif;
-	color: white;
-	font-size: 15px;
-	padding: 5px 5px 5px 5px;
-	border: solid white 2px;
-	text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+    border: solid white 2px;
+    text-decoration: none;
 }
 
 /* --------------------- 
 SLIDER
 --------------------- */
-.carousel>.carousel-inner>.item>img {
-	margin: 0 auto;
-	height: 40vw;
-	width: 100%;
+.carousel > .carousel-inner > .item > img {
+    margin: 0 auto;
+    height: 40vw;
+    width: 100%;
 }
 
 .control_slider {
-	filter: alpha(opacity = 30);
-	opacity: 0.3;
+    filter: alpha(opacity=30);
+    opacity: 0.3;
 }
 
 .control_slider:hover, .control_slider:focus {
-	filter: alpha(opacity = 100);
-	opacity: 1;
-	font-family: 'Raleway', sans-serif;
-	color: white;
-	font-size: 15px;
-	padding: 5px 5px 5px 5px;
-	border: solid white 2px;
-	text-decoration: none;
+    filter: alpha(opacity=100);
+    opacity: 1;
 }
 
 /* --------------------- 
 CONTENIDO
 --------------------- */
 .contenedor_contenido1 {
-	margin-top: 100px;
+    margin-top: 100px;
 }
 
 .col1 {
-	border-right: 1px solid black;
-	padding-left: 55px;
+    border-right: 1px solid black;
+    padding-left: 55px;
 }
 
 .col2 {
-	border-right: 1px solid black;
-	padding-left: 55px;
+    border-right: 1px solid black;
+    padding-left: 55px;
 }
 
 .col3 {
-	padding-left: 55px;
+    padding-left: 55px;
 }
 
 .contenedor_contenido2 {
-	margin-top: 60px;
+    margin-top: 60px;
 }
 
 .col4 {
-	padding-left: 85px;
-	padding-top: 30px;
+    padding-left: 85px;
+    padding-top: 30px;
 }
 
 .col5 {
-	padding-left: 55px;
+    padding-left: 55px;
 }
