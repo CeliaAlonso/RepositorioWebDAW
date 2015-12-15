@@ -2,8 +2,8 @@
  *    Autor = Celia Alonso, Raul Marin, Ricardo Salido, David Gomez
  *    Fecha = 10/12/2015
  *    Licencia = GPL v3
- *    VersiÃ³n = 1.0
- *    DescripciÃ³n = Definiciones CSS
+ *    Versión = 1.0
+ *    Descripción = Definiciones CSS
  *
  *    Copyright (C) 2015 Buscando a Nemo
  *
@@ -62,7 +62,7 @@ p {
 
 .animation-moz-fix {
 	display: inline-flex;
-} /* Arreglo para la animaciÃ³n en Firefox */
+} /* Arreglo para la animación en Firefox */
 .left {
 	float: left;
 }
@@ -96,6 +96,9 @@ header p {
 	text-decoration: none;
 }
 
+/* --------------------- 
+SLIDER
+--------------------- */
 .carousel>.carousel-inner>.item>img {
 	margin: 0 auto;
 	height: 40vw;
@@ -110,61 +113,44 @@ header p {
 .control_slider:hover, .control_slider:focus {
 	filter: alpha(opacity = 100);
 	opacity: 1;
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    font-size: 15px;
-    padding: 5px 5px 5px 5px;
-    border: solid white 2px;
-    text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	font-size: 15px;
+	padding: 5px 5px 5px 5px;
+	border: solid white 2px;
+	text-decoration: none;
 }
 
 /* --------------------- 
 CONTENIDO
 --------------------- */
-
-
 .contenedor_contenido1 {
-	
 	margin-top: 100px;
-	
 }
 
-.col1{
-	
-border-right: 1px solid black;
-padding-left: 55px;	
-
-	
+.col1 {
+	border-right: 1px solid black;
+	padding-left: 55px;
 }
 
-.col2{
-	
-border-right: 1px solid black;	
-padding-left: 55px;		
-	
+.col2 {
+	border-right: 1px solid black;
+	padding-left: 55px;
 }
 
-.col3{
-	
-padding-left: 55px;		
-	
+.col3 {
+	padding-left: 55px;
 }
 
-.contenedor_contenido2{
-	
+.contenedor_contenido2 {
 	margin-top: 60px;
-	
 }
 
-.col4{
-
-	padding-left: 85px;	
+.col4 {
+	padding-left: 85px;
 	padding-top: 30px;
-	
 }
 
-.col5{
-	
-	padding-left: 55px;	
-	
+.col5 {
+	padding-left: 55px;
 }
