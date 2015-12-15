@@ -70,3 +70,54 @@ header p { color: white; }
     border: solid white 2px;
     text-decoration: none;
 }
+
+/* --------------------- 
+CONTENIDO
+--------------------- */
+
+
+.contenedor_contenido1 {
+	
+	margin-top: 100px;
+	
+}
+
+.col1{
+	
+border-right: 1px solid black;
+padding-left: 55px;	
+
+	
+}
+
+.col2{
+	
+border-right: 1px solid black;	
+padding-left: 55px;		
+	
+}
+
+.col3{
+	
+padding-left: 55px;		
+	
+}
+
+.contenedor_contenido2{
+	
+	margin-top: 60px;
+	
+}
+
+.col4{
+
+	padding-left: 85px;	
+	padding-top: 30px;
+	
+}
+
+.col5{
+	
+	padding-left: 55px;	
+	
+}
