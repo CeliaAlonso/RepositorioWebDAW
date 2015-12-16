@@ -47,6 +47,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 
     <!--[if IE]>
     <script src="libs/ie/html5shiv.min.js"></script>
@@ -56,58 +57,91 @@
 
 <body>
 
-<div>
     <!-- ===========================
-    HEADER
-    =========================== -->
+   HEADER
+   =========================== -->
+    <div id="bg_pattern"></div>
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
+
+        <!-- ===========================
+        SLIDER
+        =========================== -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicadores -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item">
+                    <img class="first-slide" src="img/peces2.jpg" alt="First slide">
+                    <div style="position: absolute; background-color: #1b6d85; z-index: 10">
+                        <p>
+                            HOLAAAA
+                        </p>
+                    </div>
+                </div>
+                <div class="item active">
+                    <img class="second-slide" src="img/peces1.jpg" alt="Second slide">
+                </div>
+                <div class="item">
+                    <img class="third-slide" src="img/peces3.jpg" alt="Third slide">
+                </div>
+            </div>
+
+            <a class="left carousel-control control-slider" href="#myCarousel" role="button"
+               data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control control-slider" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only" style="z-index: 99;">Siguiente</span>
+            </a>
+        </div>
+
+
+        <div class="container header">
+            <div class="row header">
+                <div class="col-lg-6 col-sm-6">
                     <p>
                         <strong>BUSCANDO</strong> A NEMO
                     </p>
                 </div>
-                <div class="col-sm-4"></div>
-                <div class="col-sm-4">
+                <div class="col-lg-6 col-sm-6">
                     <a class="btn right">REGISTRATE</a>
                 </div>
+            </div>
+
+            <div class="row">
+                <nav class="navbar navbar-default">
+                    <hr>
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav" style="align-content: center">
+                                <li class="active"><a href="#"><i class="fa fa-home"></i>HOME</a></li>
+                                <li><a href="#about"><i class="fa fa-map-marker"></i>¿QUÉ HACEMOS Y OFRECEMOS?</a></li>
+                                <li><a href="#contact"><i class="fa fa-shopping-basket"></i>TIENDA</a></li>
+                                <li><a href="#contact"><i class="fa fa-picture-o"></i>GALERÍA</a></li>
+                                <li><a href="#contact"><i class="fa fa-envelope"></i>CONTACTO</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
     </header>
 
-    <!-- ===========================
-    SLIDER
-    =========================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicadores -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <div class="item">
-                <img class="first-slide" src="img/peces2.jpg" alt="First slide">
-            </div>
-            <div class="item active">
-                <img class="second-slide" src="img/peces1.jpg" alt="Second slide">
-            </div>
-            <div class="item">
-                <img class="third-slide" src="img/peces3.jpg" alt="Third slide">
-            </div>
-        </div>
-        <a class="left carousel-control control_slider" href="#myCarousel" role="button"
-           data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="right carousel-control control_slider" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-        </a>
-    </div>
 
-	<!-- ===========================
+    <!-- ===========================
     CONTENIDO
     =========================== -->
     <div class="container contenedor_contenido1">
@@ -137,7 +171,6 @@
     </div>
 
     <div class="container contenedor_contenido2">
-
         <div class="row">
             <div class="col-lg-8 col4">
                 <h3>Column 1</h3>
@@ -154,9 +187,7 @@
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
             </div>
         </div>
-
     </div>
-</div>
 
 	<!-- ===========================
     FOOTER
@@ -165,40 +196,30 @@
 		<div class="footer-left">
 			<h3>Buscando a Nemo</h3>
 			<p class="footer-links">
-				<a href="#">Política de cookies</a> · 
-				<a href="#">Información legal</a> · 
-				<a href="#">Tienda</a> · 
-				<a href="#">FAQ</a> · 
+				<a href="#">Política de cookies</a> ·
+				<a href="#">Información legal</a> ·
+				<a href="#">Tienda</a> ·
+				<a href="#">FAQ</a> ·
 				<a href="#">¿Quienes somos?</a>
 			</p>
-
 			<p class="footer-company-name">Buscando a Nemo &copy; 2015</p>
 
 			<div class="footer-icons">
-
 				<a href="#"><i class="fa fa-facebook"></i></a>
 				<a href="#"><i class="fa fa-twitter"></i></a>
 				<a href="#"><i class="fa fa-linkedin"></i></a>
 				<a href="#"><i class="fa fa-github"></i></a>
-
 			</div>
-
 		</div>
-		
+
 		<div class="footer-right right">
-
 			<p>Contactar</p>
-
 			<form action="#" method="post">
-
 				<input type="text" name="email" placeholder="Email" />
 				<textarea name="mensaje" placeholder="mensaje"></textarea>
 				<button>Enviar</button>
-
 			</form>
-
 		</div>
-
 	</footer>
 
 	<!-- ===========================
