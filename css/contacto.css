@@ -1,0 +1,57 @@
+@CHARSET "UTF-8";
+/*
+ *    Autor = Celia Alonso, Raul Marin, Ricardo Salido, David Gomez
+ *    Fecha = 10/12/2015
+ *    Licencia = GPL v3
+ *    Versión = 1.0
+ *    Descripción = Definiciones CSS
+ *
+ *    Copyright (C) 2015 Buscando a Nemo
+ *
+ *    This program is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU General Public License as published by
+ *    the Free Software Foundation, either version 3 of the License, or
+ *    (at your option) any later version.
+ *
+ *    This program is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    GNU General Public License for more details.
+ *
+ *    You should have received a copy of the GNU General Public License
+ *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+ 
+/* --------------------- 
+ESTILOS CONTENIDO FORMULARIO DE CONTACTO
+--------------------- */
+.form-contacto {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border: 1px solid #000000;
+	text-align: center;
+	border: 1px solid #000000;
+}
+
+.padding-form {
+	padding-left: 0px;
+}
+
+.derecha-form {
+	text-align: right;
+}
+
+.izquierda-form {
+	text-align: left;
+}
+.enviar-form {
+	background-color: #292c2f; 
+	padding: 10px; 
+	border: 0px; 
+}
+.enviar-form:hover{
+	background-color: #6E797F; 
+	color: #FFFFFF; 
+	padding: 10px; 
+	border: 0px;	
+}

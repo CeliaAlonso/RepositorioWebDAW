@@ -1,0 +1,298 @@
+<!--
+    Autores = Celia Alonso, Raul Marin, Ricardo Salido, David Gomez
+    Fecha = 1/12/2015
+    Licencia = GPL v3
+    Versión = 1.0
+    Descripción = CONTACTO de Buscando a Nemo
+
+    Copyright (C) 2015  Buscando a Nemo
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web de GRUPO</title>
+
+<!-- ===========================
+        FAVICON
+        =========================== -->
+<link rel="icon" href="img/icono.png" type="image/gif" />
+
+<!-- ===========================
+        FUENTES
+        =========================== -->
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900'
+	rel='stylesheet' type='text/css'>
+
+<!-- ===========================
+        ARCHIVOS CSS
+        =========================== -->
+<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/contacto.css">
+
+<!--[if IE]>
+    <script src="libs/ie/html5shiv.min.js"></script>
+    <script src="libs/ie/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+	<!-- ===========================
+   HEADER
+   =========================== -->
+	<div id="bg_pattern"></div>
+	<header>
+
+		<!-- ===========================
+        SLIDER
+        =========================== -->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicadores -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class=""></li>
+				<li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="item">
+					<img class="first-slide" src="img/peces2.jpg" alt="First slide">
+					<div style="position: absolute; background-color: #1b6d85; z-index: 10">
+						<p>HOLAAAA</p>
+					</div>
+				</div>
+				<div class="item active">
+					<img class="second-slide" src="img/peces1.jpg" alt="Second slide">
+				</div>
+				<div class="item">
+					<img class="third-slide" src="img/peces3.jpg" alt="Third slide">
+				</div>
+			</div>
+
+			<a class="left carousel-control control-slider" href="#myCarousel" role="button"
+				data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"
+				aria-hidden="true"></span> <span class="sr-only">Anterior</span>
+			</a> <a class="right carousel-control control-slider" href="#myCarousel" role="button"
+				data-slide="next"> <span class="glyphicon glyphicon-chevron-right"
+				aria-hidden="true"></span> <span class="sr-only" style="z-index: 99;">Siguiente</span>
+			</a>
+		</div>
+
+
+		<div class="container header">
+			<div class="row header">
+				<div class="col-lg-6 col-sm-6">
+					<p>
+						<strong>BUSCANDO</strong> A NEMO
+					</p>
+				</div>
+				<div class="col-lg-6 col-sm-6">
+					<a class="btn right">REGISTRATE</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<nav class="navbar navbar-default">
+					<hr>
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+								data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+									class="icon-bar"></span> <span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="navbar-collapse collapse">
+							<ul class="nav navbar-nav" style="align-content: center">
+								<li class="active"><a href="#"><i class="fa fa-home"></i>HOME</a></li>
+								<li><a href="#about"><i class="fa fa-map-marker"></i>¿QUÉ HACEMOS Y
+										OFRECEMOS?</a></li>
+								<li><a href="#contact"><i class="fa fa-shopping-basket"></i>TIENDA</a></li>
+								<li><a href="#contact"><i class="fa fa-picture-o"></i>GALERÍA</a></li>
+								<li><a href="#contact"><i class="fa fa-envelope"></i>CONTACTO</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<!-- ===========================
+    CONTENIDO DEL FORMULARIO
+    =========================== -->
+
+	<div class="container form-contacto">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-lg-12">
+						<h4>Contacta con nosotros</h4>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12">
+						<form class="form-horizontal" role="form">
+							<div class="row form-group">
+								<div class="col-lg-4 derecha-form">
+									<label>Nombre:</label>
+								</div>
+								<div class="col-lg-6 izquierda-form">
+									<input type="text" class="form-control" id="nombre"
+										pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Nombre"
+										title="Es necesario el nombre" onFocus="this.value=''" oninput="habilitar()"
+										required>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-lg-4 derecha-form">
+									<label>Primer Apellido:</label>
+								</div>
+								<div class="col-lg-6 izquierda-form">
+									<input type="text" class="form-control" id="apellido1"
+										pattern="^([A-Za-z_]{1,30})" placeholder="Primer Apellido"
+										title="Es necesario el segundo apellido" onFocus="this.value=''"
+										oninput="habilitar()" required>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-lg-4 derecha-form">
+									<label>Segundo Apellido:</label>
+								</div>
+								<div class="col-lg-6 izquierda-form">
+									<input type="text" class="form-control" id="apellido2"
+										pattern="^([A-Za-z_]{1,30})" placeholder="Segundo Apellido"
+										title="Es necesario el primer apellido" onFocus="this.value=''"
+										oninput="habilitar()" required>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-lg-4 derecha-form">
+									<label>Correo electrónico:</label>
+								</div>
+								<div class="col-lg-6 izquierda-form">
+									<input type="text" class="form-control" id="email"
+										pattern="^(\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w*)*)"
+										placeholder="Correo electrónico" title="Es necesario un correo electrónico"
+										onFocus="this.value=''" oninput="habilitar()" required>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-lg-4 derecha-form">
+									<label>Teléfono fijo:</label>
+								</div>
+								<div class="col-lg-6 izquierda-form">
+									<input type="text" class="form-control" id="fijo" pattern="^(9)\d{8}$"
+										placeholder="Teléfono fijo (opcional)"
+										title="El teléfono fijo empieza con el número 9" onFocus="this.value=''"
+										oninput="habilitar()" required>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-lg-4 derecha-form">
+									<label>Teléfono móvil:</label>
+								</div>
+								<div class="col-lg-6 izquierda-form">
+									<input type="text" class="form-control" id="movil" pattern="^(6)\d{8}$"
+										placeholder="Teléfono móvil"
+										title="Es necesario un móvil. Empieza con el número 6" onFocus="this.value=''"
+										oninput="habilitar()" required>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-lg-4 derecha-form">
+									<label>Asunto:</label>
+								</div>
+								<div class="col-lg-3 izquierda-form">
+									<select class="form-control" id="asunto_tipo" required="required">
+										<option value="">--Tipo de consulta--</option>
+										<option value="Información">Información</option>
+										<option value="Sugerencias">Sugerencias</option>
+										<option value="Quejas">Quejas</option>
+									</select>
+								</div>
+								<div class="col-lg-3 izquierda-form padding-form">
+									<select class="form-control" id="asunto_tema" required="required"
+										disabled="disabled">
+										<option value="">--Tema de consulta--</option>
+										<option value="Productos y servicios">Productos y servicios</option>
+										<option value="Sitio web">Sitio web</option>
+										<option value="Otros">Otros</option>
+									</select>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-lg-4 derecha-form">
+									<label>Mensaje:</label>
+								</div>
+								<div class="col-lg-6 izquierda-form">
+									<textarea id="mensaje" rows="5" class="form-control"
+										required="required"></textarea>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-lg-12">
+									<input type="checkbox" id="condiciones" required="required" disabled="disabled">
+									*He leído y acepto las <a href="#">condiciones de privacidad</a>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-lg-12">
+									<button type="submit" id="enviar_contacto" class="btn enviar-form">Enviar
+										formularios</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ===========================
+    FOOTER
+    =========================== -->
+	<footer class="footer-distributed right">
+		<div class="footer-left">
+			<h3>Buscando a Nemo</h3>
+			<p class="footer-links">
+				<a href="#">Política de cookies</a> · <a href="#">Información legal</a> · <a href="#">Tienda</a>
+				· <a href="#">FAQ</a> · <a href="#">¿Quiénes somos?</a>
+			</p>
+			<p class="footer-company-name">Buscando a Nemo &copy; 2015</p>
+
+			<div class="footer-icons">
+				<a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i
+					class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i
+					class="fa fa-github"></i></a>
+			</div>
+		</div>
+
+		<div class="footer-right right">
+			<p>Contactar</p>
+			<form action="#" method="post">
+				<input type="text" name="email" placeholder="Email" />
+				<textarea name="mensaje" placeholder="mensaje"></textarea>
+				<button>Enviar</button>
+			</form>
+		</div>
+	</footer>
+
+</body>
+</html>
