@@ -176,9 +176,11 @@ SUB HEADER
 	width: 100%;
 	margin-top: 50px;
 	height: 120px;
+	overflow: hidden;
 }
+.sub-header img { height: 120px;  bottom: 300px; }
 .bread-crumb { padding: 10px 0 10px }
-.bread-crumb p { font-size: 14px }
+.bread-crumb p { font-size: 16px }
 .bread-crumb h5 { font-weight: bold; letter-spacing: 1px }
 .bread-crumb .fa-angle-right { padding: 0 5px 0 5px}
 

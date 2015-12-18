@@ -72,12 +72,9 @@
                     <a class="btn right">REGISTRATE</a>
                 </div>
             </div>
-
-            <div class="row">
-            </div>
         </div>
     </header>
-
+    
     <div class="navbar-container">
         <nav class="navbar navbar-default">
             <div class="container">
@@ -108,13 +105,16 @@
     <div class="sub-header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 bread-crumb ">
+                <div class="col-lg-6 bread-crumb">
                     <h5>Formulario de contacto</h5>
                     <p>
                         <i class="fa fa-home"></i>Buscando a Nemo
                         <i class="fa fa-angle-right"></i>
                         <i class="fa fa-envelope"></i><b>Contacto</b>
                     </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/pez1_subheader.png">
                 </div>
             </div>
         </div>
@@ -124,130 +124,124 @@
     CONTENIDO DEL FORMULARIO
     =========================== -->
 
-    <div class="container form-contacto">
+    <div class="container container-contact">
         <div class="row">
-            <div class="col-lg-12">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h4>Contacta con nosotros</h4>
+            <div class="col-lg-6 form-contacto">
+                <h4>Contacta con nosotros</h4>
+                <form class="form-horizontal" role="form">
+                    <div class="row form-group">
+                        <div class="col-lg-4 derecha-form">
+                            <label>Nombre:</label>
+                        </div>
+                        <div class="col-lg-6 izquierda-form">
+                            <input type="text" class="form-control" id="nombre"
+                                   pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Nombre"
+                                   title="Es necesario el nombre" onFocus="this.value=''" oninput="habilitar()"
+                                   required>
+                        </div>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <form class="form-horizontal" role="form">
-                            <div class="row form-group">
-                                <div class="col-lg-4 derecha-form">
-                                    <label>Nombre:</label>
-                                </div>
-                                <div class="col-lg-6 izquierda-form">
-                                    <input type="text" class="form-control" id="nombre"
-                                           pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Nombre"
-                                           title="Es necesario el nombre" onFocus="this.value=''" oninput="habilitar()"
-                                           required>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col-lg-4 derecha-form">
-                                    <label>Primer Apellido:</label>
-                                </div>
-                                <div class="col-lg-6 izquierda-form">
-                                    <input type="text" class="form-control" id="apellido1"
-                                           pattern="^([A-Za-z_]{1,30})" placeholder="Primer Apellido"
-                                           title="Es necesario el segundo apellido" onFocus="this.value=''"
-                                           oninput="habilitar()" required>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col-lg-4 derecha-form">
-                                    <label>Segundo Apellido:</label>
-                                </div>
-                                <div class="col-lg-6 izquierda-form">
-                                    <input type="text" class="form-control" id="apellido2"
-                                           pattern="^([A-Za-z_]{1,30})" placeholder="Segundo Apellido"
-                                           title="Es necesario el primer apellido" onFocus="this.value=''"
-                                           oninput="habilitar()" required>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col-lg-4 derecha-form">
-                                    <label>Correo electrónico:</label>
-                                </div>
-                                <div class="col-lg-6 izquierda-form">
-                                    <input type="text" class="form-control" id="email"
-                                           pattern="^(\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w*)*)"
-                                           placeholder="Correo electrónico" title="Es necesario un correo electrónico"
-                                           onFocus="this.value=''" oninput="habilitar()" required>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col-lg-4 derecha-form">
-                                    <label>Teléfono fijo:</label>
-                                </div>
-                                <div class="col-lg-6 izquierda-form">
-                                    <input type="text" class="form-control" id="fijo" pattern="^(9)\d{8}$"
-                                           placeholder="Teléfono fijo (opcional)"
-                                           title="El teléfono fijo empieza con el número 9" onFocus="this.value=''"
-                                           oninput="habilitar()" required>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col-lg-4 derecha-form">
-                                    <label>Teléfono móvil:</label>
-                                </div>
-                                <div class="col-lg-6 izquierda-form">
-                                    <input type="text" class="form-control" id="movil" pattern="^(6)\d{8}$"
-                                           placeholder="Teléfono móvil"
-                                           title="Es necesario un móvil. Empieza con el número 6" onFocus="this.value=''"
-                                           oninput="habilitar()" required>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col-lg-4 derecha-form">
-                                    <label>Asunto:</label>
-                                </div>
-                                <div class="col-lg-3 izquierda-form">
-                                    <select class="form-control" id="asunto_tipo" required="required">
-                                        <option value="">--Tipo de consulta--</option>
-                                        <option value="Información">Información</option>
-                                        <option value="Sugerencias">Sugerencias</option>
-                                        <option value="Quejas">Quejas</option>
-                                    </select>
-                                </div>
-                                <div class="col-lg-3 izquierda-form padding-form">
-                                    <select class="form-control" id="asunto_tema" required="required"
-                                            disabled="disabled">
-                                        <option value="">--Tema de consulta--</option>
-                                        <option value="Productos y servicios">Productos y servicios</option>
-                                        <option value="Sitio web">Sitio web</option>
-                                        <option value="Otros">Otros</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col-lg-4 derecha-form">
-                                    <label>Mensaje:</label>
-                                </div>
-                                <div class="col-lg-6 izquierda-form">
+                    <div class="row form-group">
+                        <div class="col-lg-4 derecha-form">
+                            <label>Primer Apellido:</label>
+                        </div>
+                        <div class="col-lg-6 izquierda-form">
+                            <input type="text" class="form-control" id="apellido1"
+                                   pattern="^([A-Za-z_]{1,30})" placeholder="Primer Apellido"
+                                   title="Es necesario el segundo apellido" onFocus="this.value=''"
+                                   oninput="habilitar()" required>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-lg-4 derecha-form">
+                            <label>Segundo Apellido:</label>
+                        </div>
+                        <div class="col-lg-6 izquierda-form">
+                            <input type="text" class="form-control" id="apellido2"
+                                   pattern="^([A-Za-z_]{1,30})" placeholder="Segundo Apellido"
+                                   title="Es necesario el primer apellido" onFocus="this.value=''"
+                                   oninput="habilitar()" required>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-lg-4 derecha-form">
+                            <label>Correo electrónico:</label>
+                        </div>
+                        <div class="col-lg-6 izquierda-form">
+                            <input type="text" class="form-control" id="email"
+                                   pattern="^(\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w*)*)"
+                                   placeholder="Correo electrónico" title="Es necesario un correo electrónico"
+                                   onFocus="this.value=''" oninput="habilitar()" required>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-lg-4 derecha-form">
+                            <label>Teléfono fijo:</label>
+                        </div>
+                        <div class="col-lg-6 izquierda-form">
+                            <input type="text" class="form-control" id="fijo" pattern="^(9)\d{8}$"
+                                   placeholder="Teléfono fijo (opcional)"
+                                   title="El teléfono fijo empieza con el número 9" onFocus="this.value=''"
+                                   oninput="habilitar()" required>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-lg-4 derecha-form">
+                            <label>Teléfono móvil:</label>
+                        </div>
+                        <div class="col-lg-6 izquierda-form">
+                            <input type="text" class="form-control" id="movil" pattern="^(6)\d{8}$"
+                                   placeholder="Teléfono móvil"
+                                   title="Es necesario un móvil. Empieza con el número 6" onFocus="this.value=''"
+                                   oninput="habilitar()" required>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-lg-4 derecha-form">
+                            <label>Asunto:</label>
+                        </div>
+                        <div class="col-lg-3 izquierda-form">
+                            <select class="form-control" id="asunto_tipo" required="required">
+                                <option value="">--Tipo de consulta--</option>
+                                <option value="Información">Información</option>
+                                <option value="Sugerencias">Sugerencias</option>
+                                <option value="Quejas">Quejas</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 izquierda-form padding-form">
+                            <select class="form-control" id="asunto_tema" required="required"
+                                    disabled="disabled">
+                                <option value="">--Tema de consulta--</option>
+                                <option value="Productos y servicios">Productos y servicios</option>
+                                <option value="Sitio web">Sitio web</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-lg-4 derecha-form">
+                            <label>Mensaje:</label>
+                        </div>
+                        <div class="col-lg-6 izquierda-form">
 									<textarea id="mensaje" rows="5" class="form-control"
                                               required="required"></textarea>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col-lg-12">
-                                    <input type="checkbox" id="condiciones" required="required" disabled="disabled">
-                                    *He leído y acepto las <a href="#">condiciones de privacidad</a>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col-lg-12">
-                                    <button type="submit" id="enviar_contacto" class="btn enviar-form">Enviar
-                                        formularios</button>
-                                </div>
-                            </div>
-                        </form>
+                        </div>
                     </div>
-                </div>
+                    <div class="row form-group">
+                        <div class="col-lg-12">
+                            <input type="checkbox" id="condiciones" required="required" disabled="disabled">
+                            *He leído y acepto las <a href="#">condiciones de privacidad</a>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-lg-12">
+                            <button type="submit" id="enviar_contacto" class="btn enviar-form">Enviar
+                                formulario</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <h1>MAPA</h1>
             </div>
         </div>
     </div>
