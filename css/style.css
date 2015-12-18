@@ -27,6 +27,24 @@
 /* ---------------------
 FUENTES
 --------------------- */
+@font-face {
+	font-family: 'Helvetica 45';
+	src: url(../fonts/45.ttf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url(../fonts/raleway-light-webfont.woff);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url(../fonts/raleway-extrabold-webfont.woff);
+	font-weight: bold;
+}
+
 
 /* ---------------------
 VARIOS
@@ -37,8 +55,10 @@ VARIOS
 }
 
 html, body {
+	font-family: 'Helvetica 45', sans-serif;
     min-height: 100%;
-    font-family: 'Raleway', sans-serif;
+	colo: #474747;
+	-webkit-font-smoothing: antialiased;
 }
 
 h1 {
@@ -78,8 +98,10 @@ p {
 HEADER
 --------------------- */
 header {
+	font-family: 'Raleway', sans-serif;
 	width: 100%;
-	height: 40vw;
+	height: 100px;
+	background-color: white;
 }
 
 header p {
@@ -87,67 +109,93 @@ header p {
 }
 
 .header {
-	position: absolute;
+	padding: 10px;
 	width: 100%;
-	top: 0;
-	z-index: 2;
 }
 
 header div .header {
-	padding: 3vw 15vw 0 15vw;
+	padding: 0 15vw 0 15vw;
+	color: #474747;
 }
+
+header div .header p {
+	font-size: 2vw;
+	color: #474747;
+}
+
+header div .header img { height: 80px }
 
 #bg_pattern {
 	background-image: url(../img/bg_pattern.png);
 	position: absolute;
 	opacity: 0.8;
-	left: 0px;
-	top: 0px;
+	left: 0;
+	top: 60px;
 	width: 100%;
 	height: 40vw;
 	z-index: 1;
 }
 
 .btn {
-	font-family: 'Raleway', sans-serif;
-	color: white;
+	margin: 25px 10px;
+	color: #3899EC;
 	font-size: 15px;
+	font-weight: 600;
 	padding: 5px 5px 5px 5px;
-	border: solid white 2px;
+	border: solid #3899EC 2px;
 	text-decoration: none;
+}
+
+.btn-iniciar {
+	color: #3bbc5e;
+	border: solid #3bbc5e 2px;
+
+}
+
+.btn:hover {
+	color: white;
+	background-color: #3899EC;
+}
+.btn-iniciar:hover {
+	color: white;
+	background-color: #3bbc5e;
 }
 
 /* ---------------------
 NAV
---------------------- */
-
-nav {
-	padding: 5vw;
-	font-family: 'Raleway', sans-serif;
-	font-size: 18px;
-	font-weight: 600;
 	text-shadow:0px 0px 15px rgba(0, 0, 0, 1),
 	-1px -1px 0 rgba(0, 0, 0, 0.4),
 	1px -1px 0 rgba(0, 0, 0, 0.4),
 	-1px  1px 0 rgba(0, 0, 0, 0.4),
 	1px  1px 0 rgba(0, 0, 0, 0.4);
+--------------------- */
+
+nav {
+	font-size: 15px;
+	font-weight: 600;
 }
 
-nav hr {
-	margin-bottom: 5px;
+.f-nav { z-index: 9999; position: fixed; left: 0; top: 0; width: 100%;}
+.navbar-container {
+	background-color: rgba(255, 255, 255, 0.75)
+}
+
+
+nav a {
+	color: #3b3b3b;
 }
 
 i {padding-right: 10px}
 
 .navbar-default, .dropdown-toggle, .dropdown-menu { background: none; border: none; }
-.navbar-default .navbar-nav > li > a { color: white }
-.navbar-default .navbar-nav > li > a:hover { color: #ffb42e }
-.navbar-default { background: none; }
-.navbar-default .navbar-collapse { background: none; border-radius: 4px; }
+.navbar-default .navbar-nav > li > a { color: #474747 }
+.navbar-default .navbar-nav > li > a:visited { color: #474747; }
+.navbar-default .navbar-nav > li > a:hover { color: #337bc6; }
+.navbar-default .navbar-collapse { background: none; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	background: none;
-	color: #ffb42e;
+	color: #337bc6;
 }
 .dropdown-menu { background-color: rgba(0, 0, 0, 0.82) }
 
@@ -160,6 +208,23 @@ i {padding-right: 10px}
 	text-align: center;
 }
 
+.navbar-default {
+	background-color: rgba(255, 255, 255, 0.75);
+	width: 100%;
+	margin-bottom: 0;
+	position: absolute;
+	z-index: 10;
+	border-radius: 0;
+}
+
+.f-nav .navbar-default  {
+	background-color: white;
+	-webkit-box-shadow: 0px 4px 28px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 4px 28px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 4px 28px -4px rgba(0,0,0,0.75);
+
+}
+
 /* ---------------------
 SLIDER
 --------------------- */
@@ -169,10 +234,28 @@ SLIDER
 	width: 100%;
 }
 
+.carousel .text {
+	width: 25%;
+	position: absolute;
+	top: 9vw;
+	left: 20vw;
+	color: white;
+}
+
+.carousel .text h1 {
+	font-size: 2.7vw;
+}
+.carousel .text h2 {
+	font-size: 1.5vw;
+}
+
 .control-slider {
 	filter: alpha(opacity=30);
 	opacity: 0.3;
-	z-index: 99; height: 40vw;
+}
+
+.carousel-control.left, .carousel-control.right{
+	background: none;
 }
 
 .control-slider:hover, .control-slider:focus {

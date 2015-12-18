@@ -30,15 +30,12 @@
     <!-- ===========================
         FAVICON
         =========================== -->
-    <link rel="icon" href="img/icono.png" type="image/gif" />
+    <link rel="icon" href="" type="image/gif" />
 
     <!-- ===========================
         FUENTES
         =========================== -->
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900'
-          rel='stylesheet' type='text/css'>
-	<link href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet'>
-	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+	<link href='libs/font-awesome/css/font-awesome.min.css' rel='stylesheet'>
     <!-- ===========================
         ARCHIVOS CSS
         =========================== -->
@@ -60,86 +57,102 @@
     <!-- ===========================
    HEADER
    =========================== -->
-    <div id="bg_pattern"></div>
     <header>
-
-        <!-- ===========================
-        SLIDER
-        =========================== -->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicadores -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-                <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="item">
-                    <img class="first-slide" src="img/peces2.jpg" alt="First slide">
-                    <div style="position: absolute; background-color: #1b6d85; z-index: 10">
-                        <p>
-                            HOLAAAA
-                        </p>
-                    </div>
-                </div>
-                <div class="item active">
-                    <img class="second-slide" src="img/peces1.jpg" alt="Second slide">
-                </div>
-                <div class="item">
-                    <img class="third-slide" src="img/peces3.jpg" alt="Third slide">
-                </div>
-            </div>
-
-            <a class="left carousel-control control-slider" href="#myCarousel" role="button"
-               data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="right carousel-control control-slider" href="#myCarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only" style="z-index: 99;">Siguiente</span>
-            </a>
-        </div>
-
-
         <div class="container header">
             <div class="row header">
                 <div class="col-lg-6 col-sm-6">
-                    <p>
+                    <p class="logo">
+                        <img src="img/logo_negro.png">
                         <strong>BUSCANDO</strong> A NEMO
                     </p>
                 </div>
                 <div class="col-lg-6 col-sm-6">
+                    <a class="btn btn-iniciar right">INICIAR SESION</a>
                     <a class="btn right">REGISTRATE</a>
                 </div>
             </div>
 
             <div class="row">
-                <nav class="navbar navbar-default">
-                    <hr>
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav" style="align-content: center">
-                                <li class="active"><a href="#"><i class="fa fa-home"></i>HOME</a></li>
-                                <li><a href="#about"><i class="fa fa-map-marker"></i>¿QUÉ HACEMOS Y OFRECEMOS?</a></li>
-                                <li><a href="#contact"><i class="fa fa-shopping-basket"></i>TIENDA</a></li>
-                                <li><a href="#contact"><i class="fa fa-picture-o"></i>GALERÍA</a></li>
-                                <li><a href="#contact"><i class="fa fa-envelope"></i>CONTACTO</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
             </div>
         </div>
     </header>
 
+    <div class="navbar-container">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#"><i class="fa fa-home"></i>HOME</a></li>
+                        <li><a href="#about"><i class="fa fa-map-marker"></i>¿QUÉ HACEMOS Y OFRECEMOS?</a></li>
+                        <li><a href="#contact"><i class="fa fa-shopping-basket"></i>TIENDA</a></li>
+                        <li><a href="#contact"><i class="fa fa-picture-o"></i>GALERÍA</a></li>
+                        <li><a href="#contact"><i class="fa fa-envelope"></i>CONTACTO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- ===========================
+    SLIDER
+    =========================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicadores -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item">
+                <div class="text">
+                    <h1>Pez tropical<br>
+                        Pez tropical<br>
+                        Pez tropical</h1>
+                    <h2>Pez tropical. Pez tropical. Pez tropical.
+                        Pez tropical. Pez tropical. Pez tropical.</h2>
+                </div>
+                <img class="first-slide" src="img/peces2.jpg" alt="First slide">
+            </div>
+            <div class="item active">
+                <div class="text">
+                    <h1>Pez tropical<br>
+                        Pez tropical<br>
+                        Pez tropical</h1>
+                    <h2>Pez tropical. Pez tropical. Pez tropical.
+                        Pez tropical. Pez tropical. Pez tropical.</h2>
+                </div>
+                <img class="second-slide" src="img/peces1.jpg" alt="Second slide">
+            </div>
+            <div class="item">
+                <div class="text">
+                    <h1>Pez tropical<br>
+                        Pez tropical<br>
+                        Pez tropical</h1>
+                    <h2>Pez tropical. Pez tropical. Pez tropical.
+                        Pez tropical. Pez tropical. Pez tropical.</h2>
+                </div>
+                <img class="third-slide" src="img/peces3.jpg" alt="Third slide">
+            </div>
+        </div>
+
+        <a class="left carousel-control control-slider" href="#myCarousel" role="button"
+           data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="right carousel-control control-slider" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only" style="z-index: 99;">Siguiente</span>
+        </a>
+    </div>
 
     <!-- ===========================
     CONTENIDO
@@ -170,21 +183,23 @@
         </div>
     </div>
 
-    <div class="container contenedor_contenido2">
-        <div class="row">
-            <div class="col-lg-8 col4">
-                <h3>Column 1</h3>
+    <div class="stage-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3>Column 1</h3>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-            <div class="col-lg-4 col5">
-                <h3>Column 2</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Column 2</h3>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
             </div>
         </div>
     </div>
@@ -230,6 +245,21 @@ SCRIPTS NECESARIOS
 <script src="js/wow.min.js"></script>
 <script>
     new WOW().init();
+</script>
+
+<script>
+    jQuery("document").ready(function ($) {
+        var nav = $('.navbar-container');
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                nav.addClass("f-nav");
+            } else {
+                nav.removeClass("f-nav");
+            }
+        });
+
+    });
 </script>
 
 </body>
