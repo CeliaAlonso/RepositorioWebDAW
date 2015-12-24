@@ -160,6 +160,20 @@ header div .header p {
 
 header div .header img { height: 80px }
 
+.go-to-index {
+	color: #474747;
+	text-decoration: none;
+}
+
+.go-to-index:visited {
+	color: #474747;
+	text-decoration: none;
+}
+.go-to-index:hover {
+	color: #474747;
+	text-decoration: none;
+}
+
 #bg_pattern {
 	background-image: url(../img/bg_pattern.png);
 	position: absolute;
