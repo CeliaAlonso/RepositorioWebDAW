@@ -28,17 +28,14 @@
 }
 
 /* --------------------- 
-ESTILOS CONTENIDO FORMULARIO DE CONTACTO
+ESTILOS CONTENIDO - FORMULARIO DE CONTACTO
 --------------------- */
 .form-contacto {
-	color: white;
+	color: #363636;
 	text-align: center;
-	background-color: #62BB5C;
-	border-radius: 10px;
-
-	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.61);
-	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.61);
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.61);
+	background-color: #F5F5F5;
+	border-radius: 5px;
+	border: 1px solid #d9d9d9;
 }
 
 .padding-form {
@@ -53,27 +50,31 @@ ESTILOS CONTENIDO FORMULARIO DE CONTACTO
 	text-align: left;
 }
 .enviar-form {
+	border-radius: 4px;
+	border: none;
 	background: none;
 	color: white;
-	border: 1px solid white;
-	padding: 5px;
-}
-
-a {
-	color: white;
-	text-decoration: underline;
-}
-
-a:hover {
-	color: #5383d3;
+	background-color: #3899EC;
+	padding: 10px;
 }
 
 .enviar-form:hover{
-	background-color: white;
-	color: #62BB5C;
-	padding: 5px;
-	border: 1px solid #62BB5C;
+	background-color: #3275bd;
+	border: none;
 }
+
+/* ---------------------
+ESTILOS CONTENIDO - MAPA
+--------------------- */
+.map {
+	margin-top: 50px;
+	min-height: 600px;
+	width: 100%;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.59);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.59);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.59);
+}
+
 
 /* ---------------------
 NAV
@@ -82,4 +83,23 @@ NAV
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	background: none;
 	color: #58a458;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width:990px) {
+	.map {width: 80%; margin-left: 10%;}
+}
+
+@media only screen and (max-width:990px) {
+	.derecha-form {
+		text-align: left;
+	}
+	.form-contacto {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width:768px) {
+	.map {min-height: 400px;}
 }

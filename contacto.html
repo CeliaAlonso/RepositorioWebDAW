@@ -43,7 +43,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 
@@ -61,23 +60,30 @@
     <header>
         <div class="container header">
             <div class="row header">
-                <div class="col-lg-6 col-sm-6">
+                <div class="col-lg-6 col-md-6 col-sm-6">
                     <p class="logo">
                         <img src="img/logo_negro.png">
                         <strong>BUSCANDO</strong> A NEMO
                     </p>
                 </div>
-                <div class="col-lg-6 col-sm-6">
+                <div class="col-lg-6 col-md-6 col-sm-6">
                     <a class="btn btn-iniciar right">INICIAR SESION</a>
                     <a class="btn right">REGISTRATE</a>
                 </div>
             </div>
         </div>
     </header>
-    
+
+    <!-- ===========================
+   NAV
+   =========================== -->
     <div class="navbar-container">
         <nav class="navbar navbar-default">
             <div class="container">
+                <p class="nav-logo left">
+                    <img src="img/logo_negro.png">
+                    <strong>BUSCANDO</strong> A NEMO
+                </p>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
@@ -105,15 +111,15 @@
     <div class="sub-header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 bread-crumb">
+                <div class="col-lg-6 col-md-6 col-sm-6 bread-crumb">
                     <h5>Formulario de contacto</h5>
                     <p>
                         <i class="fa fa-home"></i>Buscando a Nemo
                         <i class="fa fa-angle-right"></i>
-                        <i class="fa fa-envelope"></i><b>Contacto</b>
+                        <i class="fa fa-envelope"></i><strong>Contacto</strong>
                     </p>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-sm-6 subheader-img">
                     <img src="img/pez1_subheader.png">
                 </div>
             </div>
@@ -126,14 +132,14 @@
 
     <div class="container container-contact">
         <div class="row">
-            <div class="col-lg-6 form-contacto">
+            <div class="col-lg-6 col-md-6 form-contacto">
                 <h4>Contacta con nosotros</h4>
                 <form class="form-horizontal" role="form">
                     <div class="row form-group">
-                        <div class="col-lg-4 derecha-form">
+                        <div class="col-lg-4 col-md-4 derecha-form">
                             <label>Nombre:</label>
                         </div>
-                        <div class="col-lg-6 izquierda-form">
+                        <div class="col-lg-6 col-md-6 izquierda-form">
                             <input type="text" class="form-control" id="nombre"
                                    pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Nombre"
                                    title="Es necesario el nombre" onFocus="this.value=''" oninput="habilitar()"
@@ -141,10 +147,10 @@
                         </div>
                     </div>
                     <div class="row form-group">
-                        <div class="col-lg-4 derecha-form">
+                        <div class="col-lg-4 col-md-4 derecha-form">
                             <label>Primer Apellido:</label>
                         </div>
-                        <div class="col-lg-6 izquierda-form">
+                        <div class="col-lg-6 col-md-6 izquierda-form">
                             <input type="text" class="form-control" id="apellido1"
                                    pattern="^([A-Za-z_]{1,30})" placeholder="Primer Apellido"
                                    title="Es necesario el segundo apellido" onFocus="this.value=''"
@@ -152,10 +158,10 @@
                         </div>
                     </div>
                     <div class="row form-group">
-                        <div class="col-lg-4 derecha-form">
+                        <div class="col-lg-4 col-md-4 derecha-form">
                             <label>Segundo Apellido:</label>
                         </div>
-                        <div class="col-lg-6 izquierda-form">
+                        <div class="col-lg-6 col-md-6 izquierda-form">
                             <input type="text" class="form-control" id="apellido2"
                                    pattern="^([A-Za-z_]{1,30})" placeholder="Segundo Apellido"
                                    title="Es necesario el primer apellido" onFocus="this.value=''"
@@ -163,10 +169,10 @@
                         </div>
                     </div>
                     <div class="row form-group">
-                        <div class="col-lg-4 derecha-form">
+                        <div class="col-lg-4 col-md-4 derecha-form">
                             <label>Correo electrónico:</label>
                         </div>
-                        <div class="col-lg-6 izquierda-form">
+                        <div class="col-lg-6 col-md-6 izquierda-form">
                             <input type="text" class="form-control" id="email"
                                    pattern="^(\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w*)*)"
                                    placeholder="Correo electrónico" title="Es necesario un correo electrónico"
@@ -174,10 +180,10 @@
                         </div>
                     </div>
                     <div class="row form-group">
-                        <div class="col-lg-4 derecha-form">
+                        <div class="col-lg-4 col-md-4 derecha-form">
                             <label>Teléfono fijo:</label>
                         </div>
-                        <div class="col-lg-6 izquierda-form">
+                        <div class="col-lg-6 col-md-6 izquierda-form">
                             <input type="text" class="form-control" id="fijo" pattern="^(9)\d{8}$"
                                    placeholder="Teléfono fijo (opcional)"
                                    title="El teléfono fijo empieza con el número 9" onFocus="this.value=''"
@@ -185,10 +191,10 @@
                         </div>
                     </div>
                     <div class="row form-group">
-                        <div class="col-lg-4 derecha-form">
+                        <div class="col-lg-4 col-md-4 derecha-form">
                             <label>Teléfono móvil:</label>
                         </div>
-                        <div class="col-lg-6 izquierda-form">
+                        <div class="col-lg-6 col-md-6 izquierda-form">
                             <input type="text" class="form-control" id="movil" pattern="^(6)\d{8}$"
                                    placeholder="Teléfono móvil"
                                    title="Es necesario un móvil. Empieza con el número 6" onFocus="this.value=''"
@@ -196,10 +202,10 @@
                         </div>
                     </div>
                     <div class="row form-group">
-                        <div class="col-lg-4 derecha-form">
+                        <div class="col-lg-4 col-md-4 derecha-form">
                             <label>Asunto:</label>
                         </div>
-                        <div class="col-lg-3 izquierda-form">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 izquierda-form">
                             <select class="form-control" id="asunto_tipo" required="required">
                                 <option value="">--Tipo de consulta--</option>
                                 <option value="Información">Información</option>
@@ -207,7 +213,7 @@
                                 <option value="Quejas">Quejas</option>
                             </select>
                         </div>
-                        <div class="col-lg-3 izquierda-form padding-form">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 izquierda-form padding-form">
                             <select class="form-control" id="asunto_tema" required="required"
                                     disabled="disabled">
                                 <option value="">--Tema de consulta--</option>
@@ -218,10 +224,10 @@
                         </div>
                     </div>
                     <div class="row form-group">
-                        <div class="col-lg-4 derecha-form">
+                        <div class="col-lg-4 col-md-4 derecha-form">
                             <label>Mensaje:</label>
                         </div>
-                        <div class="col-lg-6 izquierda-form">
+                        <div class="col-lg-6 col-md-6 izquierda-form">
 									<textarea id="mensaje" rows="5" class="form-control"
                                               required="required"></textarea>
                         </div>
@@ -240,44 +246,12 @@
                     </div>
                 </form>
             </div>
-            <div class="col-lg-6">
-                <h1>MAPA</h1>
+            <div class="col-lg-6 col-md-6 ">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.4133655278706!2d-100.29531123703694!3d25.655566393526243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bfc8ff203d37%3A0xc71702b00c6ed440!2sBuscando+A+Nemo%2C+S.A.+De+C.V.!5e0!3m2!1ses!2ses!4v1450523839255"
+                        frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </div>
-
-	<!-- ===========================
-    FOOTER
-    =========================== -->
-	<footer class="footer-distributed right">
-		<div class="footer-left">
-			<h3>Buscando a Nemo</h3>
-			<p class="footer-links">
-				<a href="#">Política de cookies</a> ·
-				<a href="#">Información legal</a> ·
-				<a href="#">Tienda</a> ·
-				<a href="#">FAQ</a> ·
-				<a href="#">¿Quienes somos?</a>
-			</p>
-			<p class="footer-company-name">Buscando a Nemo &copy; 2015</p>
-
-			<div class="footer-icons">
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-linkedin"></i></a>
-				<a href="#"><i class="fa fa-github"></i></a>
-			</div>
-		</div>
-
-		<div class="footer-right right">
-			<p>Contactar</p>
-			<form action="#" method="post">
-				<input type="text" name="email" placeholder="Email" />
-				<textarea name="mensaje" placeholder="mensaje"></textarea>
-				<button>Enviar</button>
-			</form>
-		</div>
-	</footer>
 
 	<!-- ===========================
 SCRIPTS NECESARIOS
@@ -292,11 +266,14 @@ SCRIPTS NECESARIOS
 <script>
     jQuery("document").ready(function ($) {
         var nav = $('.navbar-container');
+        var navLogo = $('.nav-logo');
 
         $(window).scroll(function () {
             if ($(this).scrollTop() > 100) {
+                navLogo.show();
                 nav.addClass("f-nav");
             } else {
+                navLogo.hide();
                 nav.removeClass("f-nav");
             }
         });
