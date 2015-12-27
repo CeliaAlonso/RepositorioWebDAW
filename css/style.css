@@ -79,7 +79,7 @@ VARIOS
 
 html, body {
 	font-family: 'Helvetica 45', sans-serif;
-    min-height: 100%;
+    height: 100%;
 	color: #474747;
 	-webkit-font-smoothing: antialiased;
 }
@@ -132,6 +132,11 @@ strong { font-family: 'Helvetica 75', sans-serif }
 /* --------------------- 
 HEADER
 --------------------- */
+#wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
 header {
 	font-family: 'Raleway', sans-serif;
 	width: 100%;
@@ -216,7 +221,7 @@ SUB HEADER
  -------------------- */
 
 .sub-header {
-	background-color: #62BB5C;
+	background-color: #3899EC;
 	color: white;
 	width: 100%;
 	margin-top: 50px;
@@ -331,36 +336,21 @@ SLIDER
 
 .carousel-indicators {z-index: 1}
 
-/* --------------------- 
-CONTENIDO
+/* ---------------------
+MAIN
 --------------------- */
-.contenedor_contenido1 {
-    margin-top: 100px;
+
+main {
+	padding-bottom: 180px;
 }
 
-.col1 {
-    border-right: 1px solid black;
-    padding-left: 55px;
-}
-
-.col2 {
-    border-right: 1px solid black;
-    padding-left: 55px;
-}
-
-.col3 {
-    padding-left: 55px;
-}
-
-.contenedor_contenido2 {
-    margin-top: 60px;
-}
-
-.col4 {
-    padding-left: 85px;
-    padding-top: 30px;
-}
-
-.col5 {
-    padding-left: 55px;
+/* ---------------------
+FOOTER
+--------------------- */
+footer {
+	position: absolute;
+	bottom: 0;
+	height: 150px;
+	width: 100%;
+	background-color: #3899EC;
 }

@@ -27,6 +27,17 @@
 	margin-bottom: 60px;
 }
 
+.sub-header {
+	background-color: #62BB5C;
+}
+
+/* ---------------------
+FOOTER
+--------------------- */
+footer {
+	background-color: #62BB5C;
+}
+
 /* --------------------- 
 ESTILOS CONTENIDO - FORMULARIO DE CONTACTO
 --------------------- */
@@ -34,8 +45,14 @@ ESTILOS CONTENIDO - FORMULARIO DE CONTACTO
 	color: #363636;
 	text-align: center;
 	background-color: #F5F5F5;
-	border-radius: 5px;
+	border-radius: 0px;
 	border: 1px solid #d9d9d9;
+}
+
+.form-contacto h4 { margin-bottom: 20px; }
+
+.form-control {
+	border-radius: 0px;
 }
 
 .padding-form {

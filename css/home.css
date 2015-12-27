@@ -24,8 +24,18 @@
 /* --------------------- 
 CONTENIDO
 --------------------- */
-.contenedor_contenido1 {
+.stage-1 {
     margin-top: 100px;
+    background-color: #3899EC;
+    color: white;
+    padding: 30px;
+}
+iframe {
+    width: 100%;
+    height: 315px;
+}
+.stage-2 {
+    margin-top: 20px;
 }
 
 .col1 {
