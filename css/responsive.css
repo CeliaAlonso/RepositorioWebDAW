@@ -75,6 +75,8 @@
 	}
 	.navbar-default { background-color: white; }
 	.nav-logo { font-size: 18px}
+	.enlacesFooter{ font-size: 9px;}
+	.copyrightFooter{font-size: 12px;}
 }
 
 /* Smaller Mobile Devices */

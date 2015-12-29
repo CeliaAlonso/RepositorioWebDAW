@@ -354,3 +354,10 @@ footer {
 	width: 100%;
 	background-color: #3899EC;
 }
+.enlacesFooter{
+	font-size: 15px;
+	color:	rgb(255,255,255);
+}
+.copyrightFooter{
+	font-size: 18px;
+}
