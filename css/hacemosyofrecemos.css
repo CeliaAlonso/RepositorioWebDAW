@@ -1,10 +1,10 @@
 .enlacesHacemosyOfrecemos{
-	font-size: 60px;
+	font-size: 50px;
+	font-weight: bold;
 }
 .hacemosyOfrecemos{
 	margin-top: 150px;
 	height:500px;
-	background-image:url("../img/peces1.jpg");
 	border-radius: 21px;
 	-moz-border-radius: 21px;
 	-webkit-border-radius: 21px;
@@ -16,7 +16,7 @@
 .textoHacemosyOfrecemos{
 	margin-top: 150px;
 	color:	#000000;
-	background-color: #FFFFFF;
+	background-color: rgba(0, 0, 0, 0.1);
 	opacity: 0.6;
 	border-radius: 21px;
 	-moz-border-radius: 21px;
