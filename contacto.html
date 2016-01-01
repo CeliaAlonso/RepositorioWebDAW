@@ -3,7 +3,7 @@
     Fecha = 1/12/2015
     Licencia = GPL v3
     Versión = 1.0
-    Descripción = HOME de Buscando a Nemo
+    Descripción = CONTACTO de Buscando a Nemo
 
     Copyright (C) 2015  David Gómez Quilón
 
@@ -45,6 +45,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="icon" href="img/logo_negro.png" type="image/gif" />
 
     <!--[if IE]>
     <script src="libs/ie/html5shiv.min.js"></script>
@@ -96,7 +97,7 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html"><i class="fa fa-home"></i>HOME</a></li>
-                        <li><a href="#about"><i class="fa fa-map-marker"></i>¿QUÉ HACEMOS Y OFRECEMOS?</a></li>
+                        <li><a href="hacemosyofrecemos.html"><i class="fa fa-map-marker"></i>¿QUÉ HACEMOS Y OFRECEMOS?</a></li>
                         <li><a href="tienda.html"><i class="fa fa-shopping-basket"></i>TIENDA</a></li>
                         <li><a href="#contact"><i class="fa fa-picture-o"></i>GALERÍA</a></li>
                         <li class="active"><a href="contacto.html"><i class="fa fa-envelope"></i>CONTACTO</a></li>
@@ -135,10 +136,10 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 form-contacto wow flipInY">
                     <h4><i class="fa fa-comment"></i>Contacta con nosotros</h4>
-                    <form class="form-horizontal" role="form">
+                    <form class="form-horizontal" role="form" onsubmit="">
                         <div class="row form-group">
                             <div class="col-lg-4 col-md-4 derecha-form">
-                                <label>Nombre:</label>
+                                <label>Nombre*:</label>
                             </div>
                             <div class="col-lg-6 col-md-6 izquierda-form">
                                 <input type="text" class="form-control" id="nombre"
@@ -149,29 +150,29 @@
                         </div>
                         <div class="row form-group">
                             <div class="col-lg-4 col-md-4 derecha-form">
-                                <label>Primer Apellido:</label>
+                                <label>Primer Apellido*:</label>
                             </div>
                             <div class="col-lg-6 col-md-6 izquierda-form">
                                 <input type="text" class="form-control" id="apellido1"
-                                       pattern="^([A-Za-z_]{1,30})" placeholder="Primer Apellido"
-                                       title="Es necesario el segundo apellido" onFocus="this.value=''"
-                                       oninput="habilitar()" required>
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <div class="col-lg-4 col-md-4 derecha-form">
-                                <label>Segundo Apellido:</label>
-                            </div>
-                            <div class="col-lg-6 col-md-6 izquierda-form">
-                                <input type="text" class="form-control" id="apellido2"
-                                       pattern="^([A-Za-z_]{1,30})" placeholder="Segundo Apellido"
+                                       pattern="^([A-Za-z ]{1,30})" placeholder="Primer Apellido"
                                        title="Es necesario el primer apellido" onFocus="this.value=''"
                                        oninput="habilitar()" required>
                             </div>
                         </div>
                         <div class="row form-group">
                             <div class="col-lg-4 col-md-4 derecha-form">
-                                <label>Correo electrónico:</label>
+                                <label>Segundo Apellido*:</label>
+                            </div>
+                            <div class="col-lg-6 col-md-6 izquierda-form">
+                                <input type="text" class="form-control" id="apellido2"
+                                       pattern="^([A-Za-z ]{1,30})" placeholder="Segundo Apellido"
+                                       title="Es necesario el segundo apellido" onFocus="this.value=''"
+                                       oninput="habilitar()" required>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-lg-4 col-md-4 derecha-form">
+                                <label>Correo electrónico*:</label>
                             </div>
                             <div class="col-lg-6 col-md-6 izquierda-form">
                                 <input type="text" class="form-control" id="email"
@@ -193,7 +194,7 @@
                         </div>
                         <div class="row form-group">
                             <div class="col-lg-4 col-md-4 derecha-form">
-                                <label>Teléfono móvil:</label>
+                                <label>Teléfono móvil*:</label>
                             </div>
                             <div class="col-lg-6 col-md-6 izquierda-form">
                                 <input type="text" class="form-control" id="movil" pattern="^(6)\d{8}$"
@@ -204,10 +205,10 @@
                         </div>
                         <div class="row form-group">
                             <div class="col-lg-4 col-md-4 derecha-form">
-                                <label>Asunto:</label>
+                                <label>Asunto*:</label>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 izquierda-form">
-                                <select class="form-control" id="asunto_tipo" required="required">
+                                <select class="form-control" id="asunto_tipo" required="required" onchange="habilitarTema()">
                                     <option value="">--Tipo de consulta--</option>
                                     <option value="Información">Información</option>
                                     <option value="Sugerencias">Sugerencias</option>
@@ -226,7 +227,7 @@
                         </div>
                         <div class="row form-group">
                             <div class="col-lg-4 col-md-4 derecha-form">
-                                <label>Mensaje:</label>
+                                <label>Mensaje*:</label>
                             </div>
                             <div class="col-lg-6 col-md-6 izquierda-form">
                                         <textarea id="mensaje" rows="5" class="form-control"
@@ -254,13 +255,26 @@
             </div>
         </div>
     </main>
-    <!-- ===========================
+    
+   <!-- ===========================
     FOOTER
     =========================== -->
-
     <footer>
-    </footer>
-    </div>
+        <div class="container">
+          <div class="row">
+          <hr>
+            <div class="col-lg-12">
+                <div class="col-md-8">
+                    <a class="enlacesFooter" href="#">Términos del servicio</a> | <a class="enlacesFooter" href="#">Política de Cookies</a> | <a class="enlacesFooter" href="#">Tienda</a> 
+                </div>
+                <div class="col-md-4">
+                    <p class="muted pull-right copyrightFooter">© 2016 Buscando a Nemo.</p><br/>
+                    <p class="enlacesFooter">Nº123, Calle Piruleta, Madrid, España <br/>+34 9183475863</p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </footer> 
 
 	<!-- ===========================
     SCRIPTS NECESARIOS
@@ -268,6 +282,7 @@
 <script src="libs/jquery/jquery.min.js"></script>
 <script src="libs/bootstrap/bootstrap.min.js"></script>
 <script src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/contacto.js"></script>
 <script>
     new WOW().init();
 </script>

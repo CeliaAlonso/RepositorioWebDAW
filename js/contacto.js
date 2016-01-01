@@ -32,4 +32,12 @@ function habilitarCondiciones() {
 
 function habilitarTema() {
 	
+	var tipo_asunto = document.getElementById("asunto_tipo").value; 
+	
+	if (tipo_asunto !="") {
+		
+		document.getElementById("asunto_tema").disabled=false; 
+		
+	}
+	
 }
