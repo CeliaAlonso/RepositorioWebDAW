@@ -144,7 +144,7 @@
                             <div class="col-lg-6 col-md-6 izquierda-form">
                                 <input type="text" class="form-control" id="nombre"
                                        pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Nombre"
-                                       title="Es necesario el nombre" onFocus="this.value=''" oninput="habilitar()"
+                                       title="Es necesario el nombre" onchange="habilitarBotonEnviar()"
                                        required>
                             </div>
                         </div>
@@ -154,9 +154,9 @@
                             </div>
                             <div class="col-lg-6 col-md-6 izquierda-form">
                                 <input type="text" class="form-control" id="apellido1"
-                                       pattern="^([A-Za-z ]{1,30})" placeholder="Primer Apellido"
-                                       title="Es necesario el primer apellido" onFocus="this.value=''"
-                                       oninput="habilitar()" required>
+                                       pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Primer Apellido"
+                                       title="Es necesario el primer apellido" 
+                                       onchange="habilitarBotonEnviar()" required>
                             </div>
                         </div>
                         <div class="row form-group">
@@ -165,9 +165,9 @@
                             </div>
                             <div class="col-lg-6 col-md-6 izquierda-form">
                                 <input type="text" class="form-control" id="apellido2"
-                                       pattern="^([A-Za-z ]{1,30})" placeholder="Segundo Apellido"
-                                       title="Es necesario el segundo apellido" onFocus="this.value=''"
-                                       oninput="habilitar()" required>
+                                       pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Segundo Apellido"
+                                       title="Es necesario el segundo apellido"
+                                       onchange="habilitarBotonEnviar()" required>
                             </div>
                         </div>
                         <div class="row form-group">
@@ -178,7 +178,7 @@
                                 <input type="text" class="form-control" id="email"
                                        pattern="^(\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w*)*)"
                                        placeholder="Correo electrónico" title="Es necesario un correo electrónico"
-                                       onFocus="this.value=''" oninput="habilitar()" required>
+                                       onchange="habilitarBotonEnviar()" required>
                             </div>
                         </div>
                         <div class="row form-group">
@@ -188,8 +188,8 @@
                             <div class="col-lg-6 col-md-6 izquierda-form">
                                 <input type="text" class="form-control" id="fijo" pattern="^(9)\d{8}$"
                                        placeholder="Teléfono fijo (opcional)"
-                                       title="El teléfono fijo empieza con el número 9" onFocus="this.value=''"
-                                       oninput="habilitar()" required>
+                                       title="El teléfono fijo empieza con el número 9"
+                                       onchange="habilitar()" required>
                             </div>
                         </div>
                         <div class="row form-group">
@@ -199,8 +199,8 @@
                             <div class="col-lg-6 col-md-6 izquierda-form">
                                 <input type="text" class="form-control" id="movil" pattern="^(6)\d{8}$"
                                        placeholder="Teléfono móvil"
-                                       title="Es necesario un móvil. Empieza con el número 6" onFocus="this.value=''"
-                                       oninput="habilitar()" required>
+                                       title="Es necesario un móvil. Empieza con el número 6"
+                                       onchange="habilitarBotonEnviar()" required>
                             </div>
                         </div>
                         <div class="row form-group">
@@ -208,7 +208,7 @@
                                 <label>Asunto*:</label>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 izquierda-form">
-                                <select class="form-control" id="asunto_tipo" required="required" onchange="habilitarTema()">
+                                <select class="form-control" id="asunto_tipo" required="required" onchange="habilitarTema(), habilitarBotonEnviar()">
                                     <option value="">--Tipo de consulta--</option>
                                     <option value="Información">Información</option>
                                     <option value="Sugerencias">Sugerencias</option>
@@ -217,7 +217,7 @@
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 izquierda-form padding-form">
                                 <select class="form-control" id="asunto_tema" required="required"
-                                        disabled="disabled">
+                                        disabled="disabled" onchange="habilitarBotonEnviar()">
                                     <option value="">--Tema de consulta--</option>
                                     <option value="Productos y servicios">Productos y servicios</option>
                                     <option value="Sitio web">Sitio web</option>
@@ -231,18 +231,18 @@
                             </div>
                             <div class="col-lg-6 col-md-6 izquierda-form">
                                         <textarea id="mensaje" rows="5" class="form-control"
-                                                  required="required"></textarea>
+                                                  required="required" onchange="habilitarBotonEnviar()"></textarea>
                             </div>
                         </div>
                         <div class="row form-group">
                             <div class="col-lg-12">
-                                <input type="checkbox" id="condiciones" required="required" disabled="disabled">
+                                <input type="checkbox" id="condiciones" required="required" disabled="disabled" onchange="habilitarBotonEnviar()">
                                 *He leído y acepto las <a href="#">condiciones de privacidad</a>
                             </div>
                         </div>
                         <div class="row form-group">
                             <div class="col-lg-12">
-                                <button type="submit" id="enviar_contacto" class="btn enviar-form">Enviar
+                                <button type="submit" id="enviar_contacto" class="btn enviar-form" disabled="disabled">Enviar
                                     formulario</button>
                             </div>
                         </div>
