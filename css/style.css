@@ -204,7 +204,7 @@ header div .header img { height: 80px }
 .btn-iniciar {
 	color: #3bbc5e;
 	border: solid #3bbc5e 1px;
-
+	font-family: 'Helvetica 65', sans-serif;
 }
 
 .btn:hover {

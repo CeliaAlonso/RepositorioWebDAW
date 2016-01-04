@@ -106,7 +106,7 @@
 	h4 { font-size: 30px; }
 	h5 {font-size: 25px;}
 	header { height: 120px; }
-	.btn { font-size: 13px; margin: 25px 3px; }
+	.btn { font-size: 14px; margin: 25px 3px; }
 	header div .header p { font-size: 4vw; }
 	header div .header img { height: 30px }
 }
@@ -115,7 +115,7 @@
 @media only screen and (max-width: 400px) {
 	h4 { font-size: 20px; }
 	header { height: 100px; }
-	.btn { font-size: 10px; margin: 15px 0px; }
+	.btn { font-size: 14px; margin: 15px 0px; }
 	header div .header p { font-size: 3.6vw; }
 	header div .header img { height: 30px }
 }
