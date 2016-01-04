@@ -39,6 +39,11 @@
 	.navbar-default {font-size: 12px}
 	.nav > li > a { padding: 14px 10px }
 	i {padding-right: 5px}
+
+	footer .logo p {
+		font-size: 15px;
+	}
+	footer .logo img { height: 30px; }
 }
 
 @media only screen and (max-width: 890px) {
@@ -77,6 +82,23 @@
 	.nav-logo { font-size: 18px}
 	.enlacesFooter{ font-size: 9px;}
 	.copyrightFooter{font-size: 12px;}
+
+	main { padding-bottom: 365px; }
+	footer { height: 355px; }
+	footer .logo p {
+		font-size: 20px;
+	}
+	footer .logo img { height: 50px; }
+	footer {
+		text-align: center;
+	}
+	.footer-enlaces {
+		padding-top: 10px;
+	}
+	.footer-contacto {
+		padding-top: 20px;
+	}
+	footer .copyright { margin: 0; }
 }
 
 /* Smaller Mobile Devices */

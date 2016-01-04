@@ -350,14 +350,42 @@ FOOTER
 footer {
 	position: absolute;
 	bottom: 0;
-	height: 150px;
 	width: 100%;
 	background-color: #3899EC;
+	padding-top: 10px;
 }
-.enlacesFooter{
+footer .container { background-color: #3899EC; }
+footer .logo {
+	padding-top: 20px;
+	color: white;
+}
+footer .logo img { height: 50px; }
+footer .logo a { color: white }
+footer .logo a:visited { color: white; text-decoration: none; }
+footer .logo a:hover { color: white; text-decoration: none; }
+
+footer hr { margin: 0 0 10px; }
+
+.footer-enlaces {
+	padding-top: 60px;
 	font-size: 15px;
 	color:	rgb(255,255,255);
 }
-.copyrightFooter{
-	font-size: 18px;
+.footer-enlaces a { color: white; text-decoration: none; }
+.footer-enlaces a:visited { color: white; text-decoration: none; }
+.footer-enlaces a:hover { color: white; text-decoration: underline; }
+
+.footer-contacto { color: white; }
+.footer-contacto h5 {
+	font-size: 25px;
+	font-weight: bold;
+}
+.footer-contacto p {
+	font-size: 15px;
+}
+
+footer .copyright p {
+	color: white;
+	font-size: 14px;
+	text-align: center;
 }

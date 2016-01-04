@@ -43,7 +43,7 @@ FOOTER
 footer {
     background-color: #955ac0;
 }
-
+footer .container { background-color: #955ac0; }
 
 /* ---------------------
 FILTROS

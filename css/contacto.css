@@ -1,4 +1,3 @@
-@CHARSET "UTF-8";
 /*
  *    Autor = Celia Alonso, Raul Marin, Ricardo Salido, David Gomez
  *    Fecha = 10/12/2015
@@ -37,6 +36,7 @@ FOOTER
 footer {
 	background-color: #62BB5C;
 }
+footer .container { background-color: #62BB5C; }
 
 /* --------------------- 
 ESTILOS CONTENIDO - FORMULARIO DE CONTACTO
