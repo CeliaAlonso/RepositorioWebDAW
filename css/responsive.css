@@ -40,6 +40,8 @@
 	.nav > li > a { padding: 14px 10px }
 	i {padding-right: 5px}
 
+	main { padding-bottom: 220px; }
+
 	footer .logo p {
 		font-size: 15px;
 	}
@@ -68,6 +70,8 @@
 	#myCarousel {
 		margin-top: 50px;
 	}
+	.carousel .text { top: 3vw; }
+	.carousel .text button { display: none; }
 	.subheader-img { display: none }
 
 	.navbar-default {font-size: 15px}
@@ -83,7 +87,7 @@
 	.enlacesFooter{ font-size: 9px;}
 	.copyrightFooter{font-size: 12px;}
 
-	main { padding-bottom: 365px; }
+	main { padding-bottom: 375px; }
 	footer { height: 355px; }
 	footer .logo p {
 		font-size: 20px;

@@ -21,11 +21,9 @@
  *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-.container-contact {
-	margin-top: 60px;
-	margin-bottom: 60px;
-}
-
+/* ---------------------
+SUB HEADER
+ -------------------- */
 .sub-header {
 	background-color: #62BB5C;
 }
@@ -41,19 +39,20 @@ footer .container { background-color: #62BB5C; }
 /* --------------------- 
 ESTILOS CONTENIDO - FORMULARIO DE CONTACTO
 --------------------- */
+
+.container-contact {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
 .form-contacto {
 	color: #363636;
 	text-align: center;
 	background-color: #F5F5F5;
-	border-radius: 0px;
 	border: 1px solid #d9d9d9;
 }
 
 .form-contacto h4 { margin-bottom: 20px; }
-
-.form-control {
-	border-radius: 0px;
-}
 
 .padding-form {
 	padding-left: 0px;

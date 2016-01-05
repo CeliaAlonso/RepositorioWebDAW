@@ -24,8 +24,8 @@
 /* --------------------- 
 CONTENIDO
 --------------------- */
-.stage-1 {
-    margin-top: 100px;
+.video {
+    margin-top: 50px;
     background-color: #3899EC;
     color: white;
     padding: 30px;
@@ -34,33 +34,55 @@ iframe {
     width: 100%;
     height: 315px;
 }
-.stage-2 {
-    margin-top: 20px;
+.columns {
+    margin-top: 100px;
+    text-align: center;
 }
 
-.col1 {
-    border-right: 1px solid black;
-    padding-left: 55px;
+.video .description {
+    text-align: center;
 }
 
-.col2 {
-    border-right: 1px solid black;
-    padding-left: 55px;
+.publicidad {
+    background-color: #eee;
+    padding: 40px;
+    margin-bottom: -30px;
+    text-align: center;
 }
 
-.col3 {
-    padding-left: 55px;
+.publicidad h5 {
+    font-family: 'Helvetica 65', sans-serif;
 }
 
-.contenedor_contenido2 {
-    margin-top: 60px;
+.publicidad p {
+    font-family: 'Helvetica 55', sans-serif;
+    font-size: 16px;
 }
 
-.col4 {
-    padding-left: 85px;
-    padding-top: 30px;
+.colab .colab-item { padding-top: 50px; }
+.colab .colab-item .colab-item-cont img {
+    height: 130px;
+    width: 130px;
+}
+.colab .colab-item .colab-item-cont {
+    margin: 0 auto;
+    width: 90%;
+    padding: 20px;
+    background-color: white;
 }
 
-.col5 {
-    padding-left: 55px;
+.colab-item .btn {
+    margin: 10px;
+    font-family: 'Helvetica 55', sans-serif;
+    padding: 7px 15px;
+    color: white;
+    border: none;
+}
+.colab-item .btn:hover {
+    background-color: #1CA347;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }

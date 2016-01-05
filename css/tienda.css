@@ -78,6 +78,12 @@ hr { margin: 15px 0 10px }
     border-bottom: 1px solid #EBEBEB;
     border-right: 1px solid #EBEBEB;
     border-left: 6px solid #955ac0;
+
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
 }
 .categories .fa-arrow-circle-right { float: right; }
 
@@ -113,6 +119,11 @@ hr { margin: 15px 0 10px }
 .shop-by a:hover {
     text-decoration: none;
     color: #955ac0;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 .shop-by .fa-plus-square-o, .shop-by .fa-minus-square-o { float: right; padding-top: 4px }
 .shop-by .fa-plus-square-o {display: inline-block}
@@ -140,6 +151,11 @@ hr { margin: 15px 0 10px }
 .dropdown-menu li label:hover, .dropdown-menu li label:focus {
     background: none;
     color: #955ac0;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .hr-mobile { display: none; }
@@ -159,6 +175,11 @@ hr { margin: 15px 0 10px }
 .products-mode:hover {
     color: #955ac0;
     text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .pagination {
@@ -177,6 +198,11 @@ hr { margin: 15px 0 10px }
     color: #955ac0;
     text-decoration: underline;
     background: none;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .pagination > .active > a {
@@ -189,6 +215,11 @@ hr { margin: 15px 0 10px }
     color: #955ac0;
     text-decoration: underline;
     background: none;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .banner-oferta img {
@@ -228,6 +259,11 @@ hr { margin: 15px 0 10px }
     padding: 0px 5px 0px 5px;
     border: 1px solid #955ac0;
     border-radius: 0;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .btn-group .dropdown-menu {
@@ -277,13 +313,37 @@ hr { margin: 15px 0 10px }
     text-decoration: none;
 }
 .btn-cart-mobile { display: none }
-.btn-cart:hover, .btn-cart-mobile:hover { background-color: #3bbc5e; }
+.btn-cart:hover, .btn-cart-mobile:hover {
+    background-color: #3bbc5e;
+    color: white;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
 
 .btn-wishlist, .btn-share { margin-left: 10px }
 .btn-wishlist i { padding: 0 }
 .btn-share i { padding: 0 2px 0 2px }
-.btn-wishlist:hover { background-color: #bc2c2d; }
-.btn-share:hover { background-color: #349cf7; }
+.btn-wishlist:hover {
+    background-color: #bc2c2d;
+    color: white;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.btn-share:hover {
+    background-color: #349cf7;
+    color: white;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
 
 @media only screen and (max-width:1200px) {
     .head, .category { font-size: 13px }

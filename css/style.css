@@ -116,17 +116,26 @@ b { font-family: 'Helvetica 65', sans-serif }
 strong { font-family: 'Helvetica 75', sans-serif }
 
 
+/* Arreglo para la animación en Firefox */
 .animation-moz-fix {
     display: inline-flex;
 }
 
-/* Arreglo para la animaci�n en Firefox */
+/* Clases de uso general en cualquier html */
 .left {
     float: left;
 }
 
 .right {
     float: right;
+}
+
+.border-box {
+	border-color: #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
 }
 
 /* --------------------- 
@@ -207,13 +216,15 @@ header div .header img { height: 80px }
 	font-family: 'Helvetica 65', sans-serif;
 }
 
-.btn:hover {
-	color: white;
-	background-color: #3899EC;
-}
 .btn-iniciar:hover {
 	color: white;
 	background-color: #3bbc5e;
+
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
 }
 
 /* ---------------------
@@ -258,7 +269,14 @@ i {padding-right: 10px }
 
 .navbar-default, .dropdown-toggle, .dropdown-menu { background: none; border: none; }
 .navbar-default .navbar-nav > li > a { color: #474747 }
-.navbar-default .navbar-nav > li > a:hover { color: #337bc6; }
+.navbar-default .navbar-nav > li > a:hover {
+	color: #337bc6;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
 .navbar-default .navbar-collapse { background: none; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -320,6 +338,24 @@ SLIDER
 	font-size: 1.5vw;
 }
 
+.carousel .text .btn-default {
+	font-family: 'Helvetica 65', sans-serif;
+	font-size: 1.4vw;
+	padding: 10px 15px;
+	border: 1px solid white;
+	color: white;
+	background: none;
+}
+.carousel .text .btn-default:hover {
+	color: white;
+	background: rgba(255, 255, 255, 0.18);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
 .control-slider {
 	filter: alpha(opacity=30);
 	opacity: 0.3;
@@ -362,7 +398,7 @@ footer .logo {
 footer .logo img { height: 50px; }
 footer .logo a { color: white }
 footer .logo a:visited { color: white; text-decoration: none; }
-footer .logo a:hover { color: white; text-decoration: none; }
+footer .logo a:hover { cursor:pointer; color: white; text-decoration: none; }
 
 footer hr { margin: 0 0 10px; }
 
@@ -373,7 +409,7 @@ footer hr { margin: 0 0 10px; }
 }
 .footer-enlaces a { color: white; text-decoration: none; }
 .footer-enlaces a:visited { color: white; text-decoration: none; }
-.footer-enlaces a:hover { color: white; text-decoration: underline; }
+.footer-enlaces a:hover { cursor:pointer; color: white; text-decoration: underline; }
 
 .footer-contacto { color: white; }
 .footer-contacto h5 {

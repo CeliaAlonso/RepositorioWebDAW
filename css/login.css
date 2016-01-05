@@ -121,6 +121,12 @@ main {
     color: #fff;
     background-color: #53A3CD;
     border-color: #53A3CD;
+
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 .forgot-password {
     text-decoration: underline;
@@ -149,4 +155,10 @@ main {
     color: #fff;
     background-color: #1CA347;
     border-color: #1CA347;
+
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }

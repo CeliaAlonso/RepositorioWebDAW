@@ -51,7 +51,6 @@ CONTENIDO DE LA PAGINA
 
 .container-custom {
 	margin-top: 30px;
-	border-radius: 0;
 }
 .panel {
 	margin-top: 50px;
@@ -99,11 +98,32 @@ CONTENIDO DE LA PAGINA
 }
 
 .venta-color { color: #3bbc5e; }
-.venta-color:hover { color: #31954b; }
+.venta-color:hover {
+	color: #31954b;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
 .mant-color { color: #c00d0d; }
-.mant-color:hover { color: #9a0d0d; }
+.mant-color:hover {
+	color: #9a0d0d;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
 .reparto-color { color: #b163df; }
-.reparto-color:hover { color: #955ac0; }
+.reparto-color:hover {
+	color: #955ac0;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
 
 
 @media only screen and (max-width: 990px) {
