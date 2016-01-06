@@ -86,10 +86,14 @@ CONTENIDO DE LA PAGINA
 .underline-text { text-decoration: underline; }
 
 .content-upper {
+	margin-top: 50px;
 	text-align: center;
 }
 
-.content-upper h2 { font-family: 'Helvetica 65', sans-serif; }
+.content-upper h5 {
+	font-family: 'Helvetica 45', sans-serif;
+	font-weight: bold;
+}
 
 .text-tagging {
 	margin: 50px 0 50px;

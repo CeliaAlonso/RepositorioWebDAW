@@ -25,12 +25,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web de GRUPO</title>
+    <title>BUSCANDO A NEMO | Galería de imágenes</title>
 
     <!-- ===========================
         FAVICON
         =========================== -->
-    <link rel="icon" href="" type="image/gif" />
+    <link rel="icon" href="img/logo_negro.png" type="image/gif" />
 
     <!-- ===========================
         FUENTES
@@ -68,8 +68,7 @@
                     </p></a>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
-                    <a class="btn btn-iniciar right">INICIAR SESION</a>
-                    <a class="btn right">REGISTRATE</a>
+                    <a href="login.html" class="btn btn-iniciar right">Entra / Regístrate</a>
                 </div>
             </div>
         </div>
@@ -96,7 +95,7 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html"><i class="fa fa-home"></i>HOME</a></li>
-                        <li><a href="hacemosyofrecemos.html"><i class="fa fa-map-marker"></i>¿QUÉ HACEMOS Y OFRECEMOS?</a></li>
+                        <li><a href="hacemosyofrecemos.html"><i class="fa fa-info"></i>¿QUÉ HACEMOS Y OFRECEMOS?</a></li>
                         <li><a href="tienda.html"><i class="fa fa-shopping-basket"></i>TIENDA</a></li>
                         <li class="active"><a href="galeria.html"><i class="fa fa-picture-o"></i>GALERÍA</a></li>
                         <li><a href="contacto.html"><i class="fa fa-envelope"></i>CONTACTO</a></li>
@@ -113,15 +112,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6 bread-crumb">
-                    <h5>Galería de fotos</h5>
+                    <h5>Galería de imágenes</h5>
                     <p>
-                        <i class="fa fa-home"></i>Buscando a Nemo
+                        <a href="index.html"><i class="fa fa-home"></i>Buscando a Nemo</a>
                         <i class="fa fa-angle-right"></i>
                         <i class="fa fa-envelope"></i><strong>Galería</strong>
                     </p>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 subheader-img wow fadeInRight">
-                    <img src="img/imagenes-galeria/dori.png">
+                    <img src="img/pez1_subheader.png">
                 </div>
             </div>
         </div>
@@ -134,130 +133,163 @@
 	=========================== -->
 	
     <main>
-		<div class="container" id="wizards">
-			<div class="row filas">
-				<div class="col-lg-3 col11">
-					<div class="row">
-						<a href="img/imagenes-galeria/foto1.jpg"><img class="img-galery" src="img/imagenes-galeria/foto1.jpg" alt="foto1"/> </a>
-					</div>
-					<div class="row fila-sub">
+        <div class="container">
+            <div class="row intro">
+                <h5>Galería de imágenes</h5>
+                <p>
+                    Aquí puedes echar un vistazo a algunos de nuestros trabajos como diseñadores de acuarios.<br>
+                    Es una pequeña parte de lo que somos capaz de hacer en <b>BUSCANDO A NEMO</b>.
+                </p>
+            </div>
+            <div class="row galery-foot-head">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="btn-group">
+                        <button class="btn btn-default btn-sm dropdown-toggle"
+                                type="button" data-toggle="dropdown">
+                            Mostrar... <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">10</a></li>
+                            <li><a href="#">20</a></li>
+                            <li><a href="#">40</a></li>
+                            <li><a href="#">60</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <ul class="pagination">
+                        <li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row" id="wizards">
+                <!-- GRUPO DE 3 -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto1.jpg">
+                            <img src="img/imagenes-galeria/foto1.jpg" alt="foto1"/>
+                        </a>
+                        <p><b>Acuario 500l</b> plantado natural </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto2.jpg">
+                            <img src="img/imagenes-galeria/foto2.jpg" alt="foto2"/>
+                        </a>
+                        <p><b>Acuario 60l</b> plantado natural</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto3.jpg">
+                            <img src="img/imagenes-galeria/foto3.jpg" alt="foto3"/>
+                        </a>
+                        <p>Acuario de <b>cría y enfermería</b></p>
+                    </div>
+                </div>
 
-						<p class="subtitulos">Acuario 500l plantado natural </p>
+                <!-- GRUPO DE 3 -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto4.jpg">
+                            <img src="img/imagenes-galeria/foto4.jpg" alt="foto4"/>
+                        </a>
+                        <p><b>Acuario 300l</b> plantado natural</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto5.jpg">
+                            <img src="img/imagenes-galeria/foto5.jpg" alt="foto5"/>
+                        </a>
+                        <p>Acuario <b>agua fría</b></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto6.jpg">
+                            <img src="img/imagenes-galeria/foto6.jpg" alt="foto6"/>
+                        </a>
+                        <p>Acuario marino con <b>peces ángel</b></p>
+                    </div>
+                </div>
 
-						
-					</div>
-				</div>
-				<div class="col-lg-3 col22">
-					<div class="row">
-						<a href="img/imagenes-galeria/foto2.jpg"><img class="img-galery" src="img/imagenes-galeria/foto2.jpg" alt="foto2"/> </a> 
-					</div>
-					<div class="row fila-sub">
+                <!-- GRUPO DE 3 -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto7.jpg">
+                            <img src="img/imagenes-galeria/foto7.jpg" alt="foto7"/>
+                        </a>
+                        <p>Peces <b>Disco</b></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto8.jpg">
+                            <img src="img/imagenes-galeria/foto8.jpg" alt="foto8"/>
+                        </a>
+                        <p>Acuario plantado con <b>musgo y vallisnerias</b></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto9.jpg">
+                            <img src="img/imagenes-galeria/foto9.jpg" alt="foto9"/>
+                        </a>
+                        <p>Acuario plantado con <b>plantas higrófilas</b></p>
+                    </div>
+                </div>
 
-						<p class="subtitulos">Acuario 60l plantado natural</p>
+                <!-- GRUPO DE 3 -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto10.jpg">
+                            <img src="img/imagenes-galeria/foto10.jpg" alt="foto10"/>
+                        </a>
+                        <p>Acuario con <b>helechos y cryptocorines</b></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto11.jpg">
+                            <img src="img/imagenes-galeria/foto11.jpg" alt="foto11"/>
+                        </a>
+                        <p>Acuario marino <b>500l</b></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto12.jpg">
+                            <img src="img/imagenes-galeria/foto12.jpg" alt="foto12"/>
+                        </a>
+                        <p>Peces <b>tropicales</b></p>
+                    </div>
+                </div>
+            </div>
 
-						
-					</div>
-				</div>
-				<div class="col-lg-3 col33">
-					<div class="row">
-						<a href="img/imagenes-galeria/foto3.jpg"><img class="img-galery" src="img/imagenes-galeria/foto3.jpg" alt="foto3"/> </a>  
-					</div>
-					<div class="row fila-sub">
-
-						<p class="subtitulos">Acuario de cría y enfermería</p>
-					</div>
-				</div>
-
-			</div>
-			<div class="row filas">
-				<div class="col-lg-3 col11">
-					<div class="row">
-						<a href="img/imagenes-galeria/foto4.jpg"><img class="img-galery" src="img/imagenes-galeria/foto4.jpg" alt="foto4"/> </a>   
-					</div>
-					<div class="row fila-sub">
-
-						<p class="subtitulos">Acuario 300l plantado natural</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col22">
-					<div class="row">
-						<a href="img/imagenes-galeria/foto5.jpg"><img class="img-galery" src="img/imagenes-galeria/foto5.jpg" alt="foto5"/> </a>
-					</div>
-					<div class="row fila-sub">
-
-						<p class="subtitulos">Acuario agua fría</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col33">
-					<div class="row">
-						<a href="img/imagenes-galeria/foto6.jpg"><img class="img-galery" src="img/imagenes-galeria/foto6.jpg" alt="foto6"/> </a>
-					</div>
-					<div class="row fila-sub">
-
-						<p class="subtitulos">Acuario marino con peces ángel</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="row filas">
-				<div class="col-lg-3 col11">
-					<div class="row">
-						<a href="img/imagenes-galeria/foto7.jpg"><img class="img-galery" src="img/imagenes-galeria/foto7.jpg" alt="foto7"/> </a>
-					</div>
-					<div class="row fila-sub">
-
-						<p class="subtitulos">Peces Disco</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col22">
-					<div class="row">
-						<a href="img/imagenes-galeria/foto8.jpg"><img class="img-galery" src="img/imagenes-galeria/foto8.jpg" alt="foto8"/> </a>
-					</div>
-					<div class="row fila-sub">
-
-						<p class="subtitulos">Acuario plantado con musgo y vallisnerias</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col33">
-					<div class="row">
-						<a href="img/imagenes-galeria/foto9.jpg"><img class="img-galery" src="img/imagenes-galeria/foto9.jpg" alt="foto9"/> </a>
-					</div>
-					<div class="row fila-sub">
-
-						<p class="subtitulos">Acuario plantado con plantas higrófilas</p>
-					</div>
-				</div>
-			</div>
-			<div class="row filas">
-				<div class="col-lg-3 col11">
-					<div class="row">
-						<a href="img/imagenes-galeria/foto10.jpg"><img class="img-galery" src="img/imagenes-galeria/foto10.jpg" alt="foto10"/> </a>
-					</div>
-					<div class="row fila-sub">
-
-						<p class="subtitulos">Acuario con helechos y cryptocorines</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col22">
-					<div class="row">
-						<a href="img/imagenes-galeria/foto11.jpg"><img class="img-galery" src="img/imagenes-galeria/foto11.jpg" alt="foto11"/> </a>
-					</div>
-					<div class="row fila-sub">
-
-						<p class="subtitulos">Acuario marino 500l</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col33">
-					<div class="row">
-						<a href="img/imagenes-galeria/foto12.jpg"><img class="img-galery" src="img/imagenes-galeria/foto12.jpg" alt="foto12"/> </a>
-					</div>
-					<div class="row fila-sub">
-
-						<p class="subtitulos">Peces tropicales</p>
-					</div>
-				</div>
-			</div>
-		</div>
+            <hr>
+            <div class="row galery-foot-head">
+                <div class="col-lg-12 right">
+                    <ul class="pagination">
+                        <li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
 
    <!-- ===========================
@@ -302,10 +334,10 @@
 SCRIPTS NECESARIOS
 =========================== -->
 <script src="libs/jquery/jquery.min.js"></script>
-<script src="libs/js/jquery-galeria.js"></script>
 <script src="libs/jquery/jquery-lightbox.js"></script>
 <script src="libs/bootstrap/bootstrap.min.js"></script>
 <script src="js/wow.min.js"></script>
+<script src="js/licencia.js"></script>
 <script>
     new WOW().init();
 </script>
@@ -325,6 +357,10 @@ SCRIPTS NECESARIOS
             }
         });
 
+    });
+
+    $('.dropdown-toggle').click(function() {
+        $(this).next('.dropdown-menu').slideToggle(200);
     });
 </script>
 

@@ -39,8 +39,11 @@ iframe {
     text-align: center;
 }
 
+.columns .column { padding: 30px; }
+
 .video .description {
     text-align: center;
+    padding-top: 70px;
 }
 
 .publicidad {
