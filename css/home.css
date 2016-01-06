@@ -89,3 +89,9 @@ iframe {
     -ms-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
+
+@media only screen and (max-width:768px) {
+    .video .description {
+        padding-top: 0;
+    }
+}
