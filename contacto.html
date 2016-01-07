@@ -143,7 +143,7 @@
                             <div class="col-lg-6 col-md-6 izquierda-form">
                                 <input type="text" class="form-control" id="nombre"
                                        pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Nombre"
-                                       title="Es necesario el nombre" onchange="comprobarRelleno('nombre'), habilitarBotonEnviar()"
+                                       title="Es necesario el nombre" onchange="comprobarRelleno('nombre', 'Nombre'), habilitarBotonEnviar()"
                                        required>
                                        <br>
                                        <span id="snombre"></span>
@@ -157,7 +157,7 @@
                                 <input type="text" class="form-control" id="apellido1"
                                        pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Primer Apellido"
                                        title="Es necesario el primer apellido"
-                                       onchange="comprobarRelleno('apellido1'), habilitarBotonEnviar()" required>
+                                       onchange="comprobarRelleno('apellido1', 'Primer Apellido'), habilitarBotonEnviar()" required>
                                        <br>
                                        <span id="sapellido1"></span>
                             </div>
@@ -170,7 +170,7 @@
                                 <input type="text" class="form-control" id="apellido2"
                                        pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Segundo Apellido"
                                        title="Es necesario el segundo apellido"
-                                       onchange="comprobarRelleno('apellido2'), habilitarBotonEnviar()" required>
+                                       onchange="comprobarRelleno('apellido2', 'Segundo Apellido'), habilitarBotonEnviar()" required>
                                        <br>
                                        <span id="sapellido2"></span>
                             </div>
@@ -183,7 +183,7 @@
                                 <input type="text" class="form-control" id="email"
                                        pattern="^(\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w*)*)"
                                        placeholder="Correo electrónico" title="Es necesario un correo electrónico"
-                                       onchange="comprobarRelleno('email'), habilitarBotonEnviar()" required>
+                                       onchange="comprobarRelleno('email', 'Correo electrónico'), habilitarBotonEnviar()" required>
                                        <br>
                                        <span id="semail"></span>
                             </div>
@@ -209,7 +209,7 @@
                                 <input type="text" class="form-control" id="movil" pattern="^(6)\d{8}$"
                                        placeholder="Teléfono móvil"
                                        title="Es necesario un móvil. Empieza con el número 6"
-                                       onchange="comprobarRelleno('movil'), habilitarBotonEnviar()" required>
+                                       onchange="comprobarRelleno('movil', 'Teléfono móvil'), habilitarBotonEnviar()" required>
                                        <br>
                                        <span id="smovil"></span>
                             </div>
@@ -246,7 +246,7 @@
                             </div>
                             <div class="col-lg-6 col-md-6 izquierda-form">
                                     <textarea id="mensaje" rows="5" class="form-control"
-                                              required="required" oninput="comprobarRelleno('mensaje'), habilitarBotonEnviar()"></textarea>
+                                              required="required" oninput="comprobarRelleno('mensaje', 'Mensaje'), habilitarBotonEnviar()"></textarea>
                             </div>
                             <br>
                                        <span id="smensaje"></span>
