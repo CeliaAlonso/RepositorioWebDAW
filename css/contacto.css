@@ -79,6 +79,10 @@ ESTILOS CONTENIDO - FORMULARIO DE CONTACTO
 	border: none;
 }
 
+.form-control-feedback {
+	right: 15px;
+}
+
 /* ---------------------
 ESTILOS CONTENIDO - MAPA
 --------------------- */

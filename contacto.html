@@ -136,131 +136,140 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 form-contacto border-box wow flipInY">
                         <h4><i class="fa fa-comment"></i>Contacta con nosotros</h4>
-                        <form class="form-horizontal" role="form" onsubmit="location.reload(); ">
+                        <form class="form-horizontal" role="form">
                             <div class="row form-group">
                                 <div class="col-lg-4 col-md-4 derecha-form">
-                                    <label>Nombre*:</label>
+                                    <label class="control-label" for="nombre">Nombre *:</label>
                                 </div>
                                 <div class="col-lg-6 col-md-6 izquierda-form">
-                                    <input type="text" class="form-control" id="nombre"
+                                    <input type="text" class="form-control" name="nombre" id="nombre"
                                            pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Nombre"
-                                           title="Es necesario el nombre" onchange="comprobarRelleno('nombre', 'Nombre'), habilitarBotonEnviar()"
+                                           title="Es necesario el nombre"
+                                           oninput="enableTerms()"
                                            required>
-                                    <br>
-                                    <span id="snombre"></span>
+
+                                    <span class="glyphicon form-control-feedback" id="nombre1"></span>
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col-lg-4 col-md-4 derecha-form">
-                                    <label>Primer Apellido*:</label>
+                                    <label class="control-label" for="apellido1">Primer Apellido *:</label>
                                 </div>
                                 <div class="col-lg-6 col-md-6 izquierda-form">
-                                    <input type="text" class="form-control" id="apellido1"
+                                    <input type="text" class="form-control" name="apellido1" id="apellido1"
                                            pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Primer Apellido"
                                            title="Es necesario el primer apellido"
-                                           onchange="comprobarRelleno('apellido1', 'Primer Apellido'), habilitarBotonEnviar()" required>
-                                    <br>
-                                    <span id="sapellido1"></span>
+                                           oninput="enableTerms()"
+                                           required>
+                                    <span class="glyphicon form-control-feedback" id="apellido11"></span>
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col-lg-4 col-md-4 derecha-form">
-                                    <label>Segundo Apellido*:</label>
+                                    <label class="control-label" for="apellido2">Segundo Apellido *:</label>
                                 </div>
                                 <div class="col-lg-6 col-md-6 izquierda-form">
-                                    <input type="text" class="form-control" id="apellido2"
+                                    <input type="text" class="form-control" name="apellido2" id="apellido2"
                                            pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Segundo Apellido"
                                            title="Es necesario el segundo apellido"
-                                           onchange="comprobarRelleno('apellido2', 'Segundo Apellido'), habilitarBotonEnviar()" required>
-                                    <br>
-                                    <span id="sapellido2"></span>
+                                           oninput="enableTerms()"
+                                           required>
+                                    
+                                    <span class="glyphicon form-control-feedback" id="apellido21"></span>
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col-lg-4 col-md-4 derecha-form">
-                                    <label>Correo electrónico*:</label>
+                                    <label class="control-label" for="email">Correo electrónico*:</label>
                                 </div>
                                 <div class="col-lg-6 col-md-6 izquierda-form">
-                                    <input type="text" class="form-control" id="email"
+                                    <input type="text" class="form-control" name="email" id="email"
                                            pattern="^(\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w*)*)"
                                            placeholder="Correo electrónico" title="Es necesario un correo electrónico"
-                                           onchange="comprobarRelleno('email', 'Correo electrónico'), habilitarBotonEnviar()" required>
-                                    <br>
-                                    <span id="semail"></span>
+                                           oninput="enableTerms()"
+                                           required>
+
+                                    <span class="glyphicon form-control-feedback" id="email1"></span>
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col-lg-4 col-md-4 derecha-form">
-                                    <label>Teléfono fijo:</label>
+                                    <label class="control-label" for="fijo">Teléfono fijo *:</label>
                                 </div>
                                 <div class="col-lg-6 col-md-6 izquierda-form">
-                                    <input type="text" class="form-control" id="fijo" pattern="^(9)\d{8}$"
+                                    <input type="text" class="form-control" name="fijo" id="fijo" pattern="^(9)\d{8}$"
                                            placeholder="Teléfono fijo (opcional)"
                                            title="El teléfono fijo empieza con el número 9"
-                                           onchange="validarFijo()">
-                                    <br>
-                                    <span id="sfijo"></span>
+                                           oninput="enableTerms()"
+                                           required>
+
+                                    <span class="glyphicon form-control-feedback" id="fijo1"></span>
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col-lg-4 col-md-4 derecha-form">
-                                    <label>Teléfono móvil*:</label>
+                                    <label class="control-label" for="movil">Teléfono móvil *:</label>
                                 </div>
                                 <div class="col-lg-6 col-md-6 izquierda-form">
-                                    <input type="text" class="form-control" id="movil" pattern="^(6)\d{8}$"
+                                    <input type="text" class="form-control" name="movil" id="movil" pattern="^(6)\d{8}$"
                                            placeholder="Teléfono móvil"
                                            title="Es necesario un móvil. Empieza con el número 6"
-                                           onchange="comprobarRelleno('movil', 'Teléfono móvil'), habilitarBotonEnviar()" required>
-                                    <br>
-                                    <span id="smovil"></span>
+                                           oninput="enableTerms()"
+                                           required>
+
+                                    <span class="glyphicon form-control-feedback" id="movil1"></span>
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col-lg-4 col-md-4 derecha-form">
-                                    <label>Asunto*:</label>
+                                    <label class="control-label" for="asunto_tipo">Asunto *:</label>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 izquierda-form">
-                                    <select class="form-control" id="asunto_tipo" required="required" onchange="habilitarTema(), habilitarBotonEnviar()">
+                                    <select class="form-control" name="asunto_tipo" id="asunto_tipo"
+                                            oninput="enableTerms(); enableTema();" required>
                                         <option value="">--Tipo de consulta--</option>
                                         <option value="Información">Información</option>
                                         <option value="Sugerencias">Sugerencias</option>
                                         <option value="Quejas">Quejas</option>
                                     </select>
-                                    <br>
+
                                     <span id="sasunto_tipo"></span>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 izquierda-form padding-form">
-                                    <select class="form-control" id="asunto_tema" required="required"
-                                            disabled="disabled" onchange="habilitarBotonEnviar()">
+                                    <label style="display: none;" for="asunto_tema"></label>
+                                    <select class="form-control" name="asunto_tema" id="asunto_tema"
+                                            oninput="enableTerms()"
+                                            required disabled>
                                         <option value="">--Tema de consulta--</option>
                                         <option value="Productos y servicios">Productos y servicios</option>
                                         <option value="Sitio web">Sitio web</option>
                                         <option value="Otros">Otros</option>
                                     </select>
-                                    <br>
+
                                     <span id="sasunto_tema"></span>
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col-lg-4 col-md-4 derecha-form">
-                                    <label>Mensaje*:</label>
+                                    <label class="control-label" for="mensaje">Mensaje *:</label>
                                 </div>
                                 <div class="col-lg-6 col-md-6 izquierda-form">
                                     <textarea id="mensaje" rows="5" class="form-control"
-                                              required="required" oninput="comprobarRelleno('mensaje', 'Mensaje'), habilitarBotonEnviar()"></textarea>
+                                              oninput="enableTerms()"
+                                              required></textarea>
                                 </div>
-                                <br>
+
                                 <span id="smensaje"></span>
                             </div>
                             <div class="row form-group">
                                 <div class="col-lg-12">
-                                    <input type="checkbox" id="condiciones" required="required" disabled="disabled" onchange="habilitarBotonEnviar()">
-                                    *He leído y acepto las <a href="#">condiciones de privacidad</a>
+                                    <input type="checkbox" id="condiciones" onchange="enableSubmit()" disabled required>
+                                    * He leído y acepto las <a href="#">condiciones de privacidad</a>
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col-lg-12">
-                                    <button type="submit" id="enviar_contacto" class="btn enviar-form" disabled="disabled">Enviar
+                                    <button type="submit" id="enviar_contacto" class="btn enviar-form" disabled>Enviar
                                         formulario</button>
                                 </div>
                             </div>
@@ -322,9 +331,10 @@
     =========================== -->
 <script src="libs/jquery/jquery.min.js"></script>
 <script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="libs/jquery/jquery.validate.js"></script>
 <script src="js/wow.min.js"></script>
-<script type="text/javascript" src="js/contacto.js"></script>
 <script src="js/licencia.js"></script>
+<script src="js/validacion.js"></script>
 <script>
     new WOW().init();
 </script>
