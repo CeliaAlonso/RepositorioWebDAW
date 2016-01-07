@@ -29,31 +29,31 @@ FUENTES
 --------------------- */
 @font-face {
 	font-family: 'Helvetica 35';
-	src: url(../fonts/35.ttf);
+	src: url(../fonts/35.woff);
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'Helvetica 45';
-	src: url(../fonts/45.ttf);
+	src: url(../fonts/45.woff);
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'Helvetica 55';
-	src: url(../fonts/55.ttf);
+	src: url(../fonts/55.woff);
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'Helvetica 65';
-	src: url(../fonts/65.ttf);
+	src: url(../fonts/65.woff);
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'Helvetica 75';
-	src: url(../fonts/75.ttf);
+	src: url(../fonts/75.woff);
 	font-weight: normal;
 }
 
@@ -68,7 +68,6 @@ FUENTES
 	src: url(../fonts/raleway-extrabold-webfont.woff);
 	font-weight: bold;
 }
-
 /* ---------------------
 VARIOS
 --------------------- */
