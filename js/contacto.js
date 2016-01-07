@@ -65,6 +65,28 @@ function habilitarCondiciones() {
 
 }
 
+// Función: Comprueba si el campo está vacío
+function comprobarRelleno(campo, mostrar) {
+
+	// La variable nombre tendrá como valor el valor de la variable campo
+	var nombre = document.getElementById(campo).value;
+	// La variable scampo tendrá como valor el id del input campo
+	var scampo = "s" + campo;
+
+	// Si el input no tiene nada, añadirá un mensaje
+	if (nombre == "") {
+
+		document.getElementById(scampo).innerHTML = "El campo " + mostrar
+				+ " no puede estar vacío";
+
+	} else {
+
+		document.getElementById(scampo).innerHTML = "";
+
+	}
+
+}
+
 // Función: Valida si el campo nombre o apellido es correcto
 function validarNombreOApellido(campo) {
 
@@ -73,21 +95,24 @@ function validarNombreOApellido(campo) {
 	// La variable exprRegular contiene la expresión regular que validará el
 	// campo nombre
 	var expRegular = /^[A-Za-zÁÉÍÓÚáéíóú ]{1,30}/;
+	// La variable scampo tendrá como valor el id del input campo
+	var scampo = "s" + campo;
+	var mostrar = "";
 
 	switch (campo) {
 	case "nombre":
 
-		campo = "'Nombre'";
+		mostrar = "'Nombre'";
 
 		break;
 	case "apellido1":
 
-		campo = "'Primer Apellido'"
+		mostrar = "'Primer Apellido'"
 
 		break;
 	case "apellido2":
 
-		campo = "'Segundo Apellido'"
+		mostrar = "'Segundo Apellido'"
 
 		break;
 	}
@@ -101,11 +126,12 @@ function validarNombreOApellido(campo) {
 		// error y devolviendo false
 	} else if (nombre == "") {
 
-		alert("El campo " + campo + " no puede estar vacío");
+		comprobarRelleno(campo, mostrar);
 
 	} else {
 
-		alert("El campo " + campo + " sólo puede contener caracteres");
+		document.getElementById(scampo).innerHTML = "El campo " + mostrar
+				+ " sólo puede contener caracteres";
 
 	}
 
@@ -121,6 +147,8 @@ function validarEmail() {
 	// La variable exprRegular contiene la expresión regular que validará el
 	// campo email
 	var expRegular = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w*)*/;
+	// La variable scampo tendrá como valor el id del input email
+	var scampo = "semail"; 
 
 	// Si email cumple la expresión regular, devolverá true
 	if (expRegular.test(email)) {
@@ -131,11 +159,11 @@ function validarEmail() {
 		// error y devolviendo false
 	} else if (email == "") {
 
-		alert("El campo 'Correo electrónico' no puede estar vacío");
+		comprobarRelleno("email", "Correo electrónico");
 
 	} else {
 
-		alert("El campo 'Correo electrónico' sólo puede contener caracteres numéricos");
+		document.getElementById(scampo).innerHTML ="El campo 'Correo electrónico' tiene el siguiente formato ejemplo@ejemplo.ejemplo";
 
 	}
 
@@ -151,6 +179,8 @@ function validarFijo() {
 	// La variable exprRegular contiene la expresión regular que validará el
 	// campo fijo
 	var expRegular = /^(9)\d{8}$/;
+	// La variable scampo tendrá como valor el id del input fijo
+	var scampo = "sfijo"; 
 
 	// Si fijo cumple la expresión regular, devolverá true
 	if (expRegular.test(fijo)) {
@@ -161,11 +191,11 @@ function validarFijo() {
 		// error y devolviendo false
 	} else if (fijo.length != 9) {
 
-		alert("El campo 'Teléfono fijo' tiene que tener una longitud de 9 caracteres");
+		document.getElementById(scampo).innerHTML ="El campo 'Teléfono fijo' tiene que tener una longitud de 9 caracteres";
 
-	} else {
+	} else if (!expRegular.test(fijo)){
 
-		alert("El campo 'Teléfono fijo' sólo puede contener caracteres numéricos");
+		document.getElementById(scampo).innerHTML ="El campo 'Teléfono fijo' sólo puede contener caracteres numéricos";
 
 	}
 
@@ -179,6 +209,8 @@ function validarMovil() {
 	// La variable exprRegular contiene la expresión regular que validará el
 	// campo movil
 	var expRegular = /^(6)\d{8}$/;
+	// La variable scampo tendrá como valor el id del input movil
+	var scampo = "smovil"; 
 
 	// Si movil cumple la expresión regular, devolverá true
 	if (expRegular.test(movil)) {
@@ -189,15 +221,15 @@ function validarMovil() {
 		// error, vaciando el campo y devolviendo false
 	} else if (movil == "") {
 
-		alert("El campo 'Teléfono móvil' no puede estar vacío");
+		comprobarRelleno("movil", "Teléfono móvil");
 
 	} else if (movil.length != 9) {
 
-		alert("El campo 'Teléfono móvil' tiene que tener una longitud de 9 caracteres");
+		document.getElementById(scampo).innerHTML ="El campo 'Teléfono móvil' tiene que tener una longitud de 9 caracteres";
 
 	} else {
 
-		alert("El campo 'Teléfono móvil' sólo puede contener caracteres numéricos");
+		document.getElementById(scampo).innerHTML ="El campo 'Teléfono móvil' sólo puede contener caracteres numéricos";
 
 	}
 
@@ -231,6 +263,8 @@ function validarMensaje() {
 
 	// La variable mensaje tendrá como valor el valor del campo mensaje
 	var mensaje = document.getElementById("mensaje").value;
+	// La variable scampo tendrá como valor el id del textarea mensaje
+	var scampo = "smensaje"; 
 
 	// Si el campo mensaje no tiene nada introducido, devolverá false. En caso
 	// contrario, devolverá true
@@ -240,7 +274,7 @@ function validarMensaje() {
 
 	}
 
-	alert("Tiene que escribir un mensaje en el campo 'Mensaje'");
+	document.getElementById(scampo).innerHTML ="Tiene que escribir un mensaje en el campo 'Mensaje'";
 	return false;
 
 }

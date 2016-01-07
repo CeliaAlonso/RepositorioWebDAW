@@ -135,7 +135,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 form-contacto border-box wow flipInY">
                     <h4><i class="fa fa-comment"></i>Contacta con nosotros</h4>
-                    <form class="form-horizontal" role="form" onsubmit="">
+                    <form class="form-horizontal" role="form" onsubmit="location.reload(); ">
                         <div class="row form-group">
                             <div class="col-lg-4 col-md-4 derecha-form">
                                 <label>Nombre*:</label>
@@ -143,8 +143,10 @@
                             <div class="col-lg-6 col-md-6 izquierda-form">
                                 <input type="text" class="form-control" id="nombre"
                                        pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Nombre"
-                                       title="Es necesario el nombre" onchange="habilitarBotonEnviar()"
+                                       title="Es necesario el nombre" onchange="comprobarRelleno('nombre'), habilitarBotonEnviar()"
                                        required>
+                                       <br>
+                                       <span id="snombre"></span>
                             </div>
                         </div>
                         <div class="row form-group">
@@ -155,7 +157,9 @@
                                 <input type="text" class="form-control" id="apellido1"
                                        pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Primer Apellido"
                                        title="Es necesario el primer apellido"
-                                       onchange="habilitarBotonEnviar()" required>
+                                       onchange="comprobarRelleno('apellido1'), habilitarBotonEnviar()" required>
+                                       <br>
+                                       <span id="sapellido1"></span>
                             </div>
                         </div>
                         <div class="row form-group">
@@ -166,7 +170,9 @@
                                 <input type="text" class="form-control" id="apellido2"
                                        pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Segundo Apellido"
                                        title="Es necesario el segundo apellido"
-                                       onchange="habilitarBotonEnviar()" required>
+                                       onchange="comprobarRelleno('apellido2'), habilitarBotonEnviar()" required>
+                                       <br>
+                                       <span id="sapellido2"></span>
                             </div>
                         </div>
                         <div class="row form-group">
@@ -177,7 +183,9 @@
                                 <input type="text" class="form-control" id="email"
                                        pattern="^(\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w*)*)"
                                        placeholder="Correo electrónico" title="Es necesario un correo electrónico"
-                                       onchange="habilitarBotonEnviar()" required>
+                                       onchange="comprobarRelleno('email'), habilitarBotonEnviar()" required>
+                                       <br>
+                                       <span id="semail"></span>
                             </div>
                         </div>
                         <div class="row form-group">
@@ -188,7 +196,9 @@
                                 <input type="text" class="form-control" id="fijo" pattern="^(9)\d{8}$"
                                        placeholder="Teléfono fijo (opcional)"
                                        title="El teléfono fijo empieza con el número 9"
-                                       onchange="habilitar()" required>
+                                       onchange="" required>
+                                       <br>
+                                       <span id="sfijo"></span>
                             </div>
                         </div>
                         <div class="row form-group">
@@ -199,7 +209,9 @@
                                 <input type="text" class="form-control" id="movil" pattern="^(6)\d{8}$"
                                        placeholder="Teléfono móvil"
                                        title="Es necesario un móvil. Empieza con el número 6"
-                                       onchange="habilitarBotonEnviar()" required>
+                                       onchange="comprobarRelleno('movil'), habilitarBotonEnviar()" required>
+                                       <br>
+                                       <span id="smovil"></span>
                             </div>
                         </div>
                         <div class="row form-group">
@@ -213,6 +225,8 @@
                                     <option value="Sugerencias">Sugerencias</option>
                                     <option value="Quejas">Quejas</option>
                                 </select>
+                                <br>
+                                       <span id="sasunto_tipo"></span>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 izquierda-form padding-form">
                                 <select class="form-control" id="asunto_tema" required="required"
@@ -222,6 +236,8 @@
                                     <option value="Sitio web">Sitio web</option>
                                     <option value="Otros">Otros</option>
                                 </select>
+                                <br>
+                                       <span id="sasunto_tema"></span>
                             </div>
                         </div>
                         <div class="row form-group">
@@ -230,8 +246,10 @@
                             </div>
                             <div class="col-lg-6 col-md-6 izquierda-form">
                                     <textarea id="mensaje" rows="5" class="form-control"
-                                              required="required" onchange="habilitarBotonEnviar()"></textarea>
+                                              required="required" oninput="comprobarRelleno('mensaje'), habilitarBotonEnviar()"></textarea>
                             </div>
+                            <br>
+                                       <span id="smensaje"></span>
                         </div>
                         <div class="row form-group">
                             <div class="col-lg-12">
