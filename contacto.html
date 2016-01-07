@@ -132,142 +132,144 @@
     =========================== -->
     <main>
         <div class="container container-contact">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 form-contacto border-box wow flipInY">
-                    <h4><i class="fa fa-comment"></i>Contacta con nosotros</h4>
-                    <form class="form-horizontal" role="form" onsubmit="location.reload(); ">
-                        <div class="row form-group">
-                            <div class="col-lg-4 col-md-4 derecha-form">
-                                <label>Nombre*:</label>
+            <div class="container container-contact">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 form-contacto border-box wow flipInY">
+                        <h4><i class="fa fa-comment"></i>Contacta con nosotros</h4>
+                        <form class="form-horizontal" role="form" onsubmit="location.reload(); ">
+                            <div class="row form-group">
+                                <div class="col-lg-4 col-md-4 derecha-form">
+                                    <label>Nombre*:</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 izquierda-form">
+                                    <input type="text" class="form-control" id="nombre"
+                                           pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Nombre"
+                                           title="Es necesario el nombre" onchange="comprobarRelleno('nombre', 'Nombre'), habilitarBotonEnviar()"
+                                           required>
+                                    <br>
+                                    <span id="snombre"></span>
+                                </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 izquierda-form">
-                                <input type="text" class="form-control" id="nombre"
-                                       pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Nombre"
-                                       title="Es necesario el nombre" onchange="comprobarRelleno('nombre', 'Nombre'), habilitarBotonEnviar()"
-                                       required>
-                                       <br>
-                                       <span id="snombre"></span>
+                            <div class="row form-group">
+                                <div class="col-lg-4 col-md-4 derecha-form">
+                                    <label>Primer Apellido*:</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 izquierda-form">
+                                    <input type="text" class="form-control" id="apellido1"
+                                           pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Primer Apellido"
+                                           title="Es necesario el primer apellido"
+                                           onchange="comprobarRelleno('apellido1', 'Primer Apellido'), habilitarBotonEnviar()" required>
+                                    <br>
+                                    <span id="sapellido1"></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row form-group">
-                            <div class="col-lg-4 col-md-4 derecha-form">
-                                <label>Primer Apellido*:</label>
+                            <div class="row form-group">
+                                <div class="col-lg-4 col-md-4 derecha-form">
+                                    <label>Segundo Apellido*:</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 izquierda-form">
+                                    <input type="text" class="form-control" id="apellido2"
+                                           pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Segundo Apellido"
+                                           title="Es necesario el segundo apellido"
+                                           onchange="comprobarRelleno('apellido2', 'Segundo Apellido'), habilitarBotonEnviar()" required>
+                                    <br>
+                                    <span id="sapellido2"></span>
+                                </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 izquierda-form">
-                                <input type="text" class="form-control" id="apellido1"
-                                       pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Primer Apellido"
-                                       title="Es necesario el primer apellido"
-                                       onchange="comprobarRelleno('apellido1', 'Primer Apellido'), habilitarBotonEnviar()" required>
-                                       <br>
-                                       <span id="sapellido1"></span>
+                            <div class="row form-group">
+                                <div class="col-lg-4 col-md-4 derecha-form">
+                                    <label>Correo electrónico*:</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 izquierda-form">
+                                    <input type="text" class="form-control" id="email"
+                                           pattern="^(\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w*)*)"
+                                           placeholder="Correo electrónico" title="Es necesario un correo electrónico"
+                                           onchange="comprobarRelleno('email', 'Correo electrónico'), habilitarBotonEnviar()" required>
+                                    <br>
+                                    <span id="semail"></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row form-group">
-                            <div class="col-lg-4 col-md-4 derecha-form">
-                                <label>Segundo Apellido*:</label>
+                            <div class="row form-group">
+                                <div class="col-lg-4 col-md-4 derecha-form">
+                                    <label>Teléfono fijo:</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 izquierda-form">
+                                    <input type="text" class="form-control" id="fijo" pattern="^(9)\d{8}$"
+                                           placeholder="Teléfono fijo (opcional)"
+                                           title="El teléfono fijo empieza con el número 9"
+                                           onchange="validarFijo()">
+                                    <br>
+                                    <span id="sfijo"></span>
+                                </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 izquierda-form">
-                                <input type="text" class="form-control" id="apellido2"
-                                       pattern="^([A-Za-záéíóúÁÉÍÓÚ ]{1,30})" placeholder="Segundo Apellido"
-                                       title="Es necesario el segundo apellido"
-                                       onchange="comprobarRelleno('apellido2', 'Segundo Apellido'), habilitarBotonEnviar()" required>
-                                       <br>
-                                       <span id="sapellido2"></span>
+                            <div class="row form-group">
+                                <div class="col-lg-4 col-md-4 derecha-form">
+                                    <label>Teléfono móvil*:</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 izquierda-form">
+                                    <input type="text" class="form-control" id="movil" pattern="^(6)\d{8}$"
+                                           placeholder="Teléfono móvil"
+                                           title="Es necesario un móvil. Empieza con el número 6"
+                                           onchange="comprobarRelleno('movil', 'Teléfono móvil'), habilitarBotonEnviar()" required>
+                                    <br>
+                                    <span id="smovil"></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row form-group">
-                            <div class="col-lg-4 col-md-4 derecha-form">
-                                <label>Correo electrónico*:</label>
+                            <div class="row form-group">
+                                <div class="col-lg-4 col-md-4 derecha-form">
+                                    <label>Asunto*:</label>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 izquierda-form">
+                                    <select class="form-control" id="asunto_tipo" required="required" onchange="habilitarTema(), habilitarBotonEnviar()">
+                                        <option value="">--Tipo de consulta--</option>
+                                        <option value="Información">Información</option>
+                                        <option value="Sugerencias">Sugerencias</option>
+                                        <option value="Quejas">Quejas</option>
+                                    </select>
+                                    <br>
+                                    <span id="sasunto_tipo"></span>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 izquierda-form padding-form">
+                                    <select class="form-control" id="asunto_tema" required="required"
+                                            disabled="disabled" onchange="habilitarBotonEnviar()">
+                                        <option value="">--Tema de consulta--</option>
+                                        <option value="Productos y servicios">Productos y servicios</option>
+                                        <option value="Sitio web">Sitio web</option>
+                                        <option value="Otros">Otros</option>
+                                    </select>
+                                    <br>
+                                    <span id="sasunto_tema"></span>
+                                </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 izquierda-form">
-                                <input type="text" class="form-control" id="email"
-                                       pattern="^(\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w*)*)"
-                                       placeholder="Correo electrónico" title="Es necesario un correo electrónico"
-                                       onchange="comprobarRelleno('email', 'Correo electrónico'), habilitarBotonEnviar()" required>
-                                       <br>
-                                       <span id="semail"></span>
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <div class="col-lg-4 col-md-4 derecha-form">
-                                <label>Teléfono fijo:</label>
-                            </div>
-                            <div class="col-lg-6 col-md-6 izquierda-form">
-                                <input type="text" class="form-control" id="fijo" pattern="^(9)\d{8}$"
-                                       placeholder="Teléfono fijo (opcional)"
-                                       title="El teléfono fijo empieza con el número 9"
-                                       onchange="validarFijo()">
-                                       <br>
-                                       <span id="sfijo"></span>
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <div class="col-lg-4 col-md-4 derecha-form">
-                                <label>Teléfono móvil*:</label>
-                            </div>
-                            <div class="col-lg-6 col-md-6 izquierda-form">
-                                <input type="text" class="form-control" id="movil" pattern="^(6)\d{8}$"
-                                       placeholder="Teléfono móvil"
-                                       title="Es necesario un móvil. Empieza con el número 6"
-                                       onchange="comprobarRelleno('movil', 'Teléfono móvil'), habilitarBotonEnviar()" required>
-                                       <br>
-                                       <span id="smovil"></span>
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <div class="col-lg-4 col-md-4 derecha-form">
-                                <label>Asunto*:</label>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 izquierda-form">
-                                <select class="form-control" id="asunto_tipo" required="required" onchange="habilitarTema(), habilitarBotonEnviar()">
-                                    <option value="">--Tipo de consulta--</option>
-                                    <option value="Información">Información</option>
-                                    <option value="Sugerencias">Sugerencias</option>
-                                    <option value="Quejas">Quejas</option>
-                                </select>
-                                <br>
-                                       <span id="sasunto_tipo"></span>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 izquierda-form padding-form">
-                                <select class="form-control" id="asunto_tema" required="required"
-                                        disabled="disabled" onchange="habilitarBotonEnviar()">
-                                    <option value="">--Tema de consulta--</option>
-                                    <option value="Productos y servicios">Productos y servicios</option>
-                                    <option value="Sitio web">Sitio web</option>
-                                    <option value="Otros">Otros</option>
-                                </select>
-                                <br>
-                                       <span id="sasunto_tema"></span>
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <div class="col-lg-4 col-md-4 derecha-form">
-                                <label>Mensaje*:</label>
-                            </div>
-                            <div class="col-lg-6 col-md-6 izquierda-form">
+                            <div class="row form-group">
+                                <div class="col-lg-4 col-md-4 derecha-form">
+                                    <label>Mensaje*:</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 izquierda-form">
                                     <textarea id="mensaje" rows="5" class="form-control"
                                               required="required" oninput="comprobarRelleno('mensaje', 'Mensaje'), habilitarBotonEnviar()"></textarea>
+                                </div>
+                                <br>
+                                <span id="smensaje"></span>
                             </div>
-                            <br>
-                                       <span id="smensaje"></span>
-                        </div>
-                        <div class="row form-group">
-                            <div class="col-lg-12">
-                                <input type="checkbox" id="condiciones" required="required" disabled="disabled" onchange="habilitarBotonEnviar()">
-                                *He leído y acepto las <a href="#">condiciones de privacidad</a>
+                            <div class="row form-group">
+                                <div class="col-lg-12">
+                                    <input type="checkbox" id="condiciones" required="required" disabled="disabled" onchange="habilitarBotonEnviar()">
+                                    *He leído y acepto las <a href="#">condiciones de privacidad</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row form-group">
-                            <div class="col-lg-12">
-                                <button type="submit" id="enviar_contacto" class="btn enviar-form" disabled="disabled">Enviar
-                                    formulario</button>
+                            <div class="row form-group">
+                                <div class="col-lg-12">
+                                    <button type="submit" id="enviar_contacto" class="btn enviar-form" disabled="disabled">Enviar
+                                        formulario</button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-lg-6 col-md-6 ">
-                    <iframe class="map border-box wow flipInY" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.4133655278706!2d-100.29531123703694!3d25.655566393526243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bfc8ff203d37%3A0xc71702b00c6ed440!2sBuscando+A+Nemo%2C+S.A.+De+C.V.!5e0!3m2!1ses!2ses!4v1450523839255"
-                            frameborder="0" allowfullscreen></iframe>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 col-md-6 ">
+                        <iframe class="map border-box wow flipInY" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.4133655278706!2d-100.29531123703694!3d25.655566393526243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bfc8ff203d37%3A0xc71702b00c6ed440!2sBuscando+A+Nemo%2C+S.A.+De+C.V.!5e0!3m2!1ses!2ses!4v1450523839255"
+                                frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -288,16 +290,21 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 footer-enlaces">
-                    <a onclick="abrirLicencia()">Términos de licencia</a> |
+                    <!--<a onclick="abrirLicencia()">Términos de licencia</a> |
                     <a href="contacto.html">Contacte con nosotros</a> |
-                    <a href="#">Tienda</a>
+                    <a href="#">Tienda</a>-->
+                    <h5>Interes</h5>
+                    <ul>
+                        <li><i class="fa fa-certificate"></i><a onclick="abrirLicencia()">Términos de licencia</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="contacto.html">Contacte con nosotros</a></li>
+                    </ul>
                 </div>
                 <div class="col-md-4 col-md-4 col-sm-4 footer-contacto">
                     <h5>Contacto</h5>
-                    <p>
-                        Dirección: <b>Calle Piruleta Nª 123. Madrid, España.</b><br>
-                        Telf: <b>+34 9183475863</b>
-                    </p>
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i>Dirección: <b>Calle Piruleta Nª 123. Madrid, España.</b></li>
+                        <li><i class="fa fa-phone"></i>Telf: <b>+34 9183475863</b></li>
+                    </ul>
                 </div>
             </div>
             <hr>
@@ -307,7 +314,8 @@
                 </p>
             </div>
         </div>
-    </footer> 
+    </footer>
+    </div>
 
 	<!-- ===========================
     SCRIPTS NECESARIOS

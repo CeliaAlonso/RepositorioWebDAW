@@ -255,10 +255,12 @@ hr { margin: 15px 0 10px }
 
 .btn-filter {
     margin: 25px 0;
+    font-family: 'Helvetica 55', sans-serif;
     color: white;
     background-color: #955ac0;
     border: none;
     border-radius: 4px;
+
     -webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;

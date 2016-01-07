@@ -84,31 +84,28 @@ html, body {
 	-webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5 { font-family: 'Helvetica 45', sans-serif }
-
 h1 {
-    font-size: 70px;
+	font: normal normal normal 70px/1.4em 'Helvetica 35', sans-serif;
 }
 
 h2 {
-    font-size: 60px;
+	font: normal normal normal 60px/1.4em 'Helvetica 35', sans-serif;
 }
 
 h3 {
-    font-size: 50px;
+	font: normal normal normal 50px/1.4em 'Helvetica 35', sans-serif;
 }
 
 h4 {
-    font-size: 40px;
+	font: normal normal normal 40px/1.4em 'Helvetica 35', sans-serif;
 }
 
 h5 {
-	font-size: 30px;
+	font: normal normal normal 30px/1.4em 'Helvetica 35', sans-serif;
 }
 
 p {
-	font-family: 'Helvetica 45', sans-serif;
-    font-size: 20px;
+	font: normal normal normal 18px/1.4em 'Helvetica 45', sans-serif;
 }
 
 label { font-family: 'Helvetica 55', sans-serif }
@@ -214,6 +211,12 @@ header div .header img { height: 80px }
 	color: #3bbc5e;
 	border: solid #3bbc5e 1px;
 	font-family: 'Helvetica 65', sans-serif;
+
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
 }
 
 .btn-iniciar:hover {
@@ -333,16 +336,18 @@ SLIDER
 }
 
 .carousel .text {
-	width: 25%;
+	width: 30%;
 	position: absolute;
-	top: 9vw;
+	top: 7vw;
 	left: 20vw;
 	color: white;
 	z-index: 10;
 }
 
 .carousel .text h1 {
-	font-size: 2.7vw;
+	font-family: 'Helvetica 45', sans-serif;
+	font-size: 3.3vw;
+	line-height: 3.9vw;
 }
 .carousel .text h2 {
 	font-size: 1.5vw;
@@ -351,10 +356,16 @@ SLIDER
 .carousel .text .btn-default {
 	font-family: 'Helvetica 65', sans-serif;
 	font-size: 1.4vw;
-	padding: 10px 15px;
+	padding: 0.6vw 1vw;
 	border: 1px solid white;
 	color: white;
 	background: none;
+
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
 }
 .carousel .text .btn-default:hover {
 	color: white;
@@ -413,17 +424,20 @@ footer .logo a:hover { cursor:pointer; color: white; text-decoration: none; }
 footer hr { margin: 0 0 10px; }
 
 .footer-enlaces {
-	padding-top: 60px;
 	font-size: 15px;
 	color:	rgb(255,255,255);
 }
 .footer-enlaces a { color: white; text-decoration: none; }
 .footer-enlaces a:visited { color: white; text-decoration: none; }
 .footer-enlaces a:hover { cursor:pointer; color: white; text-decoration: underline; }
+footer ul { list-style-type: none; }
+
 
 .footer-contacto { color: white; }
-.footer-contacto h5 {
-	font-size: 25px;
+footer h5 {
+	text-transform: uppercase;
+	font-family: 'Helvetica 65', sans-serif;
+	font-size: 18px;
 	font-weight: bold;
 }
 .footer-contacto p {

@@ -91,8 +91,10 @@ CONTENIDO DE LA PAGINA
 }
 
 .content-upper h5 {
-	font-family: 'Helvetica 45', sans-serif;
-	font-weight: bold;
+	font: normal normal normal 42px/1.4em 'Helvetica 35', sans-serif;
+}
+.content-upper p {
+	font: normal normal normal 18px/1.4em 'Helvetica 45', sans-serif;
 }
 
 .text-tagging {
