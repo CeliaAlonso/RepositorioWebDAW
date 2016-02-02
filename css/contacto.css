@@ -21,14 +21,12 @@
  *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-
 /* --------------------- 
 ESTILOS CONTENIDO - FORMULARIO DE CONTACTO
 --------------------- */
-
 .container-contact {
-	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-top: 30px;
+	margin-bottom: 15px;
 }
 
 .form-contacto {
@@ -38,7 +36,9 @@ ESTILOS CONTENIDO - FORMULARIO DE CONTACTO
 	border: 1px solid #d9d9d9;
 }
 
-.form-contacto h4 { margin-bottom: 20px; }
+.form-contacto h4 {
+	margin-bottom: 20px;
+}
 
 .padding-form {
 	padding-left: 0px;
@@ -51,6 +51,7 @@ ESTILOS CONTENIDO - FORMULARIO DE CONTACTO
 .izquierda-form {
 	text-align: left;
 }
+
 .enviar-form {
 	border-radius: 4px;
 	border: none;
@@ -60,7 +61,7 @@ ESTILOS CONTENIDO - FORMULARIO DE CONTACTO
 	padding: 10px;
 }
 
-.enviar-form:hover{
+.enviar-form:hover {
 	background-color: #3275bd;
 	border: none;
 }
@@ -71,7 +72,14 @@ ESTILOS CONTENIDO - FORMULARIO DE CONTACTO
 
 .form-group {
 	margin-bottom: 0px;
-	margin-top: 30px; 
+	margin-top: 30px;
+}
+
+/* --------------------- 
+ESTILOS CONTENIDO - FORMULARIO DE CONTACTO ENVIADO CORRECTAMENTE
+--------------------- */
+.centrar {
+	margin-top: 250px;
 }
 
 /* ---------------------
@@ -81,15 +89,17 @@ ESTILOS CONTENIDO - MAPA
 	margin-top: 80px;
 	min-height: 600px;
 	width: 100%;
-	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.59);
-	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.59);
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.59);
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.59);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.59);
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.59);
 }
-
 
 /* Small Devices, Tablets */
 @media only screen and (max-width:990px) {
-	.map {width: 80%; margin-left: 10%;}
+	.map {
+		width: 80%;
+		margin-left: 10%;
+	}
 }
 
 @media only screen and (max-width:990px) {
@@ -103,5 +113,7 @@ ESTILOS CONTENIDO - MAPA
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width:768px) {
-	.map {min-height: 400px;}
+	.map {
+		min-height: 400px;
+	}
 }
