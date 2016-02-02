@@ -207,8 +207,8 @@ header div .header img { height: 80px }
 }
 
 .btn-iniciar {
-	color: #3bbc5e;
-	border: solid #3bbc5e 1px;
+	color: #3899EC;
+	border: solid #3899EC 1px;
 	font-family: 'Helvetica 65', sans-serif;
 
 	-webkit-transition: all 0.3s ease-in-out 0s;
@@ -220,7 +220,7 @@ header div .header img { height: 80px }
 
 .btn-iniciar:hover {
 	color: white;
-	background-color: #3bbc5e;
+	background-color: #3899EC;
 
 	-webkit-transition: all 0.3s ease-in-out 0s;
 	-moz-transition: all 0.3s ease-in-out 0s;
@@ -281,6 +281,9 @@ i {padding-right: 10px }
 
 .navbar-default, .dropdown-toggle, .dropdown-menu { background: none; border: none; }
 .navbar-default .navbar-nav > li > a { color: #474747 }
+.navbar-default .navbar-nav > li > a:visited {
+	color: #797979;
+}
 .navbar-default .navbar-nav > li > a:hover {
 	color: #337bc6;
 	-webkit-transition: all 0.3s ease-in-out 0s;
@@ -295,7 +298,7 @@ i {padding-right: 10px }
 	background: none;
 	color: #337bc6;
 }
-.dropdown-menu { background-color: rgba(0, 0, 0, 0.82) }
+.dropdown-menu { background-color: rgba(0, 0, 0, 1) }
 
 .navbar .navbar-nav {
 	display: inline-block;
@@ -309,7 +312,7 @@ i {padding-right: 10px }
 
 .navbar-default {
 	height: 50px;
-	background-color: rgba(255, 255, 255, 0.75);
+	background-color: rgba(255, 255, 255, 1);
 	width: 100%;
 	margin-bottom: 0;
 	position: absolute;
@@ -427,7 +430,7 @@ footer hr { margin: 0 0 10px; }
 	color:	rgb(255,255,255);
 }
 .footer-enlaces a { color: white; text-decoration: none; }
-.footer-enlaces a:visited { color: white; text-decoration: none; }
+.footer-enlaces a:visited { color: #d1d1d1; text-decoration: none; }
 .footer-enlaces a:hover { cursor:pointer; color: white; text-decoration: underline; }
 footer ul { list-style-type: none; }
 
