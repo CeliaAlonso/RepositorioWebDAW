@@ -21,20 +21,6 @@
  *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/* ---------------------
-SUB HEADER
- -------------------- */
-.sub-header {
-	background-color: #62BB5C;
-}
-
-/* ---------------------
-FOOTER
---------------------- */
-footer {
-	background-color: #62BB5C;
-}
-footer .container { background-color: #62BB5C; }
 
 /* --------------------- 
 ESTILOS CONTENIDO - FORMULARIO DE CONTACTO
@@ -83,11 +69,16 @@ ESTILOS CONTENIDO - FORMULARIO DE CONTACTO
 	right: 15px;
 }
 
+.form-group {
+	margin-bottom: 0px;
+	margin-top: 30px; 
+}
+
 /* ---------------------
 ESTILOS CONTENIDO - MAPA
 --------------------- */
 .map {
-	margin-top: 50px;
+	margin-top: 80px;
 	min-height: 600px;
 	width: 100%;
 	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.59);
@@ -95,15 +86,6 @@ ESTILOS CONTENIDO - MAPA
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.59);
 }
 
-
-/* ---------------------
-NAV
---------------------- */
-.navbar-default .navbar-nav > li > a:hover { color: #58a458; }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	background: none;
-	color: #58a458;
-}
 
 /* Small Devices, Tablets */
 @media only screen and (max-width:990px) {

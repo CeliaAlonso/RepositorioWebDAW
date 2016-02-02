@@ -29,7 +29,6 @@ function enableTerms() {
     array.push(document.getElementById("apellido1").value.length);
     array.push(document.getElementById("apellido2").value.length);
     array.push(document.getElementById("email").value.length);
-    array.push(document.getElementById("fijo").value.length);
     array.push(document.getElementById("movil").value.length);
     array.push(document.getElementById("asunto_tipo").value.length);
     array.push(document.getElementById("asunto_tema").value.length);
@@ -43,25 +42,25 @@ function enableTerms() {
         }
 
     if (camposRellenados)
-        document.getElementById("condiciones").disabled = false;
+        document.getElementById("condiciones").removeAttribute('disabled');
     else
-        document.getElementById("condiciones").disabled = true;
+        document.getElementById("condiciones").setAttribute('disabled','disabled');
 }
 
 /* FUNCION QUE HABILITA EL SELECT DEL TEMA */
 function enableTema() {
     if (document.getElementById("asunto_tipo").value.length > 0)
-        document.getElementById("asunto_tema").disabled = false;
+        document.getElementById("asunto_tema").removeAttribute('disabled');
     else
-        document.getElementById("asunto_tema").disabled = true;
+        document.getElementById("asunto_tema").setAttribute('disabled','disabled');
 }
 
 /* FUNCION QUE HABILITA EL ENVIO DEL FORMULARIO */
 function enableSubmit() {
     if (document.getElementById("condiciones").checked)
-        document.getElementById("enviar_contacto").disabled = false;
+        document.getElementById("enviar_contacto").removeAttribute('disabled');
     else
-        document.getElementById("enviar_contacto").disabled = true;
+        document.getElementById("enviar_contacto").setAttribute('disabled','disabled');
 
 }
 
@@ -80,22 +79,22 @@ $('form').validate({
     rules: {
         nombre: {
             required: true,
-            regex: /^([a-zA-Z ]{1,30})+$/
+            regex: /^([a-zA-ZÁÉÍÓÚáéíóú ]{1,30})+$/
         },
         apellido1: {
             required: true,
-            regex: /^([a-zA-Z ]{1,30})+$/
+            regex: /^([a-zA-ZÁÉÍÓÚáéíóú ]{1,30})+$/
         },
         apellido2: {
             required: true,
-            regex: /^([a-zA-Z ]{1,30})+$/
+            regex: /^([a-zA-ZÁÉÍÓÚáéíóú ]{1,30})+$/
         },
         email: {
             required: true,
             regex: /^(\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w*)*)/
         },
         fijo: {
-            required: true,
+            required: false,
             regex: /^(9)\d{8}$/
         },
         movil: {
@@ -110,7 +109,7 @@ $('form').validate({
         },
         mensaje: {
             required: true,
-            regex: /^([a-zA-Z ]{1,30})+$/
+            regex: /^([a-zA-ZÁÉÍÓÚáéíóú ]{1,30})+$/
         },
     },
     highlight: function(element) {
