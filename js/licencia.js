@@ -22,5 +22,5 @@
  */
 
 function abrirLicencia() {
-    ventanaLicencia = window.open('terminos.html', "ventanaLicencia", "scrollbars=yes, width=600, height=700");
+    ventanaLicencia = window.open('licencia.html', "ventanaLicencia", "scrollbars=yes, width=600, height=700");
 }
