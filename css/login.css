@@ -20,31 +20,7 @@
  *    You should have received a copy of the GNU General Public License
  *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-/* ---------------------
-SUB HEADER
- -------------------- */
-.sub-header {
-    background-color: #34bda5;
-}
-
-/* ---------------------
-NAV
---------------------- */
-.navbar-default .navbar-nav > li > a:hover { color: #34bda5; }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    background: none;
-    color: #34bda5;
-}
-
-/* ---------------------
-FOOTER
---------------------- */
-footer {
-    background-color: #34bda5;
-}
-footer .container { background-color: #34bda5; }
-
-
+ 
 /* ---------------------
 CONTENIDO DE LA PÁGINA
 --------------------- */
@@ -74,7 +50,7 @@ main {
     transition: all 0.1s linear;
 }
 .panel-login>.panel-heading a.active{
-    color: #34bda5;
+    color: #59B2E0;
     font-size: 18px;
 }
 .panel-login>.panel-heading hr{
@@ -136,29 +112,4 @@ main {
 .forgot-password:focus {
     text-decoration: underline;
     color: #666;
-}
-
-.btn-register {
-    font-family: 'Helvetica 65', sans-serif;
-    background-color: #1CB94E;
-    outline: none;
-    color: #fff;
-    font-size: 14px;
-    height: auto;
-    font-weight: normal;
-    padding: 14px 0;
-    text-transform: uppercase;
-    border-color: #1CB94A;
-}
-.btn-register:hover,
-.btn-register:focus {
-    color: #fff;
-    background-color: #1CA347;
-    border-color: #1CA347;
-
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    -moz-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    -ms-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
 }
