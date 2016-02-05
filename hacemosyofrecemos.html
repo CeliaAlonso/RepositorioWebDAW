@@ -269,6 +269,12 @@ SCRIPTS NECESARIOS
         document.getElementById('trigger-'+obj).style.textDecoration = 'underline';
     }
     show('venta');
+	
+	switch (window.location.search){
+    	case "?accion=venta": hide('mantenimiento'); hide('reparto'); show('venta');break;
+    	case "?accion=mantenimiento": hide('venta'); hide('reparto'); show('mantenimiento');break;
+    	case "?accion=servicio": hide('mantenimiento'); hide('venta'); show('reparto');break;	
+    }
 </script>
 
 </body>
