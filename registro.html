@@ -30,12 +30,12 @@
     <!-- ===========================
         FAVICON
         =========================== -->
-    <link rel="icon" href="img/logo_negro.png" type="image/gif" />
+    <link rel="icon" href="img/logo_negro.png" type="image/gif"/>
 
     <!-- ===========================
         FUENTES
         =========================== -->
-	<link href='libs/font-awesome/css/font-awesome.min.css' rel='stylesheet'>
+    <link href='libs/font-awesome/css/font-awesome.min.css' rel='stylesheet'>
     <!-- ===========================
         ARCHIVOS CSS
         =========================== -->
@@ -54,7 +54,7 @@
 
 <body>
 
-    <div id="wrapper">
+<div id="wrapper">
     <!-- ===========================
    HEADER
    =========================== -->
@@ -67,25 +67,36 @@
                         <strong>BUSCANDO</strong> A NEMO
                     </p></a>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <a href="login.html" class="btn btn-iniciar right">Regístrate</a>
+                <div class="col-lg-6 col-sm-6 wow bounceInDown">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="welcome right" id="welcome"></p>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <a href="registro.html" class="btn btn-iniciar right">Regístrate</a>
+                        <a href="login.html" class="btn btn-iniciar right">Accede a tu cuenta</a>
+                    </div>
                 </div>
+            </div>
+
+            <div class="row">
             </div>
         </div>
     </header>
+
 
     <!-- ===========================
    NAV
    =========================== -->
     <div class="navbar-container">
         <nav class="navbar navbar-default">
-            <div class="container">
+            <div class="container navigation">
                 <a href="index.html" class="go-to-index"><p class="nav-logo left">
                     <img src="img/logo_negro.png">
                     <strong>BUSCANDO</strong> A NEMO
                 </p></a>
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target=".navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -94,11 +105,23 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html"><i class="fa fa-home"></i>HOME</a></li>
-                        <li><a href="hacemosyofrecemos.html"><i class="fa fa-info"></i>¿QUÉ HACEMOS Y OFRECEMOS?</a></li>
+                        <li class="active"><a href="index.html"><i class="fa fa-home"></i>HOME</a></li>
+                        <li><a href="hacemosyofrecemos.html"><i class="fa fa-info"></i>INFORMACIÓN</a></li>
                         <li><a href="tienda.html"><i class="fa fa-shopping-basket"></i>TIENDA</a></li>
                         <li><a href="galeria.html"><i class="fa fa-picture-o"></i>GALERÍA</a></li>
                         <li><a href="contacto.html"><i class="fa fa-envelope"></i>CONTACTO</a></li>
+                        <li class="item-search">
+                            <form class="navbar-form" role="search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Busqueda">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default btn-search" type="submit"><i
+                                                class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -147,21 +170,27 @@
                                 <div class="col-lg-12">
                                     <form id="register-form" method="post" role="form">
                                         <div class="form-group">
-                                            <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Usuario" value="">
+                                            <input type="text" name="username" id="username" tabindex="1"
+                                                   class="form-control" placeholder="Usuario" value="">
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Correo electrónico" value="">
+                                            <input type="email" name="email" id="email" tabindex="1"
+                                                   class="form-control" placeholder="Correo electrónico" value="">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Contraseña">
+                                            <input type="password" name="password" id="password" tabindex="2"
+                                                   class="form-control" placeholder="Contraseña">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirmar contraseña">
+                                            <input type="password" name="confirm-password" id="confirm-password"
+                                                   tabindex="2" class="form-control" placeholder="Confirmar contraseña">
                                         </div>
                                         <div class="form-group">
                                             <div class="row">
                                                 <div class="col-sm-6 col-sm-offset-3">
-                                                    <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-login" value="Registrarse ahora">
+                                                    <input type="submit" name="register-submit" id="register-submit"
+                                                           tabindex="4" class="form-control btn btn-login"
+                                                           value="Registrarse ahora">
                                                 </div>
                                             </div>
                                         </div>
@@ -204,7 +233,8 @@
                 <div class="col-md-4 col-md-4 col-sm-4 footer-contacto">
                     <h5>Contacto</h5>
                     <ul>
-                        <li><i class="fa fa-map-marker"></i>Dirección: <b>Calle Piruleta Nª 123. Madrid, España.</b></li>
+                        <li><i class="fa fa-map-marker"></i>Dirección: <b>Calle Piruleta Nª 123. Madrid, España.</b>
+                        </li>
                         <li><i class="fa fa-phone"></i>Telf: <b>+34 9183475863</b></li>
                     </ul>
                 </div>
@@ -212,51 +242,38 @@
             <hr>
             <div class="row copyright">
                 <p>
-                    <b>Página Web diseñada por:</b> Celia Alonso, Raúl Marín, Ricardo Salido y David Gómez para <b>BUSCANDO A NEMO</b>. Bajo la licencia <b>GPL</b>
+                    <b>Página Web diseñada por:</b> Celia Alonso, Raúl Marín, Ricardo Salido y David Gómez para <b>BUSCANDO
+                    A NEMO</b>. Bajo la licencia <b>GPL</b>
                 </p>
             </div>
         </div>
     </footer>
-    </div>
+</div>
 
-	<!-- ===========================
+<!-- ===========================
 SCRIPTS NECESARIOS
 =========================== -->
 <script src="libs/jquery/jquery.min.js"></script>
 <script src="libs/bootstrap/bootstrap.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/licencia.js"></script>
+<script src="js/navbar.js"></script>
 <script>
     new WOW().init();
 </script>
 
 <script>
-    jQuery("document").ready(function ($) {
-        var nav = $('.navbar-container');
-        var navLogo = $('.nav-logo');
 
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 100) {
-                navLogo.show();
-                nav.addClass("f-nav");
-            } else {
-                navLogo.hide();
-                nav.removeClass("f-nav");
-            }
-        });
+    (function () {
 
-    });
-
-    (function() {
-
-        $('#login-form-link').click(function(e) {
+        $('#login-form-link').click(function (e) {
             $("#login-form").delay(100).fadeIn(100);
             $("#register-form").fadeOut(100);
             $('#register-form-link').removeClass('active');
             $(this).addClass('active');
             e.preventDefault();
         });
-        $('#register-form-link').click(function(e) {
+        $('#register-form-link').click(function (e) {
             $("#register-form").delay(100).fadeIn(100);
             $("#login-form").fadeOut(100);
             $('#login-form-link').removeClass('active');

@@ -30,12 +30,12 @@
     <!-- ===========================
         FAVICON
         =========================== -->
-    <link rel="icon" href="img/logo_negro.png" type="image/gif" />
+    <link rel="icon" href="img/logo_negro.png" type="image/gif"/>
 
     <!-- ===========================
         FUENTES
         =========================== -->
-	<link href='libs/font-awesome/css/font-awesome.min.css' rel='stylesheet'>
+    <link href='libs/font-awesome/css/font-awesome.min.css' rel='stylesheet'>
     <!-- ===========================
         ARCHIVOS CSS
         =========================== -->
@@ -54,7 +54,7 @@
 
 <body>
 
-    <div id="wrapper">
+<div id="wrapper">
     <!-- ===========================
    HEADER
    =========================== -->
@@ -68,7 +68,13 @@
                     </p></a>
                 </div>
                 <div class="col-lg-6 col-sm-6 wow bounceInDown">
-                    <a href="login.html" class="btn btn-iniciar right">Entra / Regístrate</a>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="welcome right" id="welcome"></p>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <a href="registro.html" class="btn btn-iniciar right">Regístrate</a>
+                        <a href="login.html" class="btn btn-iniciar right">Accede a tu cuenta</a>
+                    </div>
                 </div>
             </div>
 
@@ -83,13 +89,14 @@
    =========================== -->
     <div class="navbar-container">
         <nav class="navbar navbar-default">
-            <div class="container">
+            <div class="container navigation">
                 <a href="index.html" class="go-to-index"><p class="nav-logo left">
                     <img src="img/logo_negro.png">
                     <strong>BUSCANDO</strong> A NEMO
                 </p></a>
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target=".navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -99,10 +106,22 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html"><i class="fa fa-home"></i>HOME</a></li>
-                        <li><a href="hacemosyofrecemos.html"><i class="fa fa-info"></i>¿QUÉ HACEMOS Y OFRECEMOS?</a></li>
+                        <li><a href="hacemosyofrecemos.html"><i class="fa fa-info"></i>INFORMACIÓN</a></li>
                         <li><a href="tienda.html"><i class="fa fa-shopping-basket"></i>TIENDA</a></li>
                         <li><a href="galeria.html"><i class="fa fa-picture-o"></i>GALERÍA</a></li>
                         <li><a href="contacto.html"><i class="fa fa-envelope"></i>CONTACTO</a></li>
+                        <li class="item-search">
+                            <form class="navbar-form" role="search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Busqueda">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default btn-search" type="submit"><i
+                                                class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -127,7 +146,9 @@
                     <h2>Tenemos especies que jamas has visto en
                         otro sitio, acercate en persona y consulta la tienda online.</h2>
 
-                    <button onclick="window.location.href='tienda.html'; return false;" class="btn btn-default">Visita la tienda</button>
+                    <button onclick="window.location.href='tienda.html'; return false;" class="btn btn-default">Visita
+                        la tienda
+                    </button>
                 </div>
                 <img class="first-slide" src="img/peces2.jpg" alt="First slide">
             </div>
@@ -139,7 +160,9 @@
                     <h2>Aqui en Buscando a NEMO disponemos de las
                         mejores especies tropicales que podras encontrar.</h2>
 
-                    <button onclick="window.location.href='tienda.html'; return false;" class="btn btn-default">Visita la tienda</button>
+                    <button onclick="window.location.href='tienda.html'; return false;" class="btn btn-default">Visita
+                        la tienda
+                    </button>
                 </div>
                 <img class="second-slide" src="img/peces1.jpg" alt="Second slide">
             </div>
@@ -208,7 +231,8 @@
                         </p>
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <iframe src="https://www.youtube.com/embed/m0933llkFoQ" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/m0933llkFoQ" frameborder="0"
+                                allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -220,7 +244,8 @@
                 <div class="row">
                     <h5>Espacio publicitario para nuestros colaboradores</h5>
                     <p>
-                        Gracias a nuestros colaboradores podemos ofrecerte un mejor servicio, asi que echale un vistazo a sus ofertas.<br>
+                        Gracias a nuestros colaboradores podemos ofrecerte un mejor servicio, asi que echale un vistazo
+                        a sus ofertas.<br>
                         Podrás disfrutar de numerosos productos y actividades en compañía de quien quieras.
                     </p>
                 </div>
@@ -229,11 +254,12 @@
                         <div class="colab-item-cont border-box">
                             <div class="wow fadeIn">
                                 <div class="wow pulse infinite" data-wow-duration="3s">
-                                    <img src="img/publi_1.png" />
+                                    <img src="img/publi_1.png"/>
                                 </div>
                             </div>
                             <h5>Zoo Aquarium</h5>
-                            <p>Ven al Zoo Aquarium de Madrid y disfruta de un 50% de descuento en niños y un 25% en adultos si compras tu entrada
+                            <p>Ven al Zoo Aquarium de Madrid y disfruta de un 50% de descuento en niños y un 25% en
+                                adultos si compras tu entrada
                                 desde <b>BUSCANDO A NEMO</b></p>
                             <button class="btn btn-success">La compro ¡YA!</button>
                         </div>
@@ -242,12 +268,13 @@
                         <div class="colab-item-cont border-box">
                             <div class="wow fadeIn">
                                 <div class="wow tada infinite" data-wow-duration="5s">
-                                    <img src="img/publi_2.png" />
+                                    <img src="img/publi_2.png"/>
                                 </div>
                             </div>
                             <h5>Faunia</h5>
-                            <p>En <b>BUSCANDO A NEMO</b> somos amantes de todo tipo de animales, por eso disfruta de un 80% de descuento si imprimes
-                             el cupón desde aquí, para toda tu familia.</p>
+                            <p>En <b>BUSCANDO A NEMO</b> somos amantes de todo tipo de animales, por eso disfruta de un
+                                80% de descuento si imprimes
+                                el cupón desde aquí, para toda tu familia.</p>
                             <button class="btn btn-success">Vamos a imprimir</button>
                         </div>
                     </div>
@@ -255,12 +282,13 @@
                         <div class="colab-item-cont border-box">
                             <div class="wow fadeIn">
                                 <div class="wow pulse infinite" data-wow-duration="3s">
-                                    <img src="img/publi_3.png" />
+                                    <img src="img/publi_3.png"/>
                                 </div>
                             </div>
                             <h5>Oceanogràfic</h5>
-                            <p>Participa en el sorteo de un viaje con todos los gastos pagados y entrada gratuita para 4 personas al Oceanogràfic de
-                            Valencia. Compartelo con quien quieras.</p>
+                            <p>Participa en el sorteo de un viaje con todos los gastos pagados y entrada gratuita para 4
+                                personas al Oceanogràfic de
+                                Valencia. Compartelo con quien quieras.</p>
                             <button class="btn btn-success">Yo lo echo por si toca</button>
                         </div>
                     </div>
@@ -299,7 +327,8 @@
                 <div class="col-md-4 col-md-4 col-sm-4 footer-contacto">
                     <h5>Contacto</h5>
                     <ul>
-                        <li><i class="fa fa-map-marker"></i>Dirección: <b>Calle Piruleta Nª 123. Madrid, España.</b></li>
+                        <li><i class="fa fa-map-marker"></i>Dirección: <b>Calle Piruleta Nª 123. Madrid, España.</b>
+                        </li>
                         <li><i class="fa fa-phone"></i>Telf: <b>+34 9183475863</b></li>
                     </ul>
                 </div>
@@ -307,40 +336,25 @@
             <hr>
             <div class="row copyright">
                 <p>
-                    <b>Página Web diseñada por:</b> Celia Alonso, Raúl Marín, Ricardo Salido y David Gómez para <b>BUSCANDO A NEMO</b>. Bajo la licencia <b>GPL</b>
+                    <b>Página Web diseñada por:</b> Celia Alonso, Raúl Marín, Ricardo Salido y David Gómez para <b>BUSCANDO
+                    A NEMO</b>. Bajo la licencia <b>GPL</b>
                 </p>
             </div>
         </div>
     </footer>
+</div>
 
-        <!-- ===========================
-        SCRIPTS NECESARIOS
-        =========================== -->
+<!-- ===========================
+SCRIPTS NECESARIOS
+=========================== -->
 <script src="libs/jquery/jquery.min.js"></script>
 <script src="libs/bootstrap/bootstrap.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/licencia.js"></script>
 <script src="js/mapaWeb.js"></script>
+<script src="js/navbar.js"></script>
 <script>
     new WOW().init();
-</script>
-
-<script>
-    jQuery("document").ready(function ($) {
-        var nav = $('.navbar-container');
-        var navLogo = $('.nav-logo');
-
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 100) {
-                navLogo.show();
-                nav.addClass("f-nav");
-            } else {
-                navLogo.hide();
-                nav.removeClass("f-nav");
-            }
-        });
-
-    });
 </script>
 
 </body>

@@ -1,4 +1,4 @@
-/*
+/**
  *    Autor = Celia Alonso, Raul Marin, Ricardo Salido, David Gomez
  *    Fecha = 10/12/2015
  *    Licencia = GPL v3

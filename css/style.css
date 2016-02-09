@@ -195,8 +195,14 @@ header div .header img { height: 80px }
 	z-index: 1;
 }
 
+.welcome {
+	font-family: 'Helvetica 55', sans-serif;
+	font-size: 15px !important;
+	margin-right: 10px;
+}
+
 .btn {
-	margin: 25px 10px;
+	margin: 5px 10px;
 	color: #3899EC;
 	font-size: 15px;
 	font-family: 'Helvetica 45', sans-serif;
@@ -207,8 +213,9 @@ header div .header img { height: 80px }
 }
 
 .btn-iniciar {
-	color: #3899EC;
+	color: #ffffff;
 	border: solid #3899EC 1px;
+	background-color: #3899EC;
 	font-family: 'Helvetica 65', sans-serif;
 
 	-webkit-transition: all 0.3s ease-in-out 0s;
@@ -219,14 +226,25 @@ header div .header img { height: 80px }
 }
 
 .btn-iniciar:hover {
-	color: white;
-	background-color: #3899EC;
+	color: #3899EC;
+	background-color: white;
 
 	-webkit-transition: all 0.3s ease-in-out 0s;
 	-moz-transition: all 0.3s ease-in-out 0s;
 	-o-transition: all 0.3s ease-in-out 0s;
 	-ms-transition: all 0.3s ease-in-out 0s;
 	transition: all 0.3s ease-in-out 0s;
+}
+
+.btn-search {
+	margin: 0;
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc
+}
+
+.btn-search .glyphicon-search {
+	padding: 3px 5px 0;
 }
 
 /* ---------------------
@@ -265,7 +283,8 @@ nav {
 	font-size: 15px;
 	font-weight: 600;
 }
-
+.navigation { width: 100%; }
+.item-search { width: 20%; }
 .nav-logo { display: none; padding-top: 10px }
 .nav-logo img { height: 30px }
 .f-nav { z-index: 9999; position: fixed; left: 0; top: 0; width: 100%; }

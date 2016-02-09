@@ -21,13 +21,29 @@
  *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 main {
-	padding-top: 50px;
+    padding-top: 50px;
 }
 
 ul {
-	list-style-type: none;
+    list-style-type: none;
 }
 
 .centrarMapaWeb {
-	text-align: center;
+    text-align: center;
+}
+
+.btn-license {
+    background-color: #3899EC;
+    color: white;
+    padding: 10px;
+}
+.btn-license:hover, .btn-license:focus {
+    border: none;
+    color: white;
+    background-color: #2e7aba;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
