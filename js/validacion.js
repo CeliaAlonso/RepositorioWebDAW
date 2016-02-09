@@ -93,13 +93,9 @@ $('form').validate({
             required: true,
             regex: /^(\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w*)*)/
         },
-        fijo: {
-            required: false,
-            regex: /^(9)\d{8}$/
-        },
         movil: {
             required: true,
-            regex: /^(6)\d{8}$/
+            regex: /^([67])\d{8}$/
         },
         asunto_tipo: {
             required: true
@@ -108,9 +104,8 @@ $('form').validate({
             required: true
         },
         mensaje: {
-            required: true,
-            regex: /^([a-zA-ZÁÉÍÓÚáéíóú ]{1,30})+$/
-        },
+            required: true
+        }
     },
     highlight: function(element) {
         var id_attr = "#" + $( element ).attr("id") + "1";
@@ -129,5 +124,36 @@ $('form').validate({
             error.insertAfter(element);
         else
             error.insertAfter(element);
+    },
+    messages: {
+        nombre: {
+            required: "El nombre es un campo requerido.",
+            regex: "El nombre solo puede tener letras."
+        },
+        apellido1: {
+            required: "El primer apellido es un campo requerido.",
+            regex: "El primer apellido solo puede tener letras."
+        },
+        apellido2: {
+            required: "El segundo apellido es un campo requerido.",
+            regex: "El segundo apellido solo puede tener letras."
+        },
+        email: {
+            required: "El email es un campo requerido.",
+            regex: "El formato es ejemplo@ejemplo.ej"
+        },
+        movil: {
+            required: "El movil es un campo requerido.",
+            regex: "El movil tiene 9 numeros y empieza por 6 o 7."
+        },
+        asunto_tipo: {
+            required: "El tipo de asunto es un campo requerido."
+        },
+        asunto_tema: {
+            required: "El tema de asunto es un campo requerido."
+        },
+        mensaje: {
+            required: "El mensaje es un campo requerido."
+        }
     }
 });
