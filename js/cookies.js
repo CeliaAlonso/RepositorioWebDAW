@@ -50,6 +50,8 @@ function setCookie(nombre_cookie, valor) {
 	var valor_cookie = encodeURIComponent(valor)
 			+ ((fechaExpiracion === null) ? "" : "; expires=" + fechaExpiracion.toUTCString());
 	document.cookie = nombre_cookie + "=" + valor_cookie;
+	
+	checkCookie();
 
 }
 
@@ -59,11 +61,11 @@ function checkCookie() {
 
 	if (usuario != null && usuario != "") {
 
-		document.getElementById("welcome").value = "Hola, " + usuario;
+		document.getElementById("welcome").innerHTML = "Bienvenido/a de nuevo, " + usuario;
 
 	} else {
 
-		usuario = prompt("¡Bienvenido a Buscando a Nemo! /n ¿Cómo se llama?", "");
+		usuario = prompt("¡Bienvenido a Buscando a Nemo! \n ¿Cómo se llama?", "");
 
 		if (usuario != null && usuario != "") {
 
@@ -74,3 +76,5 @@ function checkCookie() {
 	}
 
 }
+
+window.onload = checkCookie; 
