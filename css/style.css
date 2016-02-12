@@ -203,19 +203,19 @@ header div .header img { height: 80px }
 
 .btn {
 	margin: 5px 10px;
-	color: #3899EC;
+	color: #2e75b2;
 	font-size: 15px;
 	font-family: 'Helvetica 45', sans-serif;
 	font-weight: normal;
 	padding: 5px 5px 5px 5px;
-	border: solid #3899EC 1px;
+	border: solid #2e75b2 1px;
 	text-decoration: none;
 }
 
 .btn-iniciar {
 	color: #ffffff;
-	border: solid #3899EC 1px;
-	background-color: #3899EC;
+	border: solid #2e75b2 1px;
+	background-color: #2e75b2;
 	font-family: 'Helvetica 65', sans-serif;
 
 	-webkit-transition: all 0.3s ease-in-out 0s;
@@ -226,7 +226,7 @@ header div .header img { height: 80px }
 }
 
 .btn-iniciar:hover {
-	color: #3899EC;
+	color: #2e75b2;
 	background-color: white;
 
 	-webkit-transition: all 0.3s ease-in-out 0s;
@@ -252,7 +252,8 @@ SUB HEADER
  -------------------- */
 
 .sub-header {
-	background-color: #3899EC;
+	background-color: #2e75b2
+	;
 	color: white;
 	width: 100%;
 	margin-top: 50px;
@@ -429,10 +430,10 @@ footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	background-color: #3899EC;
+	background-color: #2e75b2;
 	padding-top: 10px;
 }
-footer .container { background-color: #3899EC; }
+footer .container { background-color: #2e75b2; }
 footer .logo {
 	padding-top: 20px;
 	color: white;
