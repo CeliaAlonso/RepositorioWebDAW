@@ -21,6 +21,7 @@
  *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/* Cookie para la bienvenida del usuario*/
 function getCookie(nombre_cookie) {
 
 	var i, x, y, arrayCookies = document.cookie.split(";");
@@ -50,12 +51,10 @@ function setCookie(nombre_cookie, valor) {
 	var valor_cookie = encodeURIComponent(valor)
 			+ ((fechaExpiracion === null) ? "" : "; expires=" + fechaExpiracion.toUTCString());
 	document.cookie = nombre_cookie + "=" + valor_cookie;
-	
-	checkCookie();
 
 }
 
-function checkCookie() {
+function checkCookieBienvenida() {
 
 	var usuario = getCookie("nombreUsuario");
 
@@ -70,6 +69,7 @@ function checkCookie() {
 		if (usuario != null && usuario != "") {
 
 			setCookie("nombreUsuario", usuario);
+			checkCookieBienvenida();
 
 		}
 
@@ -77,4 +77,41 @@ function checkCookie() {
 
 }
 
-window.onload = checkCookie; 
+window.onload = checkCookieBienvenida;
+
+/* Cookies para guardar nombre, apellidos e email del formulario de contacto */
+
+function cookiesContacto() {
+
+	var c_nombre = document.getElementById("nombre").value;
+	setCookie("nombre_contacto", c_nombre);
+
+	var c_apellido1 = document.getElementById("apellido1").value;
+	setCookie("apellido1_contacto", c_apellido1);
+
+	var c_apellido2 = document.getElementById("apellido2").value;
+	setCookie("apellido2_contacto", c_apellido2);
+
+	var c_email = document.getElementById("email").value;
+	setCookie("email_contacto", c_email);
+
+}
+
+function checkCookiesContacto() {
+
+	var c_nombre = getCookie("nombre_contacto");
+	var c_apellido1 = getCookie("apellido1_contacto");
+	var c_apellido2 = getCookie("apellido2_contacto");
+	var c_email = getCookie("email_contacto");
+
+	if (c_nombre != null && c_nombre != "" && c_apellido1 != null && c_apellido1 != ""
+			&& c_apellido2 != null && c_apellido2 != "" && c_email != null && c_email != "") {
+
+		document.getElementById("nombre").value = c_nombre;
+		document.getElementById("apellido1").value = c_apellido1;
+		document.getElementById("apellido2").value = c_apellido2;
+		document.getElementById("email").value = c_email;
+
+	}
+
+}
