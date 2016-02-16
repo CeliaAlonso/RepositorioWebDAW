@@ -34,7 +34,7 @@ CONTENIDO
 }
 .video {
     margin-top: 50px;
-    background-color: #2e75b2;
+    background-color: #267ac1;
     color: white;
     padding: 30px;
 }
@@ -49,9 +49,19 @@ iframe {
 
 .columns .column { padding: 30px; }
 
+.column h2 {
+    font-family: 'Helvetica 55', sans-serif;
+    font-size: 25px;
+}
+
 .video .description {
     text-align: center;
     padding-top: 70px;
+}
+
+.description h3 {
+    font-family: 'Helvetica 55', sans-serif;
+    font-size: 35px;
 }
 
 .publicidad {
@@ -59,6 +69,11 @@ iframe {
     padding: 40px;
     margin-bottom: -30px;
     text-align: center;
+}
+
+.publicidad h4 {
+    font-family: 'Helvetica 55', sans-serif;
+    font-size: 37px;
 }
 
 .publicidad h5 {
@@ -89,9 +104,9 @@ iframe {
     color: white;
     border: none;
 }
-.btn-success { background-color: #2e75b2; }
+.btn-success { background-color: #267ac1; }
 .colab-item .btn:hover {
-    background-color: #2e7aba;
+    background-color: #2e6ca2;
     -webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;

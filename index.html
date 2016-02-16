@@ -63,7 +63,7 @@
             <div class="row header">
                 <div class="col-lg-6 col-sm-6 wow bounceInDown">
                     <a href="index.html" class="go-to-index"><p class="logo">
-                        <img src="img/logo_negro.png" alt="Logo Buscando A Nemo">
+                        <img src="img/logo_negro.png" alt="Logo de Buscando a Nemo en la cabecera de la página.">
                         <strong>BUSCANDO</strong> A NEMO
                     </p></a>
                 </div>
@@ -90,8 +90,8 @@
     <div class="navbar-container">
         <nav class="navbar navbar-default">
             <div class="container navigation">
-                <a href="index.html" class="go-to-index"><p class="nav-logo left">
-                    <img src="img/logo_negro.png">
+                <a class="go-to-index"><p class="nav-logo left">
+                    <img src="img/logo_negro.png" alt="Logo Buscando a Nemo de la barra de navegación" aria-hidden="true">
                     <strong>BUSCANDO</strong> A NEMO
                 </p></a>
                 <div class="navbar-header">
@@ -113,14 +113,18 @@
                         <li class="item-search">
                             <form class="navbar-form" role="search">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Busqueda">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-default btn-search" type="submit"><i
-                                                class="glyphicon glyphicon-search"></i></button>
-                                    </div>
+                                    <label for="search" aria-hidden="true" title="Busqueda">
+                                        <span class="sr-only">Busqueda</span>
+                                    <input type="text" class="form-control" id="search" placeholder="Busqueda">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default btn-search" type="submit" aria-hidden="true" title="Buscar">
+                                                <span class="sr-only">Buscar</span>
+                                                <i class="glyphicon glyphicon-search"></i>
+                                            </button>
+                                        </div>
+                                    </label>
                                 </div>
                             </form>
-
                         </li>
                     </ul>
                 </div>
@@ -134,8 +138,8 @@
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicadores -->
         <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="0" class="" aria-hidden="true"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class="active" aria-hidden="true"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="item">
@@ -143,28 +147,28 @@
                     <h1>Eres<br>
                         amante de las cosas<br>
                         raras</h1>
-                    <h2>Tenemos especies que jamas has visto en
-                        otro sitio, acercate en persona y consulta la tienda online.</h2>
+                    <p>Tenemos especies que jamas has visto en
+                        otro sitio, acercate en persona y consulta la tienda online.</p>
 
                     <button onclick="window.location.href='tienda.html'; return false;" class="btn btn-default">Visita
                         la tienda
                     </button>
                 </div>
-                <img class="first-slide" src="img/peces2.jpg" alt="First slide">
+                <img class="first-slide" src="img/peces2.jpg" alt="Imagen de especies raras">
             </div>
             <div class="item active">
                 <div class="text">
                     <h1>Las mejores<br>
                         especies<br>
                         tropicales</h1>
-                    <h2>Aqui en Buscando a NEMO disponemos de las
-                        mejores especies tropicales que podras encontrar.</h2>
+                    <p>Aqui en Buscando a NEMO disponemos de las
+                        mejores especies tropicales que podras encontrar.</p>
 
                     <button onclick="window.location.href='tienda.html'; return false;" class="btn btn-default">Visita
                         la tienda
                     </button>
                 </div>
-                <img class="second-slide" src="img/peces1.jpg" alt="Second slide">
+                <img class="second-slide" src="img/peces1.jpg" alt="Imagen de peces tropicales">
             </div>
         </div>
 
@@ -185,9 +189,12 @@
         <div class="container columns">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-4 column">
-                    <a href="hacemosyofrecemos.html?accion=venta"><i class="fa fa-bug fa-5x item"></i></a>
+                    <a href="hacemosyofrecemos.html?accion=venta" title="Enlace a la variedad de especies.">
+                        <span class="sr-only">Enlace a la variedad de especies</span>
+                        <i class="fa fa-bug fa-5x item" aria-hidden="true"></i>
+                    </a>
 
-                    <h5>Variedad de especies</h5>
+                    <h2>Variedad de especies</h2>
 
                     <p>
                         Contamos con gran número de especies tanto tropicales como
@@ -195,9 +202,12 @@
                     </p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 column">
-                    <a href="hacemosyofrecemos.html?accion=mantenimiento"><i class="fa fa-users fa-5x item"></i></a>
+                    <a href="hacemosyofrecemos.html?accion=mantenimiento" title="Enlace a la información del mantenimiento.">
+                        <span class="sr-only">Enlace a la información del mantenimiento</span>
+                        <i class="fa fa-users fa-5x item" aria-hidden="true"></i>
+                    </a>
 
-                    <h5>Nos encargamos de todo</h5>
+                    <h2>Nos encargamos de todo</h2>
 
                     <p>
                         Diseño, montaje, puesta en marcha, introducción de animales
@@ -206,9 +216,12 @@
                     </p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 column">
-                    <a href="hacemosyofrecemos.html?accion=servicio"><i class="fa fa-truck fa-5x item"></i></a>
+                    <a href="hacemosyofrecemos.html?accion=servicio" title="Enlace a la información del servicio a domicilio.">
+                        <span class="sr-only">Enlace a la información del servicio a domicilio</span>
+                        <i class="fa fa-truck fa-5x item" aria-hidden="true"></i>
+                    </a>
 
-                    <h5>Servicio a domicilio</h5>
+                    <h2>Servicio a domicilio</h2>
 
                     <p>
                         Enviamos nuestros productos en la mejores condiciones por
@@ -222,7 +235,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 description">
-                        <h4>Especialistas en Acuariofília</h4>
+                        <h3>Especialistas en Acuariofília</h3>
 
                         <p>
                             En Buscando a Nemo contamos con el mejor asesoramiento,
@@ -242,7 +255,7 @@
         <div class="publicidad">
             <div class="container">
                 <div class="row">
-                    <h5>Espacio publicitario para nuestros colaboradores</h5>
+                    <h4>Espacio publicitario para nuestros colaboradores</h4>
                     <p>
                         Gracias a nuestros colaboradores podemos ofrecerte un mejor servicio, asi que echale un vistazo
                         a sus ofertas.<br>
@@ -254,7 +267,7 @@
                         <div class="colab-item-cont border-box">
                             <div class="wow fadeIn">
                                 <div class="wow pulse infinite" data-wow-duration="3s">
-                                    <img src="img/publi_1.png" alt="Logo Zoo Aquarium"/>
+                                    <img src="img/publi_1.png" alt="Logo Zoo Aquarium de Madrid"/>
                                 </div>
                             </div>
                             <h5>Zoo Aquarium</h5>
@@ -282,7 +295,7 @@
                         <div class="colab-item-cont border-box">
                             <div class="wow fadeIn">
                                 <div class="wow pulse infinite" data-wow-duration="3s">
-                                    <img src="img/publi_3.png" alt="Logo Oceanografic"/>
+                                    <img src="img/publi_3.png" alt="Logo Oceanográfic"/>
                                 </div>
                             </div>
                             <h5>Oceanogràfic</h5>
@@ -308,7 +321,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 logo">
                     <a href="#">
                         <p>
-                            <img src="img/logo.png" alt="Logo Buscando A Nemo">
+                            <img src="img/logo.png" alt="Logo Buscando a Nemo en el pie de la página.">
                             <strong>BUSCANDO</strong> A NEMO
                         </p>
                     </a>
@@ -322,7 +335,6 @@
                         <li><i class="fa fa-certificate"></i><a onclick="abrirLicencia()">Términos de licencia</a></li>
                         <li><i class="fa fa-envelope"></i><a href="contacto.html">Contacte con nosotros</a></li>
                         <li><i class="fa fa-envelope"></i><a onclick="abrirMapaWeb()">Mapa web</a></li>
-                        <li><i class="fa fa-envelope"></i><a onclick="abrirPoliticaC()">Política de cookies</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 col-md-4 col-sm-4 footer-contacto">
@@ -351,11 +363,9 @@ SCRIPTS NECESARIOS
 <script src="libs/jquery/jquery.min.js"></script>
 <script src="libs/bootstrap/bootstrap.min.js"></script>
 <script src="js/wow.min.js"></script>
-<script src="js/cookies.js"></script>
 <script src="js/licencia.js"></script>
 <script src="js/mapaWeb.js"></script>
 <script src="js/navbar.js"></script>
-<script src="js/politica_Cokiees.js"></script>
 <script>
     new WOW().init();
 </script>
