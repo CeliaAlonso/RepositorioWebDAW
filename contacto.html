@@ -56,9 +56,9 @@
 <body>
 
 	<div id="wrapper">
-		<!-- ===========================
-   HEADER
-   =========================== -->
+	<!-- ===========================
+   	HEADER
+   	=========================== -->
 		<header>
 			<div class="container header">
 				<div class="row header">
@@ -82,8 +82,8 @@
 		</header>
 
 		<!-- ===========================
-   NAV
-   =========================== -->
+   		NAV
+   		=========================== -->
 		<div class="navbar-container">
 			<nav class="navbar navbar-default">
 				<div class="container navigation">
@@ -128,8 +128,8 @@
 		</div>
 
 		<!-- ===========================
-    SUBMENU
-    =========================== -->
+    	SUBMENU
+    	=========================== -->
 		<div class="sub-header">
 			<div class="container">
 				<div class="row">
@@ -148,8 +148,8 @@
 		</div>
 
 		<!-- ===========================
-    CONTENIDO DEL FORMULARIO
-    =========================== -->
+    	CONTENIDO DEL FORMULARIO
+    	=========================== -->
 		<main>
 		<div class="container container-contact">
 			<div class="row">
@@ -232,7 +232,7 @@
 							<div class="col-lg-4 col-md-4 derecha-form">
 								<label class="control-label" for="asunto_tipo">Asunto *:</label>
 							</div>
-							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 izquierda-form">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 izquierda-form">
 								<select class="form-control" name="asunto_tipo" id="asunto_tipo"
 									onchange="enableTerms(); enableTema();" required>
 									<option value="">--Tipo de consulta--</option>
@@ -241,7 +241,12 @@
 									<option value="Quejas">Quejas</option>
 								</select> <span id="sasunto_tipo"></span>
 							</div>
-							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 izquierda-form padding-form">
+						</div>
+						<div class="row form-group">
+							<div class="col-lg-4 col-md-4 derecha-form">
+								<label class="control-label" for="asunto_tipo">Tema *:</label>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 izquierda-form">
 								<label style="display: none;" for="asunto_tema"></label> <select
 									class="form-control" name="asunto_tema" id="asunto_tema" oninput="enableTerms()"
 									required disabled>
@@ -267,7 +272,8 @@
 							<div class="col-lg-12">
 								<input type="checkbox" id="condiciones" onchange="enableSubmit()" disabled
 									required>
-								* He leído y acepto las <a href="#">condiciones de privacidad</a>
+								<label for="condiciones">* He leído y acepto las <a href="#">condiciones
+										de privacidad</a></label>
 							</div>
 						</div>
 						<div class="row form-group">
@@ -288,8 +294,8 @@
 		</main>
 
 		<!-- ===========================
-     FOOTER
-     =========================== -->
+     	FOOTER
+     	=========================== -->
 		<footer>
 			<div class="container">
 				<div class="row">
@@ -337,8 +343,8 @@
 	</div>
 
 	<!-- ===========================
-SCRIPTS NECESARIOS
-=========================== -->
+	SCRIPTS NECESARIOS
+	=========================== -->
 	<script src="libs/jquery/jquery.min.js"></script>
 	<script src="libs/bootstrap/bootstrap.min.js"></script>
 	<script src="libs/jquery/jquery.validate.js"></script>
