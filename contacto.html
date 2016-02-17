@@ -64,7 +64,8 @@
 				<div class="row header">
 					<div class="col-lg-6 col-md-6 col-sm-6">
 						<a href="index.html" class="go-to-index"><p class="logo">
-								<img src="img/logo_negro.png" alt="Logo Buscando A Nemo"> <strong>BUSCANDO</strong> A NEMO
+								<img src="img/logo_negro.png" alt="Logo Buscando A Nemo"> <strong>BUSCANDO</strong>
+								A NEMO
 							</p></a>
 					</div>
 					<div class="col-lg-6 col-sm-6 wow bounceInDown">
@@ -85,9 +86,10 @@
    =========================== -->
 		<div class="navbar-container">
 			<nav class="navbar navbar-default">
-				<div class="container">
-					<a href="index.html" class="go-to-index"><p class="nav-logo left">
-							<img src="img/logo_negro.png"> <strong>BUSCANDO</strong> A NEMO
+				<div class="container navigation">
+					<a class="go-to-index"><p class="nav-logo left">
+							<img src="img/logo_negro.png" alt="Logo Buscando a Nemo de la barra de navegación"
+								aria-hidden="true"> <strong>BUSCANDO</strong> A NEMO
 						</p></a>
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -98,23 +100,26 @@
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
-							<li><a href="index.html"><i class="fa fa-home"></i>HOME</a></li>
-							<li><a href="hacemosyofrecemos.html"><i class="fa fa-info"></i>¿QUÉ
-									HACEMOS Y OFRECEMOS?</a></li>
+							<li class="active"><a href="index.html"><i class="fa fa-home"></i>HOME</a></li>
+							<li><a href="hacemosyofrecemos.html"><i class="fa fa-info"></i>INFORMACIÓN</a></li>
 							<li><a href="tienda.html"><i class="fa fa-shopping-basket"></i>TIENDA</a></li>
 							<li><a href="galeria.html"><i class="fa fa-picture-o"></i>GALERÍA</a></li>
-							<li class="active"><a href="contacto.html"><i class="fa fa-envelope"></i>CONTACTO</a></li>
+							<li><a href="contacto.html"><i class="fa fa-envelope"></i>CONTACTO</a></li>
 							<li class="item-search">
-								<div class="navbar-form">
+								<form class="navbar-form" role="search">
 									<div class="input-group">
-										<input type="text" class="form-control" placeholder="Busqueda">
-										<div class="input-group-btn">
-											<button class="btn btn-default btn-search" type="submit">
-												<i class="glyphicon glyphicon-search"></i>
-											</button>
-										</div>
+										<label for="search" aria-hidden="true" title="Busqueda"> <span
+											class="sr-only">Busqueda</span> <input type="text" class="form-control"
+												id="search" placeholder="Busqueda">
+											<div class="input-group-btn">
+												<button class="btn btn-default btn-search" type="submit" aria-hidden="true"
+													title="Buscar">
+													<span class="sr-only">Buscar</span> <i class="glyphicon glyphicon-search"></i>
+												</button>
+											</div>
+										</label>
 									</div>
-								</div>
+								</form>
 							</li>
 						</ul>
 					</div>
@@ -291,7 +296,8 @@
 					<div class="col-lg-4 col-md-4 col-sm-4 logo">
 						<a href="#">
 							<p>
-								<img src="img/logo.png" alt="Logo Buscando A Nemo"> <strong>BUSCANDO</strong> A NEMO
+								<img src="img/logo.png" alt="Logo Buscando A Nemo"> <strong>BUSCANDO</strong>
+								A NEMO
 							</p>
 						</a>
 					</div>
@@ -349,6 +355,5 @@ SCRIPTS NECESARIOS
 	<script>
 		new WOW().init();
 	</script>
-
 </body>
 </html>
