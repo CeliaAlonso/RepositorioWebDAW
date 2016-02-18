@@ -30,7 +30,7 @@
     <!-- ===========================
         FAVICON
         =========================== -->
-    <link rel="icon" href="img/logo_negro.png" type="image/gif"/>
+    <link rel="icon" href="img/logo_negro.png" alt="Logo de Buscando a Nemo" type="image/gif"/>
 
     <!-- ===========================
         FUENTES
@@ -91,7 +91,7 @@
         <nav class="navbar navbar-default">
             <div class="container navigation">
                 <a href="index.html" class="go-to-index"><p class="nav-logo left">
-                    <img src="img/logo_negro.png">
+                    <img src="img/logo_negro.png" alt="Logo Buscando A Nemo">
                     <strong>BUSCANDO</strong> A NEMO
                 </p></a>
                 <div class="navbar-header">
@@ -105,11 +105,11 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html"><i class="fa fa-home"></i>HOME</a></li>
-                        <li class="active"><a href="hacemosyofrecemos.html"><i class="fa fa-info"></i>INFORMACIÓN</a></li>
-                        <li><a href="tienda.html"><i class="fa fa-shopping-basket"></i>TIENDA</a></li>
-                        <li><a href="galeria.html"><i class="fa fa-picture-o"></i>GALERÍA</a></li>
-                        <li><a href="contacto.html"><i class="fa fa-envelope"></i>CONTACTO</a></li>
+                        <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
+                        <li class="active"><a href="hacemosyofrecemos.html"><i class="fa fa-info" aria-hidden="true"></i>INFORMACIÓN</a></li>
+                        <li><a href="tienda.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>TIENDA</a></li>
+                        <li><a href="galeria.html"><i class="fa fa-picture-o" aria-hidden="true"></i>GALERÍA</a></li>
+                        <li><a href="contacto.html"><i class="fa fa-envelope" aria-hidden="true"></i>CONTACTO</a></li>
                         <li class="item-search">
                             <form class="navbar-form" role="search">
                                 <div class="input-group">
@@ -119,7 +119,7 @@
                                         <div class="input-group-btn">
                                             <button class="btn btn-default btn-search" type="submit" aria-hidden="true" title="Buscar">
                                                 <span class="sr-only">Buscar</span>
-                                                <i class="glyphicon glyphicon-search"></i>
+                                                <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
                                             </button>
                                         </div>
                                     </label>
@@ -141,9 +141,9 @@
                 <div class="col-lg-6 col-md-6 col-sm-6 bread-crumb">
                     <h1>Información</h1>
                     <p>
-                        <a href="index.html"><i class="fa fa-home"></i>Buscando a Nemo</a>
-                        <i class="fa fa-angle-right"></i>
-                        <i class="fa fa-info"></i><strong>Información</strong>
+                        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Buscando a Nemo</a>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <i class="fa fa-info" aria-hidden="true"></i><strong>Información</strong>
                     </p>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 subheader-img wow fadeInRight">
@@ -176,8 +176,8 @@
             <div class="panel-body">
                 <div class="col-sm-4 col-xs-4 item-tagging venta-color">
                     <div class="wow rotateIn">
-                        <a class="tagging-icon" onClick="hide('mantenimiento'); hide('reparto') ; show('venta')"><i
-                                class="fa fa-shopping-cart"></i></a>
+                        <a class="tagging-icon" aria-hidden="true" onClick="hide('mantenimiento'); hide('reparto') ; show('venta')"><i
+                                class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                     </div>
                     <a id="trigger-venta" onClick="hide('mantenimiento'); hide('reparto') ; show('venta')">Venta</a>
                 </div>
@@ -185,14 +185,14 @@
                     <div class="wow rotateIn">
                         <a class="tagging-icon mant-color"
                            onClick="hide('venta'); hide('reparto'); show('mantenimiento')"><i
-                                class="fa fa-heartbeat"></i></a>
+                                class="fa fa-heartbeat" aria-hidden="true"></i></a>
                     </div>
                     <a id="trigger-mantenimiento" onClick="hide('venta'); hide('reparto'); show('mantenimiento')">Mantenimiento</a>
                 </div>
                 <div class="col-sm-4 col-xs-4 item-tagging reparto-color">
                     <div class="wow rotateIn">
                         <a class="tagging-icon" onClick="hide('mantenimiento'); hide('venta'); show('reparto')"><i
-                                class="fa fa-truck"></i></a>
+                                class="fa fa-truck" aria-hidden="true"></i></a>
                     </div>
                     <a id="trigger-reparto" onClick="hide('mantenimiento'); hide('venta'); show('reparto');">Reparto</a>
                 </div>
@@ -253,18 +253,18 @@
                     <a href="#">Tienda</a>-->
                     <h5>Interes</h5>
                     <ul>
-                        <li><i class="fa fa-certificate"></i><a onclick="abrirLicencia()">Términos de licencia</a></li>
-                        <li><i class="fa fa-envelope"></i><a href="contacto.html">Contacte con nosotros</a></li>
-                        <li><i class="fa fa-envelope"></i><a onclick="abrirMapaWeb()">Mapa web</a></li>
-                        <li><i class="fa fa-envelope"></i><a onclick="abrirPoliticaC()">Política de cookies</a></li>
+                        <li><i class="fa fa-certificate" aria-hidden="true"></i><a onclick="abrirLicencia()">Términos de licencia</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="contacto.html">Contacte con nosotros</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a onclick="abrirMapaWeb()">Mapa web</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a onclick="abrirPoliticaC()">Política de cookies</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 col-md-4 col-sm-4 footer-contacto">
                     <h5>Contacto</h5>
                     <ul>
-                        <li><i class="fa fa-map-marker"></i>Dirección: <b>Calle Piruleta Nª 123. Madrid, España.</b>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>Dirección: <b>Calle Piruleta Nª 123. Madrid, España.</b>
                         </li>
-                        <li><i class="fa fa-phone"></i>Telf: <b>+34 9183475863</b></li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i>Telf: <b>+34 9183475863</b></li>
                     </ul>
                 </div>
             </div>
