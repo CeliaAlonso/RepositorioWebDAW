@@ -274,7 +274,7 @@ SUB HEADER
 .sub-header img { height: 120px;  bottom: 300px; overflow: hidden; }
 .bread-crumb { padding: 10px 10px 10px }
 .bread-crumb p { font-size: 16px; letter-spacing: 0px }
-.bread-crumb h5 { font-weight: bold; letter-spacing: 1px }
+.bread-crumb h1 { font-size: 30px; font-weight: bold; letter-spacing: 1px }
 .bread-crumb .fa-angle-right { padding: 0 5px 0 5px}
 .bread-crumb a {
 	color: white;

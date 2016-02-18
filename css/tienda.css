@@ -211,7 +211,7 @@ hr { margin: 15px 0 10px }
     margin-left: 5%;
     margin-bottom: 30px;
 }
-.banner-oferta p {
+.banner-oferta h2 {
     position: absolute;
     color: #ffe230;
     font-family: 'Helvetica 75', sans-serif;
@@ -308,7 +308,7 @@ hr { margin: 15px 0 10px }
 .product-item .price-before {
     font-family: 'Helvetica 65', sans-serif;
     font-size: 15px;
-    color: #a7a7a7;
+    color: #777777;
     margin-left: 10px;
     text-decoration: line-through;
     letter-spacing: -1px;
@@ -321,7 +321,7 @@ hr { margin: 15px 0 10px }
     margin: 25px 0px;
     color: white;
     font-size: 15px;
-    background-color: #a9a9a9;
+    background-color: #6a6a6a;
     font-family: 'Helvetica 65', sans-serif;
     font-weight: normal;
     padding: 5px 8px 5px 8px;
@@ -368,7 +368,7 @@ hr { margin: 15px 0 10px }
         padding: 6px 8px;
     }
     .btn-cart, .btn-cart-mobile, .btn-wishlist, .btn-share { font-size: 13px; }
-    .banner-oferta p {
+    .banner-oferta h2 {
         font-size: 35px;
     }
     .banner-oferta span {
@@ -392,7 +392,7 @@ hr { margin: 15px 0 10px }
         padding: 6px 4px;
     }
     .btn-cart, .btn-cart-mobile, .btn-wishlist, .btn-share { font-size: 15px; }
-    .banner-oferta p {
+    .banner-oferta h2 {
         font-size: 30px;
         top: 40px;
     }
