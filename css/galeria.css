@@ -79,12 +79,12 @@ CONTENIDO
 
 .galery-foot-head .pagination > li > a, .pagination > li > span {
 	border: none;
-	color: #474747;
+	color: #000000;
 }
 
 .galery-foot-head .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
 	border: none;
-	color: #D6B96B;
+	color: #267ac1;
 	text-decoration: underline;
 	background: none;
 	-webkit-transition: all 0.3s ease-in-out 0s;
@@ -95,13 +95,13 @@ CONTENIDO
 }
 
 .galery-foot-head .pagination > .active > a {
-	color: #D6B96B;
+	color: #0000ff;
 	text-decoration: underline;
 	background: none;
 }
 
 .galery-foot-head .pagination > .active > a:hover {
-	color: #D6B96B;
+	color: #0000ff;
 	text-decoration: underline;
 	background: none;
 	-webkit-transition: all 0.3s ease-in-out 0s;
@@ -120,10 +120,10 @@ CONTENIDO
 }
 
 .galery-foot-head .btn-group .btn:hover {
-	color: #D6B96B;
+	color: #267ac1;
 	background: none;
 	padding: 0px 5px 0px 5px;
-	border: 1px solid #D6B96B;
+	border: 1px solid #267ac1;
 	border-radius: 0;
 	-webkit-transition: all 0.3s ease-in-out 0s;
 	-moz-transition: all 0.3s ease-in-out 0s;
