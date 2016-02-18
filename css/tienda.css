@@ -215,7 +215,7 @@ hr { margin: 15px 0 10px }
     position: absolute;
     color: #ffe230;
     font-family: 'Helvetica 75', sans-serif;
-    font-size: 50px;
+    font-size: 43px;
     top: 60px;
     left: 100px;
 }
@@ -234,7 +234,7 @@ hr { margin: 15px 0 10px }
     font-family: 'Helvetica 55', sans-serif;
     color: white;
     background-color: #2e75b2;
-    border: none;
+    border: 1px solid #2d71b4;
     border-radius: 4px;
 
     -webkit-transition: all 0.3s ease-in-out 0s;
@@ -245,8 +245,8 @@ hr { margin: 15px 0 10px }
 }
 .btn-filter:focus,
 .btn-filter:hover {
-    color: white;
-    background-color: #2d71b4;
+    color: #2d71b4;
+    background-color: white;
     -webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
@@ -376,7 +376,7 @@ hr { margin: 15px 0 10px }
     }
     .btn-cart, .btn-cart-mobile, .btn-wishlist, .btn-share { font-size: 13px; }
     .banner-oferta h2 {
-        font-size: 35px;
+        font-size: 17px;
     }
     .banner-oferta span {
         font-size: 15px;
@@ -400,7 +400,7 @@ hr { margin: 15px 0 10px }
     }
     .btn-cart, .btn-cart-mobile, .btn-wishlist, .btn-share { font-size: 15px; }
     .banner-oferta h2 {
-        font-size: 30px;
+        font-size: 17px;
         top: 40px;
     }
     .banner-oferta span {

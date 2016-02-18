@@ -69,13 +69,12 @@
 /* Smaller Devices */
 @media only screen and (max-width: 768px) {
 	header { height: 125px; }
+	.navbar-form { display: none; }
+	.carousel-inner p { font-size: 12px; }
 	header div .header p { font-size: 4vw; }
 	.welcome { display: none; }
 	header div .header img { height: 40px }
 	.btn { font-size: 14px; margin: 5px 3px; }
-	#myCarousel {
-		margin-top: 50px;
-	}
 	.carousel .text { top: 3vw; }
 	.carousel .text button { display: none; }
 	.subheader-img { display: none }
@@ -125,6 +124,7 @@
 	h4 { font-size: 30px; }
 	h5 {font-size: 25px;}
 	header { height: 120px; }
+	.carousel-inner p { font-size: 6px; }
 	.btn { font-size: 14px; margin: 0px 3px; }
 	header div .header p { font-size: 4vw; }
 	header div .header img { height: 30px }
