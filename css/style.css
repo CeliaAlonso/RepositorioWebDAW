@@ -325,7 +325,10 @@ i {padding-right: 10px }
 }
 .navbar-default .navbar-collapse { background: none; }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:visited {
 	background: none;
 	color: #267ac1;
 }

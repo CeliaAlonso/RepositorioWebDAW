@@ -360,6 +360,13 @@ hr { margin: 15px 0 10px }
     transition: all 0.3s ease-in-out 0s;
 }
 
+.intro { padding-bottom: 70px; }
+
+.intro h2,
+.intro p {
+    text-align: center;
+}
+
 @media only screen and (max-width:1200px) {
     .head { font-size: 11px }
     .category { font-size: 13px }

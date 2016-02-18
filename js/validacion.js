@@ -75,7 +75,7 @@ $.validator.addMethod(
 );
 
 /* FUNCION DE VALIDACIÓN DE LA LIBRERIA jquery.validate.js */
-$('form').validate({
+$('#contactform').validate({
     rules: {
         nombre: {
             required: true,
