@@ -39,6 +39,7 @@ CONTENIDO
     padding: 30px;
 }
 iframe {
+    border: none;
     width: 100%;
     height: 315px;
 }

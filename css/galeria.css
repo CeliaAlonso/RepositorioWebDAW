@@ -95,13 +95,13 @@ CONTENIDO
 }
 
 .galery-foot-head .pagination > .active > a {
-	color: #0000ff;
+	color: #267ac1;
 	text-decoration: underline;
 	background: none;
 }
 
 .galery-foot-head .pagination > .active > a:hover {
-	color: #0000ff;
+	color: #267ac1;
 	text-decoration: underline;
 	background: none;
 	-webkit-transition: all 0.3s ease-in-out 0s;

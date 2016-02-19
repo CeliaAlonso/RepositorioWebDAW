@@ -224,7 +224,7 @@ header div .header img { height: 80px }
 
 .btn-iniciar {
 	color: #ffffff;
-	border: solid #267ac1 1px;
+	border: solid #267ac2 1px;
 	background-color: #267ac1;
 	font-family: 'Helvetica 65', sans-serif;
 
@@ -256,6 +256,11 @@ header div .header img { height: 80px }
 
 .btn-search .glyphicon-search {
 	padding: 3px 5px 0;
+}
+
+#search {
+	border-top-left-radius: 4px !important;
+	border-bottom-left-radius: 4px !important;
 }
 
 /* ---------------------

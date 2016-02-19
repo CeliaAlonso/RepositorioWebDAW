@@ -91,7 +91,7 @@ hr { margin: 15px 0 10px }
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #a3ccec
 }
 
-.search h5, .shop-by h5 {
+.search h3, .shop-by h3 {
     font-family: 'Helvetica 75', sans-serif;
     font-size: 20px;
 }
@@ -292,7 +292,7 @@ hr { margin: 15px 0 10px }
 
 .product-item { padding: 10px; }
 .product-item img { width: 98%; margin-left: 1%; }
-.product-item h4 {
+.product-item h3 {
     font-family: 'Helvetica 65', sans-serif;
     font-size: 25px;
     letter-spacing: -1px;
@@ -393,7 +393,7 @@ hr { margin: 15px 0 10px }
 @media only screen and (max-width:990px) {
     .head { font-size: 8px }
     .category { font-size: 9px }
-    .shop-by h5 { font-size: 17px; }
+    .shop-by h3 { font-size: 17px; }
     .pagination > li > a, .pagination > li > span {
         font-size: 12px;
         padding: 6px 4px;
@@ -418,7 +418,7 @@ hr { margin: 15px 0 10px }
 
 @media only screen and (max-width:768px) {
     .head, .category { font-size: 17px }
-    .shop-by h5 { font-size: 20px }
+    .shop-by h3 { font-size: 20px }
     .pagination > li > a, .pagination > li > span {
         font-size: 14px;
         padding: 6px 8px;
