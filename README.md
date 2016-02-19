@@ -1,3 +1,16 @@
+
+- Página actual: http://www.buscandoanemo.davidgomezq.com
+- Página antigua: http://www.buscandoanemo.davidgomezq.com/old/
+
+<h1>IMPORTANTE:</h1>
+
+En el documento de **accesibilidad** tambien hay que añadir la validación de HTML y CSS. Cada uno hay que hacerla de la siguiente manera.
+
+- **HTML** (https://validator.w3.org): Se pasan las páginas antiguas y las nuevas, se comenta lo que se ha solucionado de manera independendiente en cada una.
+- **CSS** (http://jigsaw.w3.org/css-validator): Van a salir 1012381248732 errores asi que no hay que hacerle caso, porque son de las librerias que hemos utilizado. Se indica en el documento que los errores de CSS son causados por el uso de librerias externas (Bootstrap, Font-awesome...) y despues hay que indicar que los errores que teniamos eran por repetir el mismo color en los borders y backgrounds y que no son relevantes.
+- **AA** (http://www.tawdis.net): Hay que meter las páginas antiguas y compararlas con las nuevas. Los errores que aparezcan se indica que no son necesarios solucionarlos porque blablablabla....
+
+
 # Pagina de demostración
 
 http://buscandoanemo.davidgomezq.com/
