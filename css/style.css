@@ -145,6 +145,29 @@ hr { border-top: 1px solid #D4D4D4; }
 	border: 0;
 }
 
+.alert-cookies {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 30px 100px;
+	z-index: 99999;
+	color: #FFFFFF;
+	background-color: rgba(0, 0, 0, 0.8);
+	border: none;
+	border-radius: 0;
+}
+.alert-cookies a {
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	border-bottom: 1px dotted white;
+}
+.alert-cookies a:hover {
+	text-decoration: none;
+	border-bottom: 1px solid white;
+}
+
 /* --------------------- 
 HEADER
 --------------------- */
